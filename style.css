@@ -104,15 +104,24 @@
         }
 
         .logo img {
-            margin-right:170px;
+            margin-right:150px;
         }
 
         .navbar {
-            margin-left:45px;
+            margin-left:65px;
             margin-bottom:10px;
            
         }
     }
+
+    @media screen and (max-width: 500px) {
+        .navbar a {
+            margin:15px;
+        }
+    }
+        
+    
+    
 
 /* TOP END */
 
