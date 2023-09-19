@@ -30,7 +30,7 @@
 
     @font-face {
         font-family: 'Numans';
-        src:url(../Font/Numans-Regular.ttf);
+        src:url(Numans-Regular.ttf);
     }
 
     html {
@@ -119,7 +119,7 @@
 /* ÚVOD */
 
     .UVOD {
-        background-image: url(../images/Mountain3.png);
+        background-image: url(Mountain3.png);
         background-size:cover;
         background-repeat: no-repeat;
         background-position:center;
