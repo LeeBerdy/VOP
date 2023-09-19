@@ -128,7 +128,6 @@
 /* ÚVOD */
 
     .UVOD {
-        height:700px;
         background-image: url(Mountain3.png);
         background-size:cover;
         background-repeat: no-repeat;
@@ -248,12 +247,16 @@
         }
 
         .desk {
-            width:180px;
+            width:250px;
         }
     }
         
         
     @media screen and (min-width: 760px) {
+
+        .UVOD {
+            height:700px;
+        }
 
         .desks {
             display: grid;
@@ -280,7 +283,7 @@
 /* CONTAINER */
 
 .container {
-    height:auto;
+    height:700px;
     width:auto;
     background-color:#649A6D;
     box-shadow: 0px 5px 15px rgb(63, 63, 63) inset;
@@ -399,7 +402,6 @@
     margin: auto;
     max-height:390px;
     max-width: 700px;
-    background-color: #000000;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -408,18 +410,25 @@
 
 @media screen and (max-width: 1200px) {
     .nadpis {
-        font-size:80%;
-        grid-template-columns: 170px 120px;
-        margin-bottom:0
+        margin-top:20px;
+        font-size:70%;
+        grid-template-columns: 160px 100px;
+        margin-bottom:0;
     }
 
     .block {
         display:flex;
-        margin:30px;
+        justify-self: center;
+        align-self: center;
+        margin: 0 30px;
     }
 
     .popis p {
         display:none;
+    }
+
+    .popis {
+        padding-bottom: 20px;
     }
 }
     
