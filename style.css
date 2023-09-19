@@ -108,9 +108,9 @@
         }
 
         .navbar {
-            margin-left:65px;
-            margin-bottom:10px;
-           
+            display: flex;
+            margin:auto;
+            margin-bottom:20px;
         }
     }
 
@@ -253,10 +253,6 @@
         
         
     @media screen and (min-width: 760px) {
-
-        .UVOD {
-            
-        }
 
         .desks {
             display: grid;
