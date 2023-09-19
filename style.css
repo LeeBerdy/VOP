@@ -30,7 +30,7 @@
 
     @font-face {
         font-family: 'Numans';
-        src:url(Numans-Regular.ttf);
+        src:url(Numans-Regular.ttf) format(tff);
     }
 
     html {
