@@ -372,6 +372,7 @@
 
         @media screen and (max-width:600px) {
             .container {
+                height:2872px;
                 background-image: url(Background-part1-phone.png);
             }
 
@@ -381,6 +382,16 @@
 
             .nadpis {
                 width:300px;
+            }
+
+            .sticky1 {
+                padding-left:97px;
+                margin-top:368px;
+            }
+
+            .sticky2 {
+                padding-right:97px;
+                margin-top:170px;
             }
         }
             
