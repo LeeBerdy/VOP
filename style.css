@@ -377,11 +377,13 @@
             }
 
             .container h3 {
-                font-size: 80%;
+                font-size: 120%;
             }
 
             .nadpis {
-                width:300px;
+                width:400px;
+                word-spacing: 8px;
+                font-size: 180%;
             }
 
             .sticky1 {
@@ -394,7 +396,6 @@
                 margin-top:170px;
             }
         }
-            
         
 /* Sticky 2 END */
 
