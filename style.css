@@ -1011,6 +1011,7 @@
     }
 
     .step1 {
+        margin-top:0px;
         padding:10px;
     }
 
@@ -1027,6 +1028,7 @@
     }
 
     .content1 {
+        height:90vh;
         background:url(content1\ -\ phone.png);
     }
 }
