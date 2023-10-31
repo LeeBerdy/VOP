@@ -1025,6 +1025,10 @@
     .step4{
         padding:10px;
     }
+
+    .content1 {
+        background:url(content1\ -\ phone.png);
+    }
 }
 
 /* Content END */
