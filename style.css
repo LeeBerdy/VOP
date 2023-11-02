@@ -297,23 +297,23 @@
         padding:0;
         overflow-x: hidden;
         -webkit-animation-name: Scroll;
-        -webkit-animation-duration: 6s;
+        -webkit-animation-duration: 12s;
         -moz-animation-name: Scroll;
-        -moz-animation-duration: 6s;
+        -moz-animation-duration: 12s;
         animation-name: Scroll;
-        animation-duration: 6s;
+        animation-duration: 12s;
     }
 
     .load {
         
         -webkit-animation-name: Opacity;
-        -webkit-animation-duration: 12s;
+        -webkit-animation-duration: 6s;
         -webkit-animation-fill-mode: forwards;
         -moz-animation-name: Opacity;
-        -moz-animation-duration: 12s;
+        -moz-animation-duration: 6s;
         -moz-animation-fill-mode:forwards;
         animation-name: Opacity;
-        animation-duration: 12s;
+        animation-duration: 6s;
         animation-fill-mode: forwards;
     }
 
