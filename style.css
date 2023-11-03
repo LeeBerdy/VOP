@@ -1240,7 +1240,7 @@
     }
 
     .now-ball {
-        width:50%;
+        width:70%;
         height:300px;
     }
 }
@@ -1365,6 +1365,7 @@
     }
 
     .travel-ball {
+        width:70%;
         height:300px;
     }
 }
