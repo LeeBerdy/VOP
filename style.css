@@ -274,6 +274,7 @@
     }
 }
 
+
 /* Keyframes END */
 
 
@@ -297,23 +298,23 @@
         padding:0;
         overflow-x: hidden;
         -webkit-animation-name: Scroll;
-        -webkit-animation-duration: 12s;
+        -webkit-animation-duration: ;
         -moz-animation-name: Scroll;
-        -moz-animation-duration: 12s;
+        -moz-animation-duration: ;
         animation-name: Scroll;
-        animation-duration: 12s;
+        animation-duration: ;
     }
 
     .load {
         
         -webkit-animation-name: Opacity;
-        -webkit-animation-duration: 6s;
+        -webkit-animation-duration: ;
         -webkit-animation-fill-mode: forwards;
         -moz-animation-name: Opacity;
-        -moz-animation-duration: 6s;
+        -moz-animation-duration: ;
         -moz-animation-fill-mode:forwards;
         animation-name: Opacity;
-        animation-duration: 6s;
+        animation-duration: ;
         animation-fill-mode: forwards;
     }
 
@@ -373,6 +374,7 @@
             font-size: 0.7rem;
         }
     }
+
 
 /* ALL ELEMENTS END */
 
@@ -469,13 +471,13 @@
     height:100vh;
     width:auto;
     -webkit-animation-name: Hide;
-    -webkit-animation-duration: 4s;
+    -webkit-animation-duration: ;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-name: Hide;
-    -moz-animation-duration: 4s;
+    -moz-animation-duration: ;
     -moz-animation-fill-mode: forwards;
     animation-name: Hide;
-    animation-duration: 4s;
+    animation-duration: ;
     animation-fill-mode: forwards;
 }
 
@@ -487,13 +489,13 @@
     box-shadow:0px 0px 100px #ffffff, 0px 0px 100px white;
     margin:auto;
     -webkit-animation-name: loading;
-    -webkit-animation-duration: 4s;
+    -webkit-animation-duration: ;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-name: loading;
-    -moz-animation-duration: 4s;
+    -moz-animation-duration: ;
     -moz-animation-fill-mode: forwards;
     animation-name: loading;
-    animation-duration: 4s;
+    animation-duration: ;
     animation-fill-mode: forwards;
 }
 
@@ -797,13 +799,13 @@
     background-position: top center;
     background-repeat: no-repeat;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom:120px;
     
 }
 
 .step1 {
-    grid-column: 3/6;
+    grid-column: 2/5;
     padding:50px;
     text-align: right;
 }
@@ -815,7 +817,7 @@
     border-radius: 50px;
     background-color: #51875b;
     position: absolute;
-    bottom:0;
+    bottom:0px;
     right:0;
     animation-name: Rotate-Before;
     animation-duration: 15s;
@@ -1005,14 +1007,45 @@
     }
 
     .content p {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         letter-spacing: 1px;
-        line-height: 15px;
+        line-height: 17px;
+    }
+
+    .sign {
+        grid-column: 1/5;
+        grid-row: 1/2;
+        margin-right:10px;
+    }
+
+    .break {
+        grid-column: 1/5;
+        grid-row: 2/3;
+        text-align: right;
+        padding: 10px;
+    }
+
+    .first-break {
+        grid-column: 1/5;
+        grid-row: 3/4;
+        text-align: right;
+        padding:10px
+    }
+
+    .sec-break {
+        grid-column: 2/5;
+        grid-row: 4/5;
+        text-align: right;
+        padding:10px;
     }
 
     .step1 {
-        margin-top:0px;
+        margin-left: 10%;
+        margin-top:50px;
         padding:10px;
+        display: grid;
+        grid-template-columns: 75px 75px 75px 0vw;
+        grid-template-rows: 100px 105px 69px 10vh;
     }
 
     .step2 {
@@ -1030,7 +1063,42 @@
     .content1 {
         height:90vh;
         background:url(content1\ -\ phone.png);
+        background-size: cover center;
+        background-position: top center;
+        background-repeat: no-repeat;
     }
+
+    .step1 h2::before {
+        animation-duration: 6s;
+    }
+    
+    .step1 h2::after {
+        animation-duration: 6s;
+    }
+
+    .step2 h2::before {
+        animation-duration: 6s;
+    }
+    
+    .step2 h2::after {
+        animation-duration: 6s;
+    }
+
+    .step3 h2::before {
+        animation-duration: 6s;
+    }
+    
+    .step3 h2::after {
+        animation-duration: 6s;
+    }
+
+    .step4 h2::before {
+        animation-duration: 6s;
+    }
+    
+    .step4 h2::after {
+        animation-duration: 6s;
+}
 }
 
 /* Content END */
@@ -1166,7 +1234,7 @@
 }
 
 .who-line {
-    width:293px;
+    width: 403px;
     height:50px;
     background: transparent;
     border-left: 2px solid white;
@@ -1188,6 +1256,7 @@
     .who-line {
         border-left: 1px solid white;
         border-right: 1px solid white;
+        width: 295px;
     }
 }
 
@@ -1243,6 +1312,7 @@
 @media screen and (max-width:415px) {
     .travel-line {
         width:1px;
+        top:60vh;
     }
 }
 
@@ -1265,23 +1335,23 @@
 
 .outro::before {
     content:"";
-    width: 80%;
+    width: 90%;
     height: 1px;
     background:white;
     position: absolute;
     top:10px;
-    left:10%;
+    left:5%;
     z-index: 100;
 }
 
 .outro::after {
     content:"";
-    width: 80%;
+    width: 90%;
     height: 1px;
     background:white;
     position: absolute;
     bottom:0px;
-    left:10%;
+    left:5%;
     z-index: 100;
 }
 
@@ -1338,6 +1408,18 @@
     .Lside {
         border-left: solid 1px white;
         border-right: solid 1px white;
+        height: 70px;
+        top: 430px;
+    }
+
+    .outro::before {
+        width: 80%;
+        left: 10%;
+    }
+
+    .outro::after {
+        width: 80%;
+        left: 10%;
     }
 
 }
@@ -1366,7 +1448,7 @@
     background: #ffffff;
     position: absolute;
     left:50%;
-    top:37%;
+    top:34%;
     margin-bottom:50px;
 }
 
@@ -1437,7 +1519,6 @@
 }
 
 
-
 @media screen and (max-width:415px) {
     .shot h3 {
         font-size: 1.3rem;
@@ -1453,10 +1534,14 @@
     .let-us-know::before {
         height:80px;
         width:1px;
+        top:37%;
     }
+
+
 }
 
-/* Button + Form:Hover */
+
+/* Button + Form:Hover */ 
 
 
 
@@ -1748,6 +1833,8 @@
         font-size: 1.1rem;
     }
 }
+
+
 /* Let us know END */
 
 
