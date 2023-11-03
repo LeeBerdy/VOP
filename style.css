@@ -1066,6 +1066,34 @@
         background-size: cover center;
         background-position: top center;
         background-repeat: no-repeat;
+        margin-bottom: 50px;
+    }
+
+    .content2 {
+        height:90vh;
+        background:url(content2\ -\ phone.png);
+        background-size: cover center;
+        background-position: top center;
+        background-repeat: no-repeat;
+        margin-bottom: 50px;
+    }
+
+    .content3 {
+        height:90vh;
+        background:url(content3\ -\ phone.png);
+        background-size: cover center;
+        background-position: top center;
+        background-repeat: no-repeat;
+        margin-bottom: 50px;
+    }
+
+    .content4 {
+        height:90vh;
+        background:url(content4\ -\ phone.png);
+        background-size: cover center;
+        background-position: top center;
+        background-repeat: no-repeat;
+        margin-bottom: 50px;
     }
 
     .step1 h2::before {
