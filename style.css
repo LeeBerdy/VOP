@@ -306,7 +306,7 @@
     
     }
 
-
+    
 /* Keyframes END */
 
 
@@ -338,7 +338,6 @@
     }
 
     .load {
-        
         -webkit-animation-name: Opacity;
         -webkit-animation-duration: 6s;
         -webkit-animation-fill-mode: forwards;
