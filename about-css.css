@@ -397,116 +397,42 @@ body {
 /* Anims */
 
 
-.anim-1 {position:absolute;
-    top:-10vh;
+.anim-1 {
     left:0vw;
-    border-radius: 50px;
-    width:20px;
-    height:20px;
-    background:rgb(255, 255, 255);
-    -webkit-animation-name: Fall;
-    -webkit-animation-duration: 1.7s;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-name: Fall;
-    -moz-animation-duration: 1.7s;
-    -moz-animation-fill-mode: forwards;
-    animation-name: Fall;
-    animation-duration: 1.7s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
     animation-delay: 0.2s;
 }
 
 .anim-2 {
-    position:absolute;
     left:5vw;
-    border-radius: 50px;
-    width:20px;
-    height:20px;
-    background:rgb(255, 255, 255);
-    -webkit-animation-name: Fall;
-    -webkit-animation-duration: 1.7s;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-name: Fall;
-    -moz-animation-duration: 1.7s;
-    -moz-animation-fill-mode: forwards;
-    animation-name: Fall;
-    animation-duration: 1.7s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
 }
 
 .anim-3 {
-    position:absolute;
-    top:-10vh;
     left:10vw;
-    border-radius: 50px;
-    width:20px;
-    height:20px;
-    background:rgb(255, 255, 255);
-    -webkit-animation-name: Fall;
-    -webkit-animation-duration: 1.7s;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-name: Fall;
-    -moz-animation-duration: 1.7s;
-    -moz-animation-fill-mode: forwards;
-    animation-name: Fall;
-    animation-duration: 1.7s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
     animation-delay: 0.1s;
 }
 
 .anim-4 {
-    position:absolute;
-    top:-10vh;
     left:15vw;
-    border-radius: 50px;
-    width:20px;
-    height:20px;
-    background:rgb(255, 255, 255);
-    -webkit-animation-name: Fall;
-    -webkit-animation-duration: 1.7s;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-name: Fall;
-    -moz-animation-duration: 1.7s;
-    -moz-animation-fill-mode: forwards;
-    animation-name: Fall;
-    animation-duration: 1.7s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
     animation-delay: 0.25s;
 }
 
 .anim-5 {
-    position:absolute;
-    top:-10vh;
     left:20vw;
-    border-radius: 50px;
-    width:20px;
-    height:20px;
-    background:rgb(255, 255, 255);
-    -webkit-animation-name: Fall;
-    -webkit-animation-duration: 1.7s;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-name: Fall;
-    -moz-animation-duration: 1.7s;
-    -moz-animation-fill-mode: forwards;
-    animation-name: Fall;
-    animation-duration: 1.7s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
     animation-delay: 0.4s;
 }
 
 .anim-6 {
-    position:absolute;
-    top:-10vh;
     left:25vw;
-    border-radius: 50px;
+    animation-delay: 0.1s;
+}
+
+.ball {
+    position: absolute;
     width:20px;
     height:20px;
-    background:rgb(255, 255, 255);
+    background: #ffffff;
+    top:-10vh;
+    border-radius: 50%;
     -webkit-animation-name: Fall;
     -webkit-animation-duration: 1.7s;
     -webkit-animation-fill-mode: forwards;
@@ -517,7 +443,6 @@ body {
     animation-duration: 1.7s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
-    animation-delay: 0.1s;
 }
 
 /* Anims END */

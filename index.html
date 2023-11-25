@@ -19,8 +19,6 @@
 
             <div class="load">
 
-                
-
                 <header>
 
                     <div class="top">
@@ -59,7 +57,7 @@
 
                             <div class="black">
                                 <div class="about">
-                                    <h2><span class="green">We</span> are small team of enthusiasts <span class="green">work</span>ing <span class="green">on</span> developing web <span class="green">design</span> skills and bringing a piece of <span class="green">art</span> into world wide web.<br> <br>Our goal is to provide unique design <span class="green">and</span> deliver solutions for all needs, <span class="green">desires</span>, ideas and imaginations <span class="green">of our clients</span>.</h2>
+                                    <h2><span class="green">We</span> are a small team of enthusiasts <span class="green">work</span>ing <span class="green">on</span> developing web <span class="green">design</span> skills and bringing a piece of <span class="green">art</span> into world wide web.<br> <br>Our goal is to provide unique design <span class="green">and</span> deliver solutions for all needs, <span class="green">desires</span>, ideas and imaginations <span class="green">of our clients</span>.</h2>
                                 </div>
                             </div>
 
@@ -148,29 +146,34 @@
                                 <div class="shot"><h3>Give it a shot and let us know</h3></div>
                                 <div class="button" tabindex="0"></div>
                                 <div class="form" tabindex="0">
-                                    <div class="input">
-                                        
-                                        <form class="Name">
-                                            <label for="Name">Your Name</label>
-                                            <input id="Name" autocomplete="name" type="text" placeholder="John Johnson">
-                                        </form>
-                                        <form class="Company">
-                                            <label for="Company">Company</label>
-                                            <input id="Company" autocomplete ="text" placeholder="Johnsons Inc.">
-                                        </form>
-                                        <form class="Email">
-                                            <label for="Email">Email address</label>
-                                            <input id="Email" autocomplete="email" type="email" placeholder="John.Johnson@Johnsons.com">
-                                        </form>
-                                        <form class="Note">
-                                            <label>Notes</label>
-                                            <textarea name="Notes" placeholder="Tell us about your idea..."></textarea>
-                                        </form>
-                                        <form class="Submit">
-                                            <button>Send</button>
-                                        </form>
+                                    <form class="fill" action="https://formsubmit.co/vop.develop@gmail.com" method="POST">
+                                        <div class="flex">
+                                            <div class="flex-one">
+                                                <div class="label Name">
+                                                    <label class="txt"  for="name">Name</label>
+                                                    <input class="input Name" name="name" autocomplete="name" type="text" placeholder="John Johnson">
+                                                </div>
+                                                <div class="label Company">
+                                                    <label class="txt" for="company">Company</label>
+                                                    <input class="input Company" name="company" autocomplete ="text" placeholder="Johnsons Inc.">
+                                                </div>
+                                                <div class="label Email">
+                                                    <label class="txt" for="email">Email address</label>
+                                                    <input class="input Email" name="email" autocomplete="email" type="email" placeholder="John.Johnson@Johnsons.com">
+                                                </div>
+                                            </div>
+                                            <div class="flex-two">
+                                                <div class="Notes">
+                                                    <label class="label-note">Notes</label>
+                                                    <textarea class="Note" name="message" placeholder="Tell us about your idea..."></textarea>
+                                                </div>
+                                                <div class="Submit">
+                                                    <button class="submit" type="submit" name="send">Send</button>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                    </div>
+                                    </form>
 
                                 </div>
                                 
