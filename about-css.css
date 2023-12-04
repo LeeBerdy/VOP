@@ -335,9 +335,9 @@
     
         100% {
             transform: rotate(360deg);
-            top:80vh;
+            top:85vh;
             width:6%;
-            height:20vh;
+            height:15vh;
             border-radius: 0px;
         }
     }
@@ -352,7 +352,7 @@
         }
     
         50% {
-            height:25vh;
+            height:20vh;
             opacity:1;
         }
     
@@ -378,12 +378,12 @@
     
         80% {
             opacity:1;
-            height:25vh;
+            height:20vh;
         }
     
         90% {
             opacity:1;
-            height:25vh;
+            height:20vh;
         }
     
         100% {
