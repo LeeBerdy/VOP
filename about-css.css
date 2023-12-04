@@ -400,6 +400,7 @@
 
 html {  
     font-family: 'Numans', sans-serif;
+    overflow-x: hidden;
 }
 
 body {
