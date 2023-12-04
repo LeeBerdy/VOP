@@ -400,7 +400,6 @@
 
 html {  
     font-family: 'Numans', sans-serif;
-    overflow-x: hidden;
 }
 
 body {
@@ -412,6 +411,12 @@ body {
     -moz-animation-duration: 16s;
     animation-name: Scroll;
     animation-duration: 16s;
+}
+
+@media screen and (max-width:415px) {
+    html {
+        overflow-x: hidden;
+    }
 }
 
 * {
