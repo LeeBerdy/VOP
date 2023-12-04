@@ -274,6 +274,8 @@
     }
 }
 
+
+
 @media screen and (max-width:415px) {
     @keyframes Breath { 
         0% {
@@ -306,7 +308,7 @@
     
     }
 
-    
+
 /* Keyframes END */
 
 
@@ -400,6 +402,8 @@
         font-weight: 700;
     }
 
+
+
     @media screen and (max-width:415px) {
         ::-webkit-input-placeholder {
             font-size: 0.7rem;
@@ -453,6 +457,8 @@
         transition-duration:  0.2s;
     }
     
+
+
     @media screen and (max-width: 760px) {
         .top {
             height:120px;
@@ -659,6 +665,8 @@
     color:white;
 }
 
+
+
 @media screen and (max-width:991px) {
     .title {
         font-size: 1.6rem;
@@ -815,6 +823,8 @@
     padding:50px;
     text-align: center;
 }
+
+
 
 @media screen and (max-width:767px) {
     .black::before {
@@ -1339,6 +1349,7 @@
 }
 }
 
+
 /* Content END */
 
 
@@ -1414,6 +1425,8 @@
     text-align: center;
 }
 
+
+
 @media screen and (max-width:1230px) {
     .now h2 {
         font-size: 1.6rem;
@@ -1471,6 +1484,7 @@
     }
 }
 
+
 /* Now END */
 
 
@@ -1521,6 +1535,7 @@
 }
 
 
+
 @media screen and (max-width:1230px) {
     .who h2 {
         font-size: 1.6rem;
@@ -1559,6 +1574,7 @@
         width: 295px;
     }
 }
+
 
 /* Who END */
 
@@ -1621,6 +1637,7 @@
         height:300px;
     }
 }
+
 
 /* Travel END */
 
@@ -1764,6 +1781,9 @@
 
 
 /* Outro END */
+
+
+/* Let us know */
 
 
 
@@ -2156,7 +2176,6 @@
 
 
 
-
 @media screen and (max-width:415px) {
 
     .shot {
@@ -2255,6 +2274,9 @@
 
 
 
+/* Let us know END */
+
+
 /* Footer */
 
 
@@ -2351,6 +2373,7 @@ footer {
     margin: 35px;
     transition: 0.5s;
 }
+
 
 
 @media screen and (max-width:996px) {
