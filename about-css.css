@@ -314,6 +314,82 @@
             transform: translate(0px, 0px);
         }
     }
+
+    @keyframes Fall {
+        0% {
+            transform: rotate(0deg);
+            top:-1vh;
+            opacity:1;
+            height: 1vh;
+        }
+    
+        20% {
+            height: 1vh;
+            top:-5vh;
+            opacity:1;
+        }
+
+        90% {
+            height:1vh;
+        }
+    
+        100% {
+            transform: rotate(360deg);
+            top:90vh;
+            width:6%;
+            height:10vh;
+            border-radius: 0px;
+        }
+    }
+
+    @keyframes Grow {
+        0% {
+            height:1vh;
+        }
+    
+        40% {
+            height:1vh
+        }
+    
+        50% {
+            height:15vh;
+            opacity:1;
+        }
+    
+        55% {
+            opacity:0;
+        }
+    
+        60% {
+            opacity:1;
+        }
+    
+        65% {
+            opacity:0;
+        }
+    
+        70% {
+            opacity:1;
+        }
+    
+        75% {
+            opacity:0;
+        }
+    
+        80% {
+            opacity:1;
+            height:15vh;
+        }
+    
+        90% {
+            opacity:1;
+            height:15vh;
+        }
+    
+        100% {
+            height:100vh;
+        }
+    }
 }
 
 @font-face {
