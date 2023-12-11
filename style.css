@@ -1833,7 +1833,7 @@
     position: relative;
     box-shadow: 1px 1px 20px white;;
     transition: 1s;
-    transition-delay:7s;
+    transition-delay:67s;
     transition-timing-function: ease-in;
 }
 
@@ -1847,7 +1847,7 @@
     left:18%;
     border-radius: 10px;
     transition: 1.8s;
-    transition-delay: 5s;
+    transition-delay: 65s;
     filter: blur(1px);
 }
 
