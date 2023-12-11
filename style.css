@@ -402,8 +402,6 @@
         font-weight: 700;
     }
 
-
-
     @media screen and (max-width:415px) {
         ::-webkit-input-placeholder {
             font-size: 0.7rem;
