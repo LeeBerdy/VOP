@@ -261,10 +261,6 @@
         opacity:0;
     }
 
-    50% {
-        opacity:1;
-    }
-
     100% {
         opacity:1;
     }
@@ -291,6 +287,30 @@
 
     100% {
         transform: scale(1);
+    }
+}
+
+@keyframes Slide {
+    0% {
+        opacity:0;
+        transform:translateX(-300px)
+    }
+    
+    10% {
+        opacity:1;
+        transform:translateX(0px);
+        animation-timing-function: linear;
+    }
+
+    85% {
+        opacity:1;
+        transform:translateX(200px);
+        animation-timing-function: linear;
+    }
+
+    100% {
+        opacity: 0;
+        transform:translateX(500px)
     }
 }
 
@@ -423,6 +443,7 @@
     font-family: 'Numans';
     src:url(Numans-Regular.ttf);
 }
+
 
 
 html {  
@@ -562,64 +583,69 @@ body {
 /* Title */
 
 
-    .title {
-        position: absolute;
-        top:25%;
-        left:30%;
-        animation: Disappear;
-        animation-duration: 4s;
-        animation-delay:13s;
-        animation-fill-mode: forwards;
-        z-index: 100;
-    }
+.title h2 {
+    font-size: 2.2rem;
+    color:white;
+    font-weight: 100;
+    text-shadow: 1px 1px 10px black;
+    z-index: 100;
+}
 
-    .title h2 {
-        font-size: 3.2rem;
-        color:white;
-        font-weight: 100;
-        text-shadow: 1px 1px 10px black;
-        z-index: 100;
-    }
+/* First Title */
 
-    .tit-fr {
-        opacity:0;
-        animation: Appear;
-        animation-duration:4s;
-        animation-fill-mode: forwards;
-        animation-delay:1s;
-    }
 
-    .tit-sec {
-        opacity:0;
-        animation: Appear;
-        animation-duration:4s;
-        animation-fill-mode: forwards;
-        animation-delay:2s;
-    }
+.title-fr {
+    position: absolute;
+    top:20%;
+    left:20%;
+    animation: isappear;
+    animation-duration: 4s;
+    animation-delay:7s;
+    animation-fill-mode: forwards;
+    z-index: 100;
+}
 
-    .tit-thr {
-        opacity:0;
-        animation: Appear;
-        animation-duration:4s;
-        animation-fill-mode: forwards;
-        animation-delay:3s;
-    }
+.title-fr::before {
+    content: "";
+    width:500px;
+}
 
-    .tit-for {
-        opacity:0;
-        animation: Appear;
-        animation-duration:4s;
-        animation-fill-mode: forwards;
-        animation-delay:4s;
-    }
+.tit-fr {
+    opacity: 0;
+    animation: Slide;
+    animation-duration: 8s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
 
-    .tit-fif {
-        opacity:0;
-        animation: Appear;
-        animation-duration:4s;
-        animation-fill-mode: forwards;
-        animation-delay:4.5s;
-    }
+/* Second Title */
+
+
+.title-sec {
+    position: absolute;
+    top:40%;
+    right:30%;
+    animation: isappear;
+    animation-duration: 4s;
+    animation-delay:7s;
+    animation-fill-mode: forwards;
+    z-index: 100;
+    
+}
+
+.tit-sec {
+    opacity: 0;
+    animation: Slide;
+    animation-duration: 6s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+.title-sec h2 {
+    font-size: 3rem;
+}
+
 
     @media screen and (max-width:996px) {
         .title {
@@ -731,7 +757,7 @@ body {
 .levitates {
     opacity:0;
     animation:Appear;
-    animation-delay: 6s;
+    animation-delay: 8s;
     animation-duration: 7s;
     animation-fill-mode: forwards;
     display:grid;
