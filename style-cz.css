@@ -416,83 +416,231 @@
 
 
 
+.top {
+    top:0;
+    height:60px;
+    width: 100%;
+    background-color: #000000;
+    display:flex;
+    justify-content: space-between;
+    position:fixed;
+    z-index: 1000;
+}
+
+.logo img{
+    width:110px;
+    height:35px;
+    margin-left:120px;
+    margin-top:12px;
+}
+
+.navbar {
+    margin-top:20px;
+    margin-right:0px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin:25px;
+    color: rgb(255, 255, 255);
+    transition-duration: 0.5s;
+}
+
+.navbar a:hover {
+    color: #649A6D;
+    transition-duration:  0.2s;
+}
+
+
+/* Languages */
+
+
+
+.lang-icon {
+    height:0px;
+    border:0px solid white;
+    border-top:0px;
+    box-shadow: 1px 1px 40px black;
+    width:80px;
+    margin-right:25px;
+    margin-left:0px;
+    background: black;
+    transition: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.langs a:hover {
+    color:#649A6D;
+}
+
+.cz a {
+    display: none;
+    margin-top:10px;
+    margin-bottom:0px;
+}
+
+.aj a {
+    display: none;
+}
+
+.langs {
+    display: flex;
+    flex-direction: column;
+    height:0px; 
+    align-items: center;
+}
+
+.lang-icon:hover {
+    height:90px;
+    border:1px solid white;
+    border-top:0px;
+    transition-timing-function: ease-out;
+}
+
+.navbar:has(.lang-icon:hover) .cz a {
+    display: flex;
+    cursor: pointer;
+}
+
+.navbar:has(.lang-icon:hover) .aj a {
+    display: flex;
+    cursor: pointer;
+}
+
+.langs img {
+    position: absolute;
+    right:55px;
+    width:20px;
+    height:20px;
+    opacity:1;
+    transition: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.langs img:hover {
+    opacity:0;
+    transition: 0s;
+    transition-delay: 0s;
+}
+
+.navbar:has(.lang-icon:hover) .langs img {
+    opacity:0;
+    transition: 0s;
+    transition-delay: 0s;
+}
+
+
+
+/* Languages END */
+
+
+
+@media screen and (max-width: 760px) {
     .top {
-        top:0;
-        height:60px;
-        width: 100%;
-        background-color: #000000;
-        display:flex;
-        justify-content: space-between;
-        position:fixed;
-        z-index: 1000;
+        height:120px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
 
-    .logo img{
-        width:110px;
-        height:35px;
-        margin-left:120px;
-        margin-top:12px;
+    .logo img {
+        margin-right:150px;
     }
 
     .navbar {
-        margin-top:20px;
-        margin-right:50px;
+        display: flex;
+        margin:auto;
+        margin-bottom:20px;
+        
     }
 
-    .navbar li {
-        list-style: none;
+    .lang-icon {
+        position: absolute;
+        top:-60px;
+        right:-55%;
+    }
+
+    .langs img {
+        right:25px;
+    }
+}
+
+@media screen and (max-width:667px) {
+    .lang-icon {
+        right:-45%;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .lang-icon {
+        right:-35%;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .lang-icon {
+        right:-30%;
+        width:60px;
     }
 
     .navbar a {
-        text-decoration: none;
+        margin:20px;
+    }
+
+    .cz a {
+        margin-top:10px;
+        margin-bottom:0px;
+    }
+
+    .aj a {
         margin:25px;
-        color: rgb(255, 255, 255);
-        transition-duration: 0.5s;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .lang-icon {
+        right:-25%;
+        width:60px;
     }
 
-    .navbar a:hover {
-        color: #649A6D;
-        transition-duration:  0.2s;
+}
+
+@media screen and (max-width: 415px) {
+    .navbar a {
+        font-size: 0.8rem;
     }
+
+    .logo img {
+        width:80px;
+        height:25px;
+    }
+
+    .top {
+        height:95px;
+    }
+
+    .lang-icon {
+        width:50px;
+        margin-right:25px;
+        margin-left:0px;
+        top:-40px;
+        right:-25%;
+    }
+
+    .langs img {
+        right:18px;
+        width:15px;
+        height:15px;
+    }
+}
     
-
-
-    @media screen and (max-width: 760px) {
-        .top {
-            height:120px;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .logo img {
-            margin-right:150px;
-        }
-
-        .navbar {
-            display: flex;
-            margin:auto;
-            margin-bottom:20px;
-        }
-    }
-
-    @media screen and (max-width: 415px) {
-        .navbar a {
-            margin:20px;
-            font-size: 0.8rem;
-        }
-
-        .logo img {
-            width:80px;
-            height:25px;
-            margin-left:120px;
-        }
-
-        .top {
-            height:95px;
-        }
-    }
-        
 
 /* TOP END */
 
