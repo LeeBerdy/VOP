@@ -640,6 +640,36 @@
             height:15px;
         }
     }
+
+    @media screen and (max-width: 360px) {
+        .navbar a {
+            font-size: 0.8rem;
+            margin:15px;
+        }
+
+        .logo img {
+            width:80px;
+            height:25px;
+        }
+
+        .top {
+            height:95px;
+        }
+
+        .lang-icon {
+            width:50px;
+            margin-right:20px;
+            margin-left:0px;
+            top:-40px;
+            right:-25%;
+        }
+
+        .langs img {
+            right:18px;
+            width:15px;
+            height:15px;
+        }
+    }
         
 
 /* TOP END */
@@ -878,7 +908,7 @@
     }
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:380px) {
     .title {
         width:80%;
         font-size: 1rem;
@@ -1026,6 +1056,35 @@
 
     .why h2 {
         font-size: 1.3rem;
+        padding:20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:380px) {
+
+    .about h2 {
+        font-size: 1.2rem;
+        text-align: center
+    }
+
+    .black::after {
+        height: 70px;
+        width:1px;
+    }
+
+    .black::before {
+        height:70px;
+        width:1px;
+        top:90%;
+    }
+
+    .why {
+        padding:20px;
+    }
+
+    .why h2 {
+        font-size: 1.2rem;
         padding:20px;
         text-align: center;
     }
