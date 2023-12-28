@@ -415,7 +415,8 @@
 
 .filter {
     filter: blur(0px);
-    transition: 0.2s;
+    transition: 0.1s;
+    transition-delay: 0s;
 }
 
 
