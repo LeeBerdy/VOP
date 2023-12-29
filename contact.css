@@ -150,8 +150,8 @@ body {
 
 .filter {
     filter: blur(0px);
-    transition: 0.3s;
-    transition-delay: 0.2s;
+    transition: 0.2s;
+    transition-delay: 0s;
 }
 
 
@@ -190,8 +190,8 @@ body {
         height:4px;
         background: white;
         border-radius: 5px;
-        transition: 0.3s;
-        transition-delay: 0.6s;
+        transition: 0.25s;
+        transition-delay: 0.3s;
     }
 
     .strip-fr {
@@ -415,16 +415,17 @@ body {
         background-color: #202020f3;
         transform: translateX(-100vw);
         transition: 0.5s;
-        transition-delay: 0.3s;
         z-index: 1000;
     }   
 
     .top:has(.icon:hover) .navbar {
         transform: translateX(-50vw);
+        transition-delay: 0.2s;
     }
 
     .navbar:hover {
         transform: translateX(-50vw);
+        transition-delay: 0.2s;
     }
 
     .navbar ul {
