@@ -415,8 +415,8 @@
 
 .filter {
     filter: blur(0px);
-    transition: 0.1s;
-    transition-delay: 0s;
+    transition: 0.3s;
+    transition-delay: 0.2s;
 }
 
 
@@ -682,61 +682,6 @@
         z-index: 1000;
     }   
 
-    .cancel-butt {
-        content:"";
-        position: absolute;
-        top:70px;
-        right:-50px;
-        width:60px;
-        height:60px;
-        background: rgba(255, 255, 255, 0.723);
-        border:3px black solid;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .cancel-butt:hover {
-        background: rgba(255, 255, 255, 0.873);
-    }
-
-    .top:has(.cancel-butt:active) .navbar{
-        transform: translateX(-100vw);
-        transition: 0.15s;
-        transition-delay: 0s;
-    }
-
-    .top:has(.cancel-butt:hover) .strip{
-        transition-delay: 0s;
-    }
-
-    .top:has(.cancel-butt:active) .strip{
-        transition-delay: 0s;
-    }
-
-    .cancel-butt::before {
-        content:"";
-        position: absolute;
-        top:9px;
-        left:47%;
-        width:5px;
-        height:40px;
-        background: rgb(0, 0, 0);
-        border-radius: 10px;
-        transform: rotate(45deg);
-    }
-
-    .cancel-butt::after {
-        content:"";
-        position: absolute;
-        top:9px;
-        left:47%;
-        width:5px;
-        height:40px;
-        background: rgb(0, 0, 0);
-        border-radius: 10px;
-        transform: rotate(-45deg);
-    }
-
     .top:has(.icon:hover) .navbar {
         transform: translateX(-50vw);
     }
@@ -759,10 +704,6 @@
         margin-right:10px;
         width:30px;
         height:30px;
-    }
-
-    .navbar a {
-        
     }
 
     .navbar li {
@@ -799,8 +740,50 @@
 
 }
 
+@media screen and (max-width:556px) {
+    .navbar ul {
+        font-size:1.3rem;
+        margin-left:0px;
+    }
+
+    .navbar img {
+        width:25px;
+        height:25px;
+    }
+
+    .navbar li {
+        margin-right:0px;
+    }
+}
+
 @media screen and (max-width:415px) {
-    
+    .navbar {
+        position: absolute;
+        top:-20px;
+        right:0;
+        height:100vh;
+        width:60vw;
+        background-color: #202020f3;
+        transform: translateX(-100vw);
+        transition: 0.5s;
+        transition-delay: 0.3s;
+        z-index: 1000;
+    }   
+
+    .top:has(.icon:hover) .navbar {
+        transform: translateX(-40vw);
+    }
+
+    .navbar:hover {
+        transform: translateX(-40vw);
+    }
+
+}
+
+@media screen and (max-width:350px) {
+    .navbar li {
+        margin-left:0px;
+    }
 }
 
         
