@@ -463,13 +463,13 @@ body {
         height:25px;
     }
 
-    .load:has(.icon:hover) .filter {
+    body:has(.icon:hover) .filter {
         filter: blur(4px);
         transition: 0.6s;
         transition-delay: 0.2s;
     }
 
-    .load:has(.navbar:hover) .filter {
+    body:has(.navbar:hover) .filter {
         filter: blur(4px);
         transition: 0.6s;
         transition-delay: 0.2s;
