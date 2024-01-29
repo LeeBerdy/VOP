@@ -1,0 +1,923 @@
+$TmaváŠedá:rgba(33, 33, 33, 1);
+$TmavšíŠedá:rgba(23, 23, 23, 1);
+$SvětláŠedá:rgba(139, 139, 139, 1);
+$ŠedáIkony:rgba(56, 56, 56, 1);
+$Zelená:rgba(0, 125, 92, 1);
+$Bílá:rgba(251, 251, 251, 1);
+
+
+
+/* Font-face */
+
+
+@font-face {
+    font-family:'NotoSans-reg';
+    src:url(NotoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family:'NotoSans-semiBold';
+    src:url(NotoSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family:'NotoSans-Bold';
+    src:url(NotoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family:'NotoSans-light';
+    src:url(NotoSans-Light.ttf);
+}
+
+/* Font-face END */
+
+
+
+/* ALL ELEMENTS */
+
+
+html, body {
+    font-family: 'Notosans-reg', sans-serif;
+}
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* ALL ELEMENTS END */
+
+
+
+/* Top */
+
+
+
+.Top {
+    position:relative;
+    z-index: 1000;
+    
+    .Navbar {
+        top:0px;
+        left:0px;
+        width:100%;
+        height:60px;
+        background:transparent;
+        position: absolute;
+        display:grid;
+        
+        .content-navbar {
+            max-width:1600px;
+            margin:auto;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        a{
+            text-decoration: none;
+            color: $Bílá;
+            position: relative;
+        }
+
+        li {
+            color:$Bílá;
+            font-size: 1.1rem;
+            list-style-type: none;
+        }
+
+        .AC {
+            background:linear-gradient(to right, $Zelená, rgba(0, 125, 92, 0.2));
+            width:150px;
+            height:38px;
+            border-radius: 20px;
+            display:flex;
+            margin-top:-5px;
+            transition: 0.3s;
+
+            p {
+                margin:auto;
+                font-size: 1rem;
+            }
+        }
+
+        .AC:hover {
+            box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.171);
+        }
+
+        .Left{
+            width:500px;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin:auto;
+            margin-top:20px;
+            text-align: center;
+        }
+
+        .Logo {
+            margin:auto;
+            margin-top:-70px;
+            transform: scale(0.3);
+        }
+
+        .Right {
+            
+            width:500px;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin:auto;
+            margin-top:20px;
+            text-align: center;
+        }
+
+    }
+
+    .home::after,
+    .about::after,
+    .galerie::after,
+    .prices::after,
+    .contact::after {
+        content:"";
+        width:100%;
+        height:2px;
+        background-color: $Bílá;
+        position: absolute;
+        bottom:-5px;
+        left:0px;
+        transition: 0.3s;
+        transform-origin: center;
+        transform: scaleX(0);
+    }
+
+    .Navbar:has(.home:hover) .home::after,
+    .Navbar:has(.about:hover) .about::after,
+    .Navbar:has(.galerie:hover) .galerie::after,
+    .Navbar:has(.prices:hover) .prices::after,
+    .Navbar:has(.contact:hover) .contact::after {
+        transform: scaleX(1);
+        
+    }
+
+}
+
+
+
+/* Top END */
+
+
+/* Hero */
+
+
+
+.Hero {
+    width:auto;
+    height:100vh;
+    background: linear-gradient($ŠedáIkony, rgba(22, 22, 22, 1));
+    
+
+    .content-hero {
+        inset:0;
+        margin:auto;
+        height:100vh;
+        max-width:1500px;
+        position: relative;
+        z-index: 500;
+    }
+
+    .obrazek {
+        position: absolute;
+        right:5%;
+        top:20%;
+    }
+
+    .Title {
+        position: absolute;
+        top:45%;
+        left:5%;
+        color:$Bílá;
+        font-family: 'NotoSans-Bold', sans-serif;
+        font-size: 1.9rem;
+        line-height: 60px;
+
+        span {
+            font-family: 'NotoSans-reg', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 100;
+            line-height: 40px;
+        }
+
+        p {
+            font-family: 'NotoSans-reg', sans-serif;
+            font-size:1.2rem;
+            line-height: 30px;
+            margin-top:40px;
+        }
+    }
+
+    .Konzultace-butt {
+        position: absolute;
+        inset:0;
+        margin:auto auto 50px auto;
+        width:220px;
+        height:50px;
+        color:$Bílá;
+        background-color: $Zelená;
+        display:grid;
+        text-decoration: none;
+        transition: 0.3s;
+        
+
+        h3 {
+            margin:auto;
+            font-size:1rem;
+            font-weight: 100;
+        }
+
+    }
+
+    .Konzultace-butt:hover {
+        transform: scale(1.02);
+        box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.144);
+    }
+
+}
+
+@media screen and (max-height:767px) {
+    .Hero {
+        height:767px;
+
+        .content-hero {
+            height:767px;
+        }
+    }
+}
+
+@media screen and (min-height:1000px) {
+    .Hero {
+        height:1000px;
+
+        .content-hero {
+            height:1000px;
+        }
+    }
+}
+
+
+/* Hero END */
+
+
+/* About */
+
+
+
+.About {
+    width:auto;
+    height:500px;
+
+    .first-part {
+        height:450px;
+        width:auto;
+        background-image:url(./About-background.svg);
+        background-position: center;
+        background-size: cover;   
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1000;
+        display:grid;
+
+        .content-about {
+            margin:140px auto auto auto;
+            max-width:1100px;
+            padding:0px 50px;
+            color:$Bílá;
+
+            h3 {
+                padding:0px 10px;
+                max-width:230px;
+                border-bottom:3px solid $Zelená;
+                font-family: 'NotoSans-bold', sans-serif;
+            }
+
+            p {
+                padding:10px 20px;
+                text-align: right;
+                font-family: 'NotoSans-light', sans-serif;
+                font-size: 1.2rem;
+            }
+        }
+        
+    }
+
+    .studio-pic {
+        margin-top:-200px;
+        width:auto;
+        height:700px;
+        background-image: url(Studio-pic.png);
+        background-position: center;
+        background-size: cover;   
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 500;
+    }
+
+    .sec-part {
+        margin-top:-200px;
+        height:400px;
+        width:auto;
+        background-image:url(./About-background-2.svg);
+        background-position: center;
+        background-size: cover;   
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1000;
+        display:grid;
+
+        .content-mover {
+            max-width:1200px;
+            margin:auto;
+            padding:0px 50px;
+
+            .content-about {
+                margin:100px 200px auto 0px;    
+                color:$Bílá;
+                position: relative;
+
+                h3 {
+                    padding:0px 10px;
+                    max-width:130px;
+                    border-bottom:3px solid $Zelená;
+                    font-family: 'NotoSans-bold', sans-serif;
+                }
+
+                p {
+                    padding:10px 20px;
+                    text-align: left;
+                    font-family: 'NotoSans-light', sans-serif;
+                    font-size: 1.2rem;
+                }
+
+                a {
+                    text-decoration: none;
+
+                    .button {
+                        position: absolute;
+                        bottom:0px;
+                        right:-200px;
+                        width:180px;
+                        height:50px;
+                        background-color:$Zelená;
+                        display:grid;
+                        transition: 0.3s;
+    
+                        h3 {
+                            max-width:200px;
+                            color:$Bílá;
+                            font-family: 'NotoSans-semiBold', sans-serif;
+                            font-size:1.1rem;
+                            margin:auto;
+                            border:0px;
+                            padding:0px;
+                        }
+                    }
+                }
+
+                .button:hover {
+                    transform: scale(1.02);
+                    box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.144);
+                }
+            }
+        }
+    }
+}
+
+
+
+/* About END */
+
+
+/* Icons */
+
+.icons {
+    width:auto;
+    height:400px;
+    background-color: $SvětláŠedá;
+    position: relative;
+    top:650px;
+    padding: 0px 40px;
+    display:flex;
+
+    p {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .content-icons {
+        max-width:1400px;
+        margin:auto;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        .tools {
+            margin:auto 30px;
+            width:250px;
+            display:grid;
+            grid-template-rows: 1fr 1fr;
+
+            img {
+                transform:scale(1);
+                margin:auto;
+                margin-bottom:-50px;
+            }
+
+            p {
+                margin:auto;
+                margin-top:30px;
+            }
+        }
+
+        .health {
+            margin:auto 30px;
+            width:250px;
+            display:grid;
+            grid-template-rows: 1fr 1fr;
+
+            img {
+                margin:auto;
+                margin-bottom:-0px;
+                transform:scale(0.9);
+            }
+
+            p {
+                margin:auto;
+                margin-top:30px;
+            }
+        }
+
+        .clients {
+            margin:auto 30px;
+            width:250px;
+            display:grid;
+            grid-template-rows: 1fr 1fr;
+
+            img {
+                margin:auto;
+                margin-bottom:-0px;
+                transform: scale(0.9);
+            }
+
+            p {
+                margin:auto;
+                margin-top:30px;
+            }
+            }
+
+        .stability {
+            margin:auto 30px;
+            width:250px;
+            display:grid;
+            grid-template-rows: 1fr 1fr;
+
+            img {
+                margin:auto;
+                margin-bottom:-0px;
+                transform:scale(0.9);
+            }
+
+            p {
+                margin:auto;
+                margin-top:30px;
+            }
+        }
+    }
+}
+
+
+
+/* Icons END */
+
+
+/* Galery */
+
+
+.galery {
+    width:auto;
+    height:2500px;
+    background-color:$TmaváŠedá;
+    display: grid;
+    overflow-y: hidden;
+
+    .galery-grid {
+        margin:800px auto auto auto;
+        max-width:800px;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+
+        .grid-left {
+            display:grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            margin-top:135px;
+            position: relative;
+
+            h2 {
+                position: absolute;
+                top:-120px;
+                left:10%;
+                font-family: 'NotoSans-light',sans-serif;
+                font-size:2.3rem;
+                font-weight: 100;
+                color: $Bílá;
+                padding:0px 10px;
+                border-bottom: 3px solid $Zelená;
+            }
+        }
+
+        .grid-right {
+            display:grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            margin-bottom:135px;
+            position: relative;
+
+            .button {
+                position: absolute;
+                bottom:-120px;
+                left:100px;
+                width:180px;
+                height:50px;
+                background-color:$Zelená;
+                display:grid;
+                transition: 0.3s;
+
+                h3 {
+                    color:$Bílá;
+                    font-family: 'NotoSans-semiBold', sans-serif;
+                    font-size:1.1rem;
+                    margin:auto;
+                    border:0px;
+                    padding:0px;
+                }
+            }
+
+            .button:hover {
+                transform: scale(1.02);
+                box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.144);
+            }
+        }
+
+        .pic {
+            margin:10px;
+            opacity:0.8;
+            transition: 0.3s;
+            position: relative;
+            overflow-y: hidden;
+        }
+
+        .pic:hover{
+            transform: scale(1.05);
+            opacity:1;
+        }
+
+        .box {
+            position:absolute;
+            bottom:0px;
+            width:100%;
+            height:100px;
+            background-color: $TmaváŠedá;
+            opacity:0.9;
+            transform: translateY(100px);
+            transition: 0.3s;
+            display: grid;
+
+            h3 {
+                font-family: 'NotoSans-reg',sans-serif;
+                color:$Zelená;
+                font-size: 1.5rem;
+                font-weight: 100;
+                margin:auto;
+                opacity:1;
+                
+            }
+        }
+
+        .box-4 {
+            height:150px;
+            transform: translateY(150px);
+
+            h3 {
+                margin-left:40px;
+                margin-top:40px;
+                
+            }
+        }
+
+        
+    }
+
+    .galery-grid:has(.pic-1:hover) .box-1,
+    .galery-grid:has(.pic-2:hover) .box-2,
+    .galery-grid:has(.pic-3:hover) .box-3,
+    .galery-grid:has(.pic-4:hover) .box-4,
+    .galery-grid:has(.pic-5:hover) .box-5,
+    .galery-grid:has(.pic-6:hover) .box-6,
+    .galery-grid:has(.pic-7:hover) .box-7,
+    .galery-grid:has(.pic-8:hover) .box-8 {
+        transform: translateY(0px);
+    }
+}
+
+
+
+/* Galery END */
+
+
+/* Reservation */
+
+
+.reservation {
+    width:auto;
+    height:400px;
+    background-color: $SvětláŠedá;
+    display:grid;
+
+    .content-reservation {
+        max-width:1100px;
+        margin:130px auto;
+        padding:0px 20px;
+        display:grid;
+        grid-template-columns: 4fr 1fr;
+
+        h3 {
+            padding:0px 10px;
+            max-width:200px;
+            border-bottom:3px solid $Zelená;
+            font-family: 'NotoSans-bold', sans-serif;
+        }
+
+        p {
+            padding:10px 20px;
+            text-align: left;
+            font-family: 'NotoSans-reg', sans-serif;
+            font-size: 1.2rem;
+        }
+
+        .res-text {
+            max-width:800px;
+        }
+
+        .res-icon {
+            padding-left:70px;
+        }
+    }
+}
+
+
+/* Reservation END */
+
+
+/* Logostrip */
+
+
+
+.logostrip {
+    width:auto;
+    height:120px;
+    background-color: $TmaváŠedá;
+    display:grid;
+
+    .logo-logostrip {
+        margin:auto;
+        margin-top:-70px;
+        transform: scale(0.3);
+    }
+}
+
+
+/* Logostrip END */
+
+
+/* Contact form */
+
+
+
+.contact-form {
+    width:auto;
+    height:700px;
+    background-image: url("5.květen.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+
+    .dark-background {
+        background-color:rgba(33, 33, 33, 0.877);
+        width:auto;
+        display: grid;
+
+        .content-con-form {
+            max-width:1400px;
+            margin:auto;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+
+            .content-form-left {
+                margin:auto;
+                margin-right:100px;
+                grid-template-rows: 1fr 1fr;
+
+                p {
+                    padding:10px 20px;
+                    text-align: center;
+                    font-family: 'NotoSans-light', sans-serif;
+                    font-size: 1.2rem;
+                    color:$Bílá;
+                }
+
+                .con-form-text-1 {
+                    max-width:500px;
+                    font-weight: 100;
+                    letter-spacing: 1px;
+                    margin-top:-0px;
+                }
+
+                .con-form-text-2 {
+                    max-width:500px;
+                    font-weight: 100;
+                    letter-spacing: 1px;
+                    margin-top:100px;
+
+                    p{
+                        font-family: 'NotoSans-semibold', sans-serif;
+                    }
+                }
+            }
+
+            .content-form-right {
+                margin-left:100px;
+                display:grid;
+
+                .con-form {
+                    margin:auto;
+                    width: 100%;
+                    height:500px;
+
+                    .fill-box {
+                        position: relative;
+                    }
+                    
+                    input {
+                        padding-top:30px;
+                        height:70px;
+                        width:100%;
+                        background-color: transparent;
+                        border-bottom: 1px solid $Bílá;
+                        border-top: 0px;
+                        border-left: 0px;
+                        border-right: 0px;
+                        position: relative;
+                        color:$Bílá;
+                        font-size: 1.3rem;
+                        font-family: 'NotoSans-light', sans-serif;
+
+                    }
+
+                    .input-name {
+                        padding-left:80px;
+                    }
+
+                    .input-email {
+                        padding-left:70px;
+                    }
+
+                    .input-phone {
+                        padding-left:95px;
+                    }
+
+                    label {
+                        position: absolute;
+                        top:35px;
+                        left:10px;
+                        color:$Bílá;
+                        font-size: 1.2rem;
+                    }
+
+                    textarea {
+                        width:100%;
+                        height:180px;
+                        background-color: rgba(33, 33, 33, 0.877);
+                        margin-top:60px;
+                        resize:none;
+                        font-family: 'NotoSans-light', sans-serif;
+                        color:$Bílá;
+                        font-size: 1.3rem;
+                        padding:10px;
+                    }
+
+                    input:focus,
+                    textarea:focus {
+                        outline: none;
+                    }
+
+                    .Submit {
+                        display: grid;
+
+                        button {
+                            width:200px;
+                            height:50px;
+                            margin:auto;
+                            margin-top:50px;
+                            background-color: $Zelená;
+                            color:$Bílá;
+                            border:0px;
+                            font-family: 'NotoSans-semiBold', sans-serif;
+                            font-size:1.1rem;
+                            cursor: pointer;
+                            transition: 0.3s;
+                        }
+
+                        button:hover {
+                            transform: scale(1.02);
+                            box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.144);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* contact form END */
+
+
+/* Footer */ 
+
+
+.footer-menu {
+    width:auto;
+    height:200px;
+    background-color: $SvětláŠedá;
+    display:grid;
+
+    .content-footer {
+        max-width:1400px;
+        margin:auto;
+        display:grid;
+        grid-template-rows: 1fr 1fr;
+        
+        .footer-icons {
+            margin:auto;
+            margin-top:60px;
+
+            img {
+                transition: 0.3s;
+                border-radius: 10px;
+                margin:5px;
+            }
+
+            img:hover {
+                background-color:$Bílá;
+            }
+        }
+
+        .footer-navbar {
+            margin:auto;
+            margin-left:50px;
+            margin-top:40px;
+
+            a {
+                text-decoration: none;
+                color:$TmaváŠedá;
+                font-size:1.2rem;
+            }
+
+            li {
+                list-style-type: none;
+            }
+
+            ul{
+                width:600px;
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            }
+        }
+    }
+}
+
+
+.footer-copyright {
+    width:auto;
+    height:40px;
+    background-color: $TmaváŠedá;
+    display:grid;
+
+    .content-copy {
+        color:$Bílá;
+        font-size:0.9rem;
+        margin:auto;
+    }
+}
+
+/* Footer END */
+
+
+
