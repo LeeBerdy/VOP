@@ -402,7 +402,7 @@ html, body {
     max-width: 300px;
     margin-left: 10px;
     font-size: 0.7rem;
-    line-height: 15px;
+    line-height: 18px;
     margin-top: 15px;
   }
 }
@@ -475,6 +475,7 @@ html, body {
   max-width: 230px;
   border-bottom: 3px solid rgb(0, 125, 92);
   font-family: "NotoSans-bold", sans-serif;
+  font-weight: 100;
 }
 .About .first-part .content-about p {
   padding: 10px 20px;
@@ -520,6 +521,7 @@ html, body {
   max-width: 130px;
   border-bottom: 3px solid rgb(0, 125, 92);
   font-family: "NotoSans-bold", sans-serif;
+  font-weight: 100;
 }
 .About .sec-part .content-mover .content-about p {
   padding: 10px 20px;
@@ -704,7 +706,7 @@ html, body {
   }
   .About .first-part .content-about h3 {
     margin-left: 30px;
-    max-width: 180px;
+    max-width: 190px;
     font-size: 0.8rem;
   }
   .About .first-part .content-about p {
