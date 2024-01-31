@@ -384,9 +384,9 @@ html, body {
 }
 @media screen and (max-width: 430px) {
   .Hero .content-hero .obrazek {
-    right: -45%;
+    right: -42%;
     top: -5%;
-    transform: scale(0.4);
+    transform: scale(0.5);
   }
   .Hero .content-hero .Title {
     top: 55%;
