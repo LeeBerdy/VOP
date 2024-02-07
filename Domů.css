@@ -969,6 +969,7 @@ html, body {
   height: 400px;
   background-color: rgb(139, 139, 139);
   position: relative;
+  z-index: 1000;
   top: 650px;
   padding: 0px 40px;
   display: flex;
