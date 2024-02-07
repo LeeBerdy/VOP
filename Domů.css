@@ -1397,7 +1397,7 @@ html, body {
   }
   .reservation .content-reservation .res-icon {
     padding-top: 5px;
-    padding-left: 15px;
+    padding-left: 0px;
     transform: scale(0.7);
   }
   .reservation .content-reservation h3 {
