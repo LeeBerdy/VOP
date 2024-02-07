@@ -695,7 +695,7 @@ html, body {
   width: auto;
   height: 700px;
   background-image: url(Studio-pic.png);
-  background-position: center;
+  background-position: center 0px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -782,7 +782,7 @@ html, body {
   }
   .About .studio-pic {
     margin-top: -200px;
-    height: 600px;
+    height: 650px;
   }
   .About .sec-part {
     height: 300px;
@@ -824,6 +824,12 @@ html, body {
   }
   .About .first-part .content-about p {
     font-size: 0.8rem;
+  }
+  .About .studio-pic {
+    margin-top: -200px;
+    height: 600px;
+    background-size: 60rem;
+    top: 130px;
   }
   .About .sec-part {
     height: 250px;
@@ -925,6 +931,7 @@ html, body {
     height: 550px;
     background-position: center;
     background-size: 40rem;
+    top: 140px;
     background-repeat: no-repeat;
   }
   .About .sec-part {
