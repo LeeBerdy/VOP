@@ -52,8 +52,18 @@ html, body {
   font-family: "Notosans-reg", sans-serif;
   background-color: rgb(33, 33, 33);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+}
 * {
   padding: 0;
   margin: 0;
