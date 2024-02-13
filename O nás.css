@@ -688,8 +688,10 @@ html:focus-within {
     padding: 0px 10px;
   }
   .Who .content-who h3 {
+    margin-left: 30px;
     font-size: 0.8rem;
     max-width: 85px;
+    text-align: center;
   }
   .Who .content-who p {
     padding: 10px 20px;
@@ -708,6 +710,7 @@ html:focus-within {
 }
 .Barley .content-Barley {
   width: 1500px;
+  min-width: 700px;
   height: 100%;
   margin: auto;
   color: rgb(251, 251, 251);
@@ -947,6 +950,7 @@ html:focus-within {
 @media screen and (max-width: 750px) {
   .Barley {
     height: 900px;
+    justify-content: center;
   }
   .Barley .content-Barley {
     width: 1500px;
@@ -989,7 +993,7 @@ html:focus-within {
     bottom: -220px;
   }
   .Barley .content-Barley .pic-logo {
-    left: 35%;
+    left: 37%;
     bottom: -30px;
     transform: scale(1);
   }
@@ -997,9 +1001,11 @@ html:focus-within {
 @media screen and (max-width: 550px) {
   .Barley {
     height: 800px;
+    justify-content: center;
   }
   .Barley .content-Barley {
     width: 1500px;
+    min-width: 500px;
     padding: 0px 50px;
   }
   .Barley .content-Barley .pic-Barley {
@@ -1019,14 +1025,14 @@ html:focus-within {
     right: -120px;
   }
   .Barley .content-Barley .pic-Barley h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     top: 3px;
   }
   .Barley .content-Barley .pic-Barley .h3-one {
     right: 5px;
   }
   .Barley .content-Barley .pic-Barley .h3-two {
-    right: -60px;
+    right: -55px;
   }
   .Barley .content-Barley .pic-Barley p {
     font-size: 0.8rem;
@@ -1040,9 +1046,9 @@ html:focus-within {
     bottom: -210px;
   }
   .Barley .content-Barley .pic-logo {
-    left: 35%;
+    left: 31%;
     bottom: -40px;
-    transform: scale(1);
+    transform: scale(0.9);
   }
   .Barley .content-Barley .pic-Barley:after {
     width: 259px;
@@ -1055,10 +1061,11 @@ html:focus-within {
   }
   .Barley .content-Barley {
     width: 1500px;
-    padding: 0px 50px;
+    min-width: 330px;
+    padding: 0px 20px;
   }
   .Barley .content-Barley .pic-Barley {
-    left: 10%;
+    left: 5%;
     top: 10%;
     width: 200px;
     height: 300px;
@@ -1092,7 +1099,7 @@ html:focus-within {
     bottom: -150px;
   }
   .Barley .content-Barley .pic-Barley .p-two {
-    bottom: -250px;
+    bottom: -255px;
   }
   .Barley .content-Barley .pic-logo {
     left: 25%;
@@ -1148,12 +1155,12 @@ html:focus-within {
 }
 .Tomas .content-Tomas .pic-Tomas h3 {
   position: absolute;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-family: "NotoSans-semiBold", sans-serif;
   mix-blend-mode: difference;
   font-weight: 100;
-  top: 50px;
-  left: -75px;
+  top: 45px;
+  left: -65px;
 }
 .Tomas .content-Tomas .pic-Tomas p {
   font-family: "NotoSans-light", sans-serif;
@@ -1218,14 +1225,7 @@ html:focus-within {
     left: 5px;
   }
   .Tomas .content-Tomas .pic-Tomas h3 {
-    font-size: 1.6rem;
-    top: 50px;
-  }
-  .Tomas .content-Tomas .pic-Tomas .h3-one {
-    left: 5px;
-  }
-  .Tomas .content-Tomas .pic-Tomas .h3-two {
-    left: -75px;
+    font-size: 1.4rem;
   }
   .Tomas .content-Tomas .pic-Tomas p {
     left: -420px;
@@ -1267,8 +1267,7 @@ html:focus-within {
     left: 5px;
   }
   .Tomas .content-Tomas .pic-Tomas h3 {
-    font-size: 1.6rem;
-    top: 55px;
+    font-size: 1.4rem;
   }
   .Tomas .content-Tomas .pic-Tomas .h3-one {
     left: 5px;
@@ -1318,8 +1317,7 @@ html:focus-within {
     left: 5px;
   }
   .Tomas .content-Tomas .pic-Tomas h3 {
-    font-size: 1.6rem;
-    top: 55px;
+    font-size: 1.4rem;
   }
   .Tomas .content-Tomas .pic-Tomas .h3-one {
     left: 5px;
@@ -1347,9 +1345,10 @@ html:focus-within {
 @media screen and (max-width: 750px) {
   .Tomas {
     height: 900px;
+    justify-content: center;
   }
   .Tomas .content-Tomas {
-    width: 1500px;
+    max-width: 1500px;
     padding: 0px 50px;
   }
   .Tomas .content-Tomas .pic-Tomas {
@@ -1362,23 +1361,17 @@ html:focus-within {
     font-size: 2.5rem;
   }
   .Tomas .content-Tomas .pic-Tomas .h1-one {
-    left: 2px;
+    left: -135px;
   }
   .Tomas .content-Tomas .pic-Tomas .h1-two {
-    left: -118px;
-  }
-  .Tomas .content-Tomas .pic-Tomas h3 {
-    font-size: 1.6rem;
-    top: 55px;
-  }
-  .Tomas .content-Tomas .pic-Tomas .h3-one {
     left: 5px;
   }
-  .Tomas .content-Tomas .pic-Tomas .h3-two {
-    left: -75px;
+  .Tomas .content-Tomas .pic-Tomas h3 {
+    font-size: 1.4rem;
+    left: -65px;
   }
   .Tomas .content-Tomas .pic-Tomas p {
-    left: -20px;
+    left: -120px;
     max-width: 400px;
   }
   .Tomas .content-Tomas .pic-Tomas .p-one {
@@ -1388,21 +1381,23 @@ html:focus-within {
     bottom: -240px;
   }
   .Tomas .content-Tomas .pic-logo {
-    left: 35%;
-    bottom: 0px;
+    left: 43%;
+    bottom: 30px;
     transform: scale(1);
   }
 }
 @media screen and (max-width: 550px) {
   .Tomas {
-    height: 800px;
+    height: 830px;
+    justify-content: center;
   }
   .Tomas .content-Tomas {
-    width: 1500px;
+    max-width: 1500px;
+    min-width: 500px;
     padding: 0px 50px;
   }
   .Tomas .content-Tomas .pic-Tomas {
-    left: 10%;
+    right: 10%;
     top: 10%;
     width: 250px;
     height: 350px;
@@ -1411,24 +1406,19 @@ html:focus-within {
     font-size: 2.2rem;
   }
   .Tomas .content-Tomas .pic-Tomas .h1-one {
-    right: 2px;
+    left: -120px;
   }
   .Tomas .content-Tomas .pic-Tomas .h1-two {
-    right: -108px;
+    left: 5px;
   }
   .Tomas .content-Tomas .pic-Tomas h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    left: -58px;
     top: 50px;
-  }
-  .Tomas .content-Tomas .pic-Tomas .h3-one {
-    right: 5px;
-  }
-  .Tomas .content-Tomas .pic-Tomas .h3-two {
-    right: -65px;
   }
   .Tomas .content-Tomas .pic-Tomas p {
     font-size: 0.8rem;
-    left: 20px;
+    left: -140px;
     max-width: 380px;
   }
   .Tomas .content-Tomas .pic-Tomas .p-one {
@@ -1438,9 +1428,9 @@ html:focus-within {
     bottom: -210px;
   }
   .Tomas .content-Tomas .pic-logo {
-    left: 35%;
-    bottom: -40px;
-    transform: scale(1);
+    left: 41%;
+    bottom: 25px;
+    transform: scale(0.9);
   }
   .Tomas .content-Tomas .pic-Tomas:after {
     width: 259px;
@@ -1449,51 +1439,48 @@ html:focus-within {
 }
 @media screen and (max-width: 435px) {
   .Tomas {
-    height: 800px;
+    height: 830px;
   }
   .Tomas .content-Tomas {
-    width: 1500px;
-    padding: 0px 50px;
+    max-width: 1500px;
+    min-width: 330px;
+    padding: 0px 20px;
   }
   .Tomas .content-Tomas .pic-Tomas {
-    left: 10%;
+    right: 5%;
     top: 10%;
     width: 200px;
     height: 300px;
   }
   .Tomas .content-Tomas .pic-Tomas h1 {
+    top: 60px;
     font-size: 2rem;
   }
   .Tomas .content-Tomas .pic-Tomas .h1-one {
-    right: 2px;
+    left: -110px;
   }
   .Tomas .content-Tomas .pic-Tomas .h1-two {
-    right: -98px;
+    left: 3px;
   }
   .Tomas .content-Tomas .pic-Tomas h3 {
     font-size: 1.1rem;
-    top: 40px;
-  }
-  .Tomas .content-Tomas .pic-Tomas .h3-one {
-    right: 5px;
-  }
-  .Tomas .content-Tomas .pic-Tomas .h3-two {
-    right: -55px;
+    left: -53px;
+    top: 35px;
   }
   .Tomas .content-Tomas .pic-Tomas p {
     font-size: 0.8rem;
-    left: 10px;
+    left: -90px;
     max-width: 280px;
   }
   .Tomas .content-Tomas .pic-Tomas .p-one {
     bottom: -150px;
   }
   .Tomas .content-Tomas .pic-Tomas .p-two {
-    bottom: -250px;
+    bottom: -255px;
   }
   .Tomas .content-Tomas .pic-logo {
-    left: 25%;
-    bottom: -40px;
+    left: 39%;
+    bottom: 35px;
     transform: scale(0.8);
   }
   .Tomas .content-Tomas .pic-Tomas:after {
@@ -1558,6 +1545,212 @@ html:focus-within {
   font-weight: 100;
 }
 
+@media screen and (max-width: 1100px) {
+  .Contact {
+    height: 400px;
+  }
+  .Contact .content-Contact {
+    width: 1200px;
+    min-width: 700px;
+    height: 100%;
+    margin: auto;
+    padding: 0px 50px;
+    grid-template-columns: 2fr 1fr;
+  }
+  .Contact .content-Contact .Contact-text {
+    margin: auto;
+    padding: 0px 50px;
+  }
+  .Contact .content-Contact .Contact-text h3 {
+    font-size: 1rem;
+    max-width: 190px;
+  }
+  .Contact .content-Contact .Contact-text p {
+    font-size: 1rem;
+    max-width: 600px;
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+  .Contact .content-Contact .Contact-butt {
+    margin: auto;
+    margin-left: 20px;
+    margin-top: 210px;
+  }
+  .Contact .content-Contact .Contact-butt a {
+    width: 220px;
+    height: 50px;
+  }
+  .Contact .content-Contact .Contact-butt a h3 {
+    margin: auto;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .Contact {
+    height: 400px;
+  }
+  .Contact .content-Contact {
+    width: 1200px;
+    min-width: 700px;
+    height: 100%;
+    margin: auto;
+    padding: 0px 50px;
+    grid-template-columns: 2fr 1fr;
+  }
+  .Contact .content-Contact .Contact-text {
+    margin: auto;
+    padding: 0px 50px;
+  }
+  .Contact .content-Contact .Contact-text h3 {
+    font-size: 0.9rem;
+    max-width: 175px;
+  }
+  .Contact .content-Contact .Contact-text p {
+    font-size: 0.9rem;
+    max-width: 600px;
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+  .Contact .content-Contact .Contact-butt {
+    margin: auto;
+    margin-left: 20px;
+    margin-top: 210px;
+  }
+  .Contact .content-Contact .Contact-butt a {
+    width: 180px;
+    height: 40px;
+  }
+  .Contact .content-Contact .Contact-butt a h3 {
+    margin: auto;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .Contact {
+    height: 300px;
+    justify-items: center;
+  }
+  .Contact .content-Contact {
+    width: 1200px;
+    min-width: 500px;
+    height: 100%;
+    margin: auto;
+    padding: 0px 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .Contact .content-Contact .Contact-text {
+    margin: auto;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    padding: 0px 0px;
+  }
+  .Contact .content-Contact .Contact-text h3 {
+    font-size: 0.9rem;
+    max-width: 175px;
+  }
+  .Contact .content-Contact .Contact-text p {
+    font-size: 0.9rem;
+    max-width: 400px;
+    padding-top: 10px;
+    padding-left: 0px;
+  }
+  .Contact .content-Contact .Contact-butt {
+    margin: 40px 40px auto auto;
+  }
+  .Contact .content-Contact .Contact-butt a {
+    width: 180px;
+    height: 40px;
+  }
+  .Contact .content-Contact .Contact-butt a h3 {
+    margin: auto;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .Contact {
+    height: 300px;
+    justify-items: center;
+  }
+  .Contact .content-Contact {
+    width: 1200px;
+    min-width: 400px;
+    height: 100%;
+    margin: auto;
+    padding: 0px 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .Contact .content-Contact .Contact-text {
+    margin: auto;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 0px 0px;
+  }
+  .Contact .content-Contact .Contact-text h3 {
+    font-size: 0.9rem;
+    max-width: 175px;
+  }
+  .Contact .content-Contact .Contact-text p {
+    font-size: 0.8rem;
+    max-width: 400px;
+    padding-top: 10px;
+    padding-left: 0px;
+  }
+  .Contact .content-Contact .Contact-butt {
+    margin: 40px 40px auto auto;
+  }
+  .Contact .content-Contact .Contact-butt a {
+    width: 180px;
+    height: 40px;
+  }
+  .Contact .content-Contact .Contact-butt a h3 {
+    margin: auto;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 435px) {
+  .Contact {
+    height: 300px;
+    justify-items: center;
+  }
+  .Contact .content-Contact {
+    width: 1200px;
+    min-width: 300px;
+    height: 100%;
+    margin: auto;
+    padding: 0px 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .Contact .content-Contact .Contact-text {
+    margin: auto;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 0px 0px;
+  }
+  .Contact .content-Contact .Contact-text h3 {
+    font-size: 0.8rem;
+    max-width: 155px;
+  }
+  .Contact .content-Contact .Contact-text p {
+    font-size: 0.8rem;
+    max-width: 400px;
+    padding-top: 10px;
+    padding-left: 0px;
+  }
+  .Contact .content-Contact .Contact-butt {
+    margin: 40px 40px auto auto;
+  }
+  .Contact .content-Contact .Contact-butt a {
+    width: 180px;
+    height: 40px;
+  }
+  .Contact .content-Contact .Contact-butt a h3 {
+    margin: auto;
+    font-size: 0.8rem;
+  }
+}
 /* Contact END */
 /* Footer */
 .footer-menu {
