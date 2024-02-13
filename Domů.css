@@ -649,10 +649,10 @@ html:focus-within {
 }
 @media screen and (max-width: 1100px) {
   .Hero {
-    height: 90vh;
+    height: 95vh;
   }
   .Hero .content-hero {
-    height: 90vh;
+    height: 95vh;
   }
 }
 @media screen and (max-width: 1100px) and (max-height: 680px) {
