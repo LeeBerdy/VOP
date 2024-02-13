@@ -1,4 +1,36 @@
 @charset "UTF-8";
+/* Animations */
+@keyframes Slide-left {
+  0% {
+    transform: translate(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+@keyframes Slide-right {
+  0% {
+    transform: translate(-200px);
+    filter: blur(7px);
+  }
+  100% {
+    transform: translate(0px);
+    filter: blur(0px);
+  }
+}
+@keyframes Slide-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+/* Animations END */
 /* Font-face */
 @font-face {
   font-family: "NotoSans-reg";
@@ -451,6 +483,8 @@ html:focus-within {
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
+  animation-name: Slide-bottom;
+  animation-duration: 0.6s;
   z-index: 600;
 }
 .Hero .content-hero .Poster .head {
@@ -464,6 +498,9 @@ html:focus-within {
   font-family: "NotoSans-semiBold";
   font-weight: 100;
   font-size: 6rem;
+  animation: Slide-right;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
 }
 
 @media screen and (max-height: 767px) {
