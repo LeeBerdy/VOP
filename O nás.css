@@ -293,6 +293,10 @@ html:focus-within {
   transform: translateX(0%);
 }
 @media screen and (max-width: 1100px) {
+  .Top .Navbar {
+    height: 100px;
+    background: linear-gradient(rgb(33, 33, 33), transparent);
+  }
   .Top .Resp-navbar {
     display: flex;
   }
@@ -416,6 +420,12 @@ html:focus-within {
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .Top {
+    position: fixed;
+    width: 100%;
+  }
+}
 /* Top END */
 /* Hero */
 .Hero {
@@ -559,8 +569,8 @@ html:focus-within {
   }
   .Hero .content-hero .Poster .head h1 {
     max-width: 50px;
-    font-size: 7rem;
-    line-height: 100px;
+    font-size: 5rem;
+    line-height: 80px;
   }
 }
 /* Hero END */
