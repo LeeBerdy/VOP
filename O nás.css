@@ -294,7 +294,7 @@ html:focus-within {
 }
 @media screen and (max-width: 1100px) {
   .Top .Navbar {
-    height: 100px;
+    height: 90px;
     background: linear-gradient(rgb(33, 33, 33), transparent);
   }
   .Top .Resp-navbar {
