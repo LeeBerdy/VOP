@@ -117,7 +117,7 @@ html:focus-within {
 /* Top */
 .Top {
   position: relative;
-  z-index: 1000;
+  z-index: 3000;
 }
 .Top .Navbar {
   top: 0px;
@@ -324,7 +324,7 @@ html:focus-within {
 }
 @media screen and (max-width: 1100px) {
   .Top .Navbar {
-    height: 90px;
+    height: 95px;
     background: linear-gradient(rgb(33, 33, 33), transparent);
   }
   .Top .Resp-navbar {
@@ -420,6 +420,10 @@ html:focus-within {
   }
 }
 @media screen and (max-width: 430px) {
+  .Top .Navbar {
+    height: 75px;
+    background: linear-gradient(rgb(33, 33, 33), transparent);
+  }
   .Top .Resp-navbar ul {
     margin: 20vh auto auto 5vw;
   }
@@ -457,11 +461,35 @@ html:focus-within {
   }
 }
 /* Top END */
+/* Arrow */
+.arrow {
+  position: fixed;
+  z-index: 2000;
+  bottom: 50px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  background-color: rgb(56, 56, 56);
+}
+
+@media screen and (max-width: 1100px) {
+  .arrow {
+    display: none;
+  }
+}
+/* Arrow END */
 /* Hero */
 .Hero {
   width: auto;
   height: 100vh;
   background: linear-gradient(rgb(56, 56, 56), rgb(22, 22, 22));
+  position: relative;
+  z-index: 2500;
 }
 .Hero .content-hero {
   inset: 0;
@@ -1833,6 +1861,8 @@ html:focus-within {
   height: 200px;
   background-color: rgb(139, 139, 139);
   display: grid;
+  position: relative;
+  z-index: 2500;
 }
 .footer-menu .content-footer {
   max-width: 1400px;

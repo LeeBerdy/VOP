@@ -8,7 +8,6 @@ $Bílá:rgba(251, 251, 251, 1);
 
 /* Animations */
 
-
 @keyframes Slide-left {
 
     0% {
@@ -46,8 +45,8 @@ $Bílá:rgba(251, 251, 251, 1);
     }
 }
 
-
 /* Animations END */
+
 
 
 /* Font-face */
@@ -84,6 +83,17 @@ html, body {
     font-family: 'Notosans-reg', sans-serif;
     background-color: $TmaváŠedá;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+@media(prefers-reduced-motion) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
 }
 
 * {
@@ -154,7 +164,7 @@ html, body {
 
 .Top {
     position:relative;
-    z-index: 1000;
+    z-index: 3000;
     
     .Navbar {
         top:0px;
@@ -403,6 +413,12 @@ html, body {
     }
 
     @media screen and (max-width:1100px) {
+
+        .Navbar {
+            height:95px;
+            background:linear-gradient($TmaváŠedá, transparent)
+        }
+
         .Resp-navbar {
             display:flex;
         }
@@ -550,6 +566,11 @@ html, body {
 
     @media screen and (max-width:430px) {
 
+        .Navbar {
+            height:75px;
+            background:linear-gradient($TmaváŠedá, transparent)
+        }
+
         .Resp-navbar {
         
             ul {
@@ -597,21 +618,57 @@ html, body {
     }
 }
 
+@media screen and (max-width:1100px) {
 
-
+    .Top {
+        position: fixed;
+        width:100%;
+    }
+}
 
 
 /* Top END */
 
 
-/* Hero */
 
+/* Arrow */
+
+
+.arrow {
+    position: fixed;
+    z-index: 2000;
+    bottom:50px;
+    right:50px;
+    width:40px;
+    height:40px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.arrow:hover {
+    background-color: $ŠedáIkony;
+}
+
+@media screen and (max-width:1100px) {
+    .arrow {
+        display:none;
+    }
+}
+
+
+/* Arrow END */
+
+
+
+/* Hero */
 
 
 .Hero {
     width:auto;
     height:100vh;
     background: linear-gradient($ŠedáIkony, rgba(22, 22, 22, 1));
+    position: relative;
+    z-index: 2500;
     
 
     .content-hero {
@@ -847,14 +904,14 @@ html, body {
 @media screen and (max-width:1100px) {
 
     .Hero {
-        height:100vh;
+        height:95vh;
 
         .content-hero {
-            height:100vh;
+            height:95vh;
         }
     }
 
-    @media screen and (max-height:600px) {
+    @media screen and (max-height:680px) {
         .Hero {
             height:600px;
     
@@ -864,7 +921,7 @@ html, body {
         }
     }
 
-    @media screen and (min-height:800px) {
+    @media screen and (min-height:880px) {
         .Hero {
             height:800px;
     
@@ -1099,11 +1156,11 @@ html, body {
             margin-top:-200px;
             height:600px;
             background-size:60rem;
-            top:130px;
+            top:80px;
         }
 
         .sec-part {
-            height:250px;
+            height:280px;
 
             .content-mover {
                 .content-about {
@@ -1292,6 +1349,7 @@ html, body {
     height:400px;
     background-color: $SvětláŠedá;
     position: relative;
+    z-index: 800;
     top:650px;
     padding: 0px 40px;
     display:flex;
@@ -1831,7 +1889,7 @@ html, body {
 
             .res-icon {
                 padding-top:5px;
-                padding-left:15px;
+                padding-left:0px;
                 transform: scale(0.7);
             }
 
@@ -2132,6 +2190,10 @@ html, body {
                             font-size: 1rem;
                         }
 
+                        textarea {
+                            font-size:1rem;
+                        }
+
                         .Submit {
     
                             button {
@@ -2279,6 +2341,10 @@ html, body {
                             font-size: 0.9rem;
                         }
 
+                        textarea {
+                            font-size:0.9rem;
+                        }
+
                         .Submit {
     
                             button {
@@ -2383,6 +2449,8 @@ html, body {
     height:200px;
     background-color: $SvětláŠedá;
     display:grid;
+    position: relative;
+    z-index: 2500;
 
     .content-footer {
         max-width:1400px;
