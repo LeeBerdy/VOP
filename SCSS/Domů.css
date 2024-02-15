@@ -32,19 +32,19 @@
 /* Font-face */
 @font-face {
   font-family: "NotoSans-reg";
-  src: url(NotoSans-Regular.ttf);
+  src: url(../Fonts/NotoSans-Regular.ttf);
 }
 @font-face {
   font-family: "NotoSans-semiBold";
-  src: url(NotoSans-SemiBold.ttf);
+  src: url(../Fonts/NotoSans-SemiBold.ttf);
 }
 @font-face {
   font-family: "NotoSans-Bold";
-  src: url(NotoSans-Bold.ttf);
+  src: url(../Fonts/NotoSans-Bold.ttf);
 }
 @font-face {
   font-family: "NotoSans-light";
-  src: url(NotoSans-Light.ttf);
+  src: url(../Fonts/NotoSans-Light.ttf);
 }
 /* Font-face END */
 /* ALL ELEMENTS */
@@ -710,7 +710,7 @@ html:focus-within {
 .About .first-part {
   height: 450px;
   width: auto;
-  background-image: url(./About-background.svg);
+  background-image: url(../Pics/About-background.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -742,7 +742,7 @@ html:focus-within {
   margin-top: -200px;
   width: auto;
   height: 700px;
-  background-image: url(Studio-pic.png);
+  background-image: url(../Pics/Studio-pic.png);
   background-position: center 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -753,7 +753,7 @@ html:focus-within {
   margin-top: -200px;
   height: 400px;
   width: auto;
-  background-image: url(./About-background-2.svg);
+  background-image: url(../Pics/About-background-2.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1497,7 +1497,7 @@ html:focus-within {
 .contact-form {
   width: auto;
   height: 700px;
-  background-image: url("5.květen.jpg");
+  background-image: url("../Pics/5.květen.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

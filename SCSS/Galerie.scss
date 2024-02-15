@@ -58,22 +58,22 @@ $Bílá:rgba(251, 251, 251, 1);
 
 @font-face {
     font-family:'NotoSans-reg';
-    src:url(NotoSans-Regular.ttf);
+    src:url(../Fonts/NotoSans-Regular.ttf);
 }
 
 @font-face {
     font-family:'NotoSans-semiBold';
-    src:url(NotoSans-SemiBold.ttf);
+    src:url(../Fonts/NotoSans-SemiBold.ttf);
 }
 
 @font-face {
     font-family:'NotoSans-Bold';
-    src:url(NotoSans-Bold.ttf);
+    src:url(../Fonts/NotoSans-Bold.ttf);
 }
 
 @font-face {
     font-family:'NotoSans-light';
-    src:url(NotoSans-Light.ttf);
+    src:url(../Fonts/NotoSans-Light.ttf);
 }
 
 /* Font-face END */
@@ -678,7 +678,7 @@ html:focus-within {
             height:100%;
             width:100%;
             position: relative;
-            background-image:url(./Galery-pic.png);
+            background-image:url(../Pics/Galery-pic.png);
             background-position: center;
             background-size:auto;
             background-repeat: no-repeat;
