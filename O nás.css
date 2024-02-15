@@ -794,6 +794,21 @@ html:focus-within {
   position: absolute;
   right: -70px;
 }
+.Barley .content-Barley .pic-Barley img {
+  transform: scale(1);
+  position: absolute;
+  border-radius: 10px;
+  bottom: -60px;
+}
+.Barley .content-Barley .pic-Barley .fb {
+  left: 50px;
+}
+.Barley .content-Barley .pic-Barley .ig {
+  left: 0px;
+}
+.Barley .content-Barley .pic-Barley img:hover {
+  background-color: rgb(56, 56, 56);
+}
 .Barley .content-Barley .pic-Barley p {
   font-family: "NotoSans-light", sans-serif;
   position: absolute;
@@ -1019,15 +1034,28 @@ html:focus-within {
   .Barley .content-Barley .pic-Barley .h3-two {
     right: -70px;
   }
+  .Barley .content-Barley .pic-Barley img {
+    transform: scale(0.9);
+    position: absolute;
+    border-radius: 10px;
+  }
+  .Barley .content-Barley .pic-Barley .fb {
+    left: 310px;
+    bottom: 0px;
+  }
+  .Barley .content-Barley .pic-Barley .ig {
+    left: 310px;
+    bottom: 45px;
+  }
   .Barley .content-Barley .pic-Barley p {
     left: 20px;
     max-width: 400px;
   }
   .Barley .content-Barley .pic-Barley .p-one {
-    bottom: -120px;
+    bottom: -130px;
   }
   .Barley .content-Barley .pic-Barley .p-two {
-    bottom: -220px;
+    bottom: -230px;
   }
   .Barley .content-Barley .pic-logo {
     left: 37%;
@@ -1070,6 +1098,19 @@ html:focus-within {
   }
   .Barley .content-Barley .pic-Barley .h3-two {
     right: -55px;
+  }
+  .Barley .content-Barley .pic-Barley img {
+    transform: scale(0.8);
+    position: absolute;
+    border-radius: 10px;
+  }
+  .Barley .content-Barley .pic-Barley .fb {
+    left: 260px;
+    bottom: 0px;
+  }
+  .Barley .content-Barley .pic-Barley .ig {
+    left: 260px;
+    bottom: 40px;
   }
   .Barley .content-Barley .pic-Barley p {
     font-size: 0.8rem;
@@ -1126,6 +1167,19 @@ html:focus-within {
   }
   .Barley .content-Barley .pic-Barley .h3-two {
     right: -55px;
+  }
+  .Barley .content-Barley .pic-Barley img {
+    transform: scale(0.7);
+    position: absolute;
+    border-radius: 10px;
+  }
+  .Barley .content-Barley .pic-Barley .fb {
+    left: 205px;
+    bottom: 0px;
+  }
+  .Barley .content-Barley .pic-Barley .ig {
+    left: 205px;
+    bottom: 35px;
   }
   .Barley .content-Barley .pic-Barley p {
     font-size: 0.8rem;
@@ -1198,6 +1252,21 @@ html:focus-within {
   font-weight: 100;
   top: 45px;
   left: -65px;
+}
+.Tomas .content-Tomas .pic-Tomas img {
+  transform: scale(1);
+  position: absolute;
+  border-radius: 10px;
+  bottom: -60px;
+}
+.Tomas .content-Tomas .pic-Tomas .fb {
+  right: 0px;
+}
+.Tomas .content-Tomas .pic-Tomas .ig {
+  right: 50px;
+}
+.Tomas .content-Tomas .pic-Tomas img:hover {
+  background-color: rgb(56, 56, 56);
 }
 .Tomas .content-Tomas .pic-Tomas p {
   font-family: "NotoSans-light", sans-serif;
@@ -1407,15 +1476,28 @@ html:focus-within {
     font-size: 1.4rem;
     left: -65px;
   }
+  .Tomas .content-Tomas .pic-Tomas img {
+    transform: scale(0.9);
+    position: absolute;
+    border-radius: 10px;
+  }
+  .Tomas .content-Tomas .pic-Tomas .fb {
+    right: 310px;
+    bottom: 0px;
+  }
+  .Tomas .content-Tomas .pic-Tomas .ig {
+    right: 310px;
+    bottom: 45px;
+  }
   .Tomas .content-Tomas .pic-Tomas p {
     left: -120px;
     max-width: 400px;
   }
   .Tomas .content-Tomas .pic-Tomas .p-one {
-    bottom: -140px;
+    bottom: -150px;
   }
   .Tomas .content-Tomas .pic-Tomas .p-two {
-    bottom: -240px;
+    bottom: -250px;
   }
   .Tomas .content-Tomas .pic-logo {
     left: 43%;
@@ -1452,6 +1534,19 @@ html:focus-within {
     font-size: 1.2rem;
     left: -58px;
     top: 50px;
+  }
+  .Tomas .content-Tomas .pic-Tomas img {
+    transform: scale(0.8);
+    position: absolute;
+    border-radius: 10px;
+  }
+  .Tomas .content-Tomas .pic-Tomas .fb {
+    right: 260px;
+    bottom: 0px;
+  }
+  .Tomas .content-Tomas .pic-Tomas .ig {
+    right: 260px;
+    bottom: 40px;
   }
   .Tomas .content-Tomas .pic-Tomas p {
     font-size: 0.8rem;
@@ -1503,6 +1598,19 @@ html:focus-within {
     font-size: 1.1rem;
     left: -53px;
     top: 35px;
+  }
+  .Tomas .content-Tomas .pic-Tomas img {
+    transform: scale(0.7);
+    position: absolute;
+    border-radius: 10px;
+  }
+  .Tomas .content-Tomas .pic-Tomas .fb {
+    right: 205px;
+    bottom: 0px;
+  }
+  .Tomas .content-Tomas .pic-Tomas .ig {
+    right: 205px;
+    bottom: 35px;
   }
   .Tomas .content-Tomas .pic-Tomas p {
     font-size: 0.8rem;
@@ -1567,6 +1675,7 @@ html:focus-within {
   margin: auto;
   margin-left: 20px;
   margin-top: 210px;
+  transition: 0.3s;
 }
 .Contact .content-Contact .Contact-butt a {
   text-decoration: none;
@@ -1580,6 +1689,10 @@ html:focus-within {
   margin: auto;
   font-size: 1rem;
   font-weight: 100;
+}
+.Contact .content-Contact .Contact-butt:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.144);
 }
 
 @media screen and (max-width: 1100px) {
