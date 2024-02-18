@@ -6,7 +6,9 @@ $Zelená:rgba(0, 125, 92, 1);
 $Bílá:rgba(251, 251, 251, 1);
 
 
+
 /* Animations */
+
 
 @keyframes Slide-left {
 
@@ -24,37 +26,60 @@ $Bílá:rgba(251, 251, 251, 1);
 @keyframes Slide-right {
 
     0% {
-        
-        transform: translate(-200px);
         filter: blur(7px);
     }
 
-    
-
     100% {
-        transform: translate(0px);
         filter: blur(0px);
     }
 }
 
-@keyframes Slide-bottom {
+@keyframes Fall { 
 
     0% {
-        transform: translateY(50px);
+        transform: scale(4);
         opacity: 0;
     }
 
     100% {
-        transform: translateY(0px);
+        transform: scale(1);
         opacity: 1;
     }
 }
+
+@keyframes Fall-1 { 
+
+    0% {
+        transform: scale(4);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(0.8);
+        opacity: 1;
+    }
+}
+
+@keyframes Fall-2 { 
+
+    0% {
+        transform: scale(4);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+}
+
 
 /* Animations END */
 
 
 
 /* Font-face */
+
 
 @font-face {
     font-family:'NotoSans-reg';
@@ -76,11 +101,13 @@ $Bílá:rgba(251, 251, 251, 1);
     src:url(../Fonts/NotoSans-Light.ttf);
 }
 
+
 /* Font-face END */
 
 
 
 /* ALL ELEMENTS */
+
 
 html, body {
     font-family: 'Notosans-reg', sans-serif;
@@ -153,10 +180,13 @@ html:focus-within {
     }
 }
 
+
 /* ALL ELEMENTS END */
 
 
+
 /* Top */
+
 
 .Top {
     position:relative;
@@ -401,7 +431,6 @@ html:focus-within {
             color:$Bílá;
             
         }
-
     }
 
     .Resp-navbar.hidden {
@@ -681,18 +710,21 @@ html:focus-within {
             background-position: center;
             background-size:auto;
             background-repeat: no-repeat;
-            animation-name: Slide-bottom;
+            animation-name: Slide-right;
             animation-duration: 0.6s;
             z-index: 600;
             display:grid;
 
             .logo {
                 margin:auto;
-                transform: scale(1);
+                animation-name: Fall;
+                animation-duration: 0.4s;
+                animation-timing-function:ease-out
             }
         }
     }
 }
+
 
 
 @media screen and (max-height:767px) {
@@ -756,17 +788,10 @@ html:focus-within {
             .Poster {
                 z-index: 600;
 
-                .head {
-                    position: absolute;
-                    bottom:15%;
-                    right:5%;
-
-                    h1 {
-                        font-size: 6rem;
-                    }
+                .logo {
+                    animation-name: Fall-1;
+                    animation-fill-mode: forwards;
                 }
-
-                
             }
         }
     }
@@ -780,18 +805,6 @@ html:focus-within {
 
             .Poster {
                 z-index: 600;
-
-                .head {
-                    position: absolute;
-                    bottom:15%;
-                    right:5%;
-
-                    h1 {
-                        font-size: 5rem;
-                    }
-                }
-
-                
             }
         }
     }
@@ -804,20 +817,7 @@ html:focus-within {
             padding:60px 30px 0 30px;
 
             .Poster {
-                
                 z-index: 600;
-
-                .head {
-                    position: absolute;
-                    bottom:15%;
-                    right:5%;
-
-                    h1 {
-                        font-size: 4rem;
-                    }
-                }
-
-                
             }
         }
     }
@@ -830,22 +830,13 @@ html:focus-within {
             padding:60px 0px 0 0px;
 
             .Poster {
-                background-position: -31rem center;
                 z-index: 600;
 
-                .head {
-                    position: absolute;
-                    bottom:25%;
-                    left:10%;
-
-                    h1 {
-                        max-width: 50px;
-                        font-size: 5rem;
-                        line-height: 80px;
-                    }
+                .logo {
+                    animation-name: Fall-2;
+                    animation-fill-mode: forwards;
+                    max-width:250px;
                 }
-
-                
             }
         }
     }
@@ -855,12 +846,13 @@ html:focus-within {
 /* Hero END */
 
 
+
 /* Galery */
 
 
 .Galery {
     width:auto;
-    height:2500px;
+    height:2600px;
     background-color:$TmavšíŠedá;
     display: grid;
     z-index: 100;
@@ -891,7 +883,7 @@ html:focus-within {
             width:350px;
             height:350px;
             margin:50px;
-            opacity:0.7;
+            opacity:0.8;
             transition: 0.3s;
             position: relative;
             overflow-y: hidden;
@@ -899,25 +891,336 @@ html:focus-within {
         }
 
         .pic:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
             opacity: 1;
             z-index: 1500;
-        }
-
-        .pic:active {
-            transform: scale(2);
-            opacity: 1;
-        }
-
-        .pic:focus {
-            transform: scale(2);
         }
     }
 }
 
+.Galery:has(.pic-1:hover) .pic-2,
+.Galery:has(.pic-1:hover) .pic-3,
+.Galery:has(.pic-1:hover) .pic-4,
+.Galery:has(.pic-1:hover) .pic-5,
+.Galery:has(.pic-1:hover) .pic-6,
+.Galery:has(.pic-1:hover) .pic-7,
+.Galery:has(.pic-1:hover) .pic-8,
+.Galery:has(.pic-1:hover) .pic-9,
+.Galery:has(.pic-1:hover) .pic-10 {
+    filter:blur(3px);
+    opacity: 0.6;
+}
 
+.Galery:has(.pic-2:hover) .pic-1,
+.Galery:has(.pic-2:hover) .pic-3,
+.Galery:has(.pic-2:hover) .pic-4,
+.Galery:has(.pic-2:hover) .pic-5,
+.Galery:has(.pic-2:hover) .pic-6,
+.Galery:has(.pic-2:hover) .pic-7,
+.Galery:has(.pic-2:hover) .pic-8,
+.Galery:has(.pic-2:hover) .pic-9,
+.Galery:has(.pic-2:hover) .pic-10 {
+    filter:blur(3px);
+    opacity: 0.6;
+}
 
+.Galery:has(.pic-3:hover) .pic-2,
+.Galery:has(.pic-3:hover) .pic-1,
+.Galery:has(.pic-3:hover) .pic-4,
+.Galery:has(.pic-3:hover) .pic-5,
+.Galery:has(.pic-3:hover) .pic-6,
+.Galery:has(.pic-3:hover) .pic-7,
+.Galery:has(.pic-3:hover) .pic-8,
+.Galery:has(.pic-3:hover) .pic-9,
+.Galery:has(.pic-3:hover) .pic-10 {
+    filter:blur(3px);
+    opacity: 0.6;
+}
 
+.Galery:has(.pic-4:hover) .pic-2,
+.Galery:has(.pic-4:hover) .pic-3,
+.Galery:has(.pic-4:hover) .pic-1,
+.Galery:has(.pic-4:hover) .pic-5,
+.Galery:has(.pic-4:hover) .pic-6,
+.Galery:has(.pic-4:hover) .pic-7,
+.Galery:has(.pic-4:hover) .pic-8,
+.Galery:has(.pic-4:hover) .pic-9,
+.Galery:has(.pic-4:hover) .pic-10 {
+    filter:blur(3px);
+    opacity: 0.6;
+}
+
+.Galery:has(.pic-5:hover) .pic-2,
+.Galery:has(.pic-5:hover) .pic-3,
+.Galery:has(.pic-5:hover) .pic-4,
+.Galery:has(.pic-5:hover) .pic-1,
+.Galery:has(.pic-5:hover) .pic-6,
+.Galery:has(.pic-5:hover) .pic-7,
+.Galery:has(.pic-5:hover) .pic-8,
+.Galery:has(.pic-5:hover) .pic-9,
+.Galery:has(.pic-5:hover) .pic-10 {
+    filter:blur(3px);
+    opacity: 0.6;
+}
+
+.Galery:has(.pic-6:hover) .pic-2,
+.Galery:has(.pic-6:hover) .pic-3,
+.Galery:has(.pic-6:hover) .pic-4,
+.Galery:has(.pic-6:hover) .pic-5,
+.Galery:has(.pic-6:hover) .pic-1,
+.Galery:has(.pic-6:hover) .pic-7,
+.Galery:has(.pic-6:hover) .pic-8,
+.Galery:has(.pic-6:hover) .pic-9,
+.Galery:has(.pic-6:hover) .pic-10 {
+    filter:blur(3px);
+    opacity: 0.6;
+}
+
+.Galery:has(.pic-7:hover) .pic-2,
+.Galery:has(.pic-7:hover) .pic-3,
+.Galery:has(.pic-7:hover) .pic-4,
+.Galery:has(.pic-7:hover) .pic-5,
+.Galery:has(.pic-7:hover) .pic-6,
+.Galery:has(.pic-7:hover) .pic-1,
+.Galery:has(.pic-7:hover) .pic-8,
+.Galery:has(.pic-7:hover) .pic-9,
+.Galery:has(.pic-7:hover) .pic-10 {
+    filter:blur(3px);
+    opacity: 0.6;
+}
+
+.Galery:has(.pic-8:hover) .pic-2,
+.Galery:has(.pic-8:hover) .pic-3,
+.Galery:has(.pic-8:hover) .pic-4,
+.Galery:has(.pic-8:hover) .pic-5,
+.Galery:has(.pic-8:hover) .pic-6,
+.Galery:has(.pic-8:hover) .pic-7,
+.Galery:has(.pic-8:hover) .pic-1,
+.Galery:has(.pic-8:hover) .pic-9,
+.Galery:has(.pic-8:hover) .pic-10 {
+    filter:blur(3px);
+    opacity: 0.6;
+}
+
+.Galery:has(.pic-9:hover) .pic-2,
+.Galery:has(.pic-9:hover) .pic-3,
+.Galery:has(.pic-9:hover) .pic-4,
+.Galery:has(.pic-9:hover) .pic-5,
+.Galery:has(.pic-9:hover) .pic-6,
+.Galery:has(.pic-9:hover) .pic-7,
+.Galery:has(.pic-9:hover) .pic-8,
+.Galery:has(.pic-9:hover) .pic-1,
+.Galery:has(.pic-9:hover) .pic-10 {
+    filter:blur(3px);
+    opacity: 0.6;
+}
+
+.Galery:has(.pic-10:hover) .pic-2,
+.Galery:has(.pic-10:hover) .pic-3,
+.Galery:has(.pic-10:hover) .pic-4,
+.Galery:has(.pic-10:hover) .pic-5,
+.Galery:has(.pic-10:hover) .pic-6,
+.Galery:has(.pic-10:hover) .pic-7,
+.Galery:has(.pic-10:hover) .pic-8,
+.Galery:has(.pic-10:hover) .pic-9,
+.Galery:has(.pic-10:hover) .pic-1 {
+    filter:blur(3px);
+    opacity: 0.6;
+}
+
+@media screen and (max-width:950px) {
+
+    .Galery {
+        width:auto;
+        height:2200px;
+        background-color:$TmavšíŠedá;
+        display: grid;
+        z-index: 100;
+        position: relative;
+    
+    
+        .Galery-grid {
+            margin:auto auto auto auto;
+            max-width:900px;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+    
+            .grid-left {
+                display:grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                margin-bottom:135px;
+                position: relative;
+            }
+    
+            .grid-right {
+                display:grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                margin-top:135px;
+                position: relative;
+            }
+    
+            .pic {
+                width:320px;
+                height:320px;
+                margin:30px;
+                opacity:0.8;
+                transition: 0.3s;
+                position: relative;
+                overflow-y: hidden;
+                z-index: 1000;
+
+                img {
+                    width:320px;
+                height:320px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:750px) {
+
+    .Galery {
+        width:auto;
+        height:1950px;
+        background-color:$TmavšíŠedá;
+        display: grid;
+        z-index: 100;
+        position: relative;
+    
+    
+        .Galery-grid {
+            margin:auto auto auto auto;
+            max-width:900px;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+    
+            .grid-left {
+                display:grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                margin-bottom:135px;
+                position: relative;
+            }
+    
+            .grid-right {
+                display:grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                margin-top:135px;
+                position: relative;
+            }
+    
+            .pic {
+                width:280px;
+                height:280px;
+                margin:20px;
+                opacity:0.8;
+                transition: 0.3s;
+                position: relative;
+                overflow-y: hidden;
+                z-index: 1000;
+
+                img {
+                    width:280px;
+                height:280px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:650px) {
+
+    .Galery {
+        width:auto;
+        height:1650px;
+        background-color:$TmavšíŠedá;
+        display: grid;
+        z-index: 100;
+        position: relative;
+    
+    
+        .Galery-grid {
+            margin:auto auto auto auto;
+            max-width:900px;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+    
+            .grid-left {
+                display:grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                margin-bottom:135px;
+                position: relative;
+            }
+    
+            .grid-right {
+                display:grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                margin-top:135px;
+                position: relative;
+            }
+    
+            .pic {
+                width:250px;
+                height:250px;
+                margin:10px;
+                opacity:0.8;
+                transition: 0.3s;
+                position: relative;
+                overflow-y: hidden;
+                z-index: 1000;
+
+                img {
+                    width:250px;
+                height:250px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    .Galery {
+        height:3400px;
+    
+        .Galery-grid {
+            margin:auto auto auto auto;
+            max-width:900px;
+            display:grid;
+            grid-template-columns: 1fr;
+    
+            .grid-left {
+                display:grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                margin-bottom:0px;
+                position: relative;
+            }
+    
+            .grid-right {
+                display:grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                margin-top:0px;
+                position: relative;
+            }
+    
+            .pic {
+                width:280px;
+                height:280px;
+                margin:20px;
+                opacity:0.8;
+                transition: 0.3s;
+                position: relative;
+                overflow-y: hidden;
+                z-index: 1000;
+
+                img {
+                    width:280px;
+                height:280px;
+                }
+            }
+        }
+    }
+}
 /* Galery END */
 
 
@@ -1133,4 +1436,6 @@ html:focus-within {
         }
     }
 }
+
+
 /* Footer END */

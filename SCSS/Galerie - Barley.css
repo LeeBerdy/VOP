@@ -11,21 +11,39 @@
 }
 @keyframes Slide-right {
   0% {
-    transform: translate(-200px);
     filter: blur(7px);
   }
   100% {
-    transform: translate(0px);
     filter: blur(0px);
   }
 }
-@keyframes Slide-bottom {
+@keyframes Fall {
   0% {
-    transform: translateY(50px);
+    transform: scale(4);
     opacity: 0;
   }
   100% {
-    transform: translateY(0px);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes Fall-1 {
+  0% {
+    transform: scale(4);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+}
+@keyframes Fall-2 {
+  0% {
+    transform: scale(4);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.9);
     opacity: 1;
   }
 }
@@ -507,14 +525,16 @@ html:focus-within {
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
-  animation-name: Slide-bottom;
+  animation-name: Slide-right;
   animation-duration: 0.6s;
   z-index: 600;
   display: grid;
 }
 .Hero .content-hero .Poster .logo {
   margin: auto;
-  transform: scale(1);
+  animation-name: Fall;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-out;
 }
 
 @media screen and (max-height: 767px) {
@@ -564,13 +584,9 @@ html:focus-within {
   .Hero .content-hero .Poster {
     z-index: 600;
   }
-  .Hero .content-hero .Poster .head {
-    position: absolute;
-    bottom: 15%;
-    right: 5%;
-  }
-  .Hero .content-hero .Poster .head h1 {
-    font-size: 6rem;
+  .Hero .content-hero .Poster .logo {
+    animation-name: Fall-1;
+    animation-fill-mode: forwards;
   }
 }
 @media screen and (max-width: 850px) {
@@ -580,14 +596,6 @@ html:focus-within {
   .Hero .content-hero .Poster {
     z-index: 600;
   }
-  .Hero .content-hero .Poster .head {
-    position: absolute;
-    bottom: 15%;
-    right: 5%;
-  }
-  .Hero .content-hero .Poster .head h1 {
-    font-size: 5rem;
-  }
 }
 @media screen and (max-width: 550px) {
   .Hero .content-hero {
@@ -596,39 +604,25 @@ html:focus-within {
   .Hero .content-hero .Poster {
     z-index: 600;
   }
-  .Hero .content-hero .Poster .head {
-    position: absolute;
-    bottom: 15%;
-    right: 5%;
-  }
-  .Hero .content-hero .Poster .head h1 {
-    font-size: 4rem;
-  }
 }
 @media screen and (max-width: 435px) {
   .Hero .content-hero {
     padding: 60px 0px 0 0px;
   }
   .Hero .content-hero .Poster {
-    background-position: -31rem center;
     z-index: 600;
   }
-  .Hero .content-hero .Poster .head {
-    position: absolute;
-    bottom: 25%;
-    left: 10%;
-  }
-  .Hero .content-hero .Poster .head h1 {
-    max-width: 50px;
-    font-size: 5rem;
-    line-height: 80px;
+  .Hero .content-hero .Poster .logo {
+    animation-name: Fall-2;
+    animation-fill-mode: forwards;
+    max-width: 250px;
   }
 }
 /* Hero END */
 /* Galery */
 .Galery {
   width: auto;
-  height: 2500px;
+  height: 2600px;
   background-color: rgb(23, 23, 23);
   display: grid;
   z-index: 100;
@@ -656,25 +650,311 @@ html:focus-within {
   width: 350px;
   height: 350px;
   margin: 50px;
-  opacity: 0.7;
+  opacity: 0.8;
   transition: 0.3s;
   position: relative;
   overflow-y: hidden;
   z-index: 1000;
 }
 .Galery .Galery-grid .pic:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   opacity: 1;
   z-index: 1500;
 }
-.Galery .Galery-grid .pic:active {
-  transform: scale(2);
-  opacity: 1;
-}
-.Galery .Galery-grid .pic:focus {
-  transform: scale(2);
+
+.Galery:has(.pic-1:hover) .pic-2,
+.Galery:has(.pic-1:hover) .pic-3,
+.Galery:has(.pic-1:hover) .pic-4,
+.Galery:has(.pic-1:hover) .pic-5,
+.Galery:has(.pic-1:hover) .pic-6,
+.Galery:has(.pic-1:hover) .pic-7,
+.Galery:has(.pic-1:hover) .pic-8,
+.Galery:has(.pic-1:hover) .pic-9,
+.Galery:has(.pic-1:hover) .pic-10 {
+  filter: blur(3px);
+  opacity: 0.6;
 }
 
+.Galery:has(.pic-2:hover) .pic-1,
+.Galery:has(.pic-2:hover) .pic-3,
+.Galery:has(.pic-2:hover) .pic-4,
+.Galery:has(.pic-2:hover) .pic-5,
+.Galery:has(.pic-2:hover) .pic-6,
+.Galery:has(.pic-2:hover) .pic-7,
+.Galery:has(.pic-2:hover) .pic-8,
+.Galery:has(.pic-2:hover) .pic-9,
+.Galery:has(.pic-2:hover) .pic-10 {
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+.Galery:has(.pic-3:hover) .pic-2,
+.Galery:has(.pic-3:hover) .pic-1,
+.Galery:has(.pic-3:hover) .pic-4,
+.Galery:has(.pic-3:hover) .pic-5,
+.Galery:has(.pic-3:hover) .pic-6,
+.Galery:has(.pic-3:hover) .pic-7,
+.Galery:has(.pic-3:hover) .pic-8,
+.Galery:has(.pic-3:hover) .pic-9,
+.Galery:has(.pic-3:hover) .pic-10 {
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+.Galery:has(.pic-4:hover) .pic-2,
+.Galery:has(.pic-4:hover) .pic-3,
+.Galery:has(.pic-4:hover) .pic-1,
+.Galery:has(.pic-4:hover) .pic-5,
+.Galery:has(.pic-4:hover) .pic-6,
+.Galery:has(.pic-4:hover) .pic-7,
+.Galery:has(.pic-4:hover) .pic-8,
+.Galery:has(.pic-4:hover) .pic-9,
+.Galery:has(.pic-4:hover) .pic-10 {
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+.Galery:has(.pic-5:hover) .pic-2,
+.Galery:has(.pic-5:hover) .pic-3,
+.Galery:has(.pic-5:hover) .pic-4,
+.Galery:has(.pic-5:hover) .pic-1,
+.Galery:has(.pic-5:hover) .pic-6,
+.Galery:has(.pic-5:hover) .pic-7,
+.Galery:has(.pic-5:hover) .pic-8,
+.Galery:has(.pic-5:hover) .pic-9,
+.Galery:has(.pic-5:hover) .pic-10 {
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+.Galery:has(.pic-6:hover) .pic-2,
+.Galery:has(.pic-6:hover) .pic-3,
+.Galery:has(.pic-6:hover) .pic-4,
+.Galery:has(.pic-6:hover) .pic-5,
+.Galery:has(.pic-6:hover) .pic-1,
+.Galery:has(.pic-6:hover) .pic-7,
+.Galery:has(.pic-6:hover) .pic-8,
+.Galery:has(.pic-6:hover) .pic-9,
+.Galery:has(.pic-6:hover) .pic-10 {
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+.Galery:has(.pic-7:hover) .pic-2,
+.Galery:has(.pic-7:hover) .pic-3,
+.Galery:has(.pic-7:hover) .pic-4,
+.Galery:has(.pic-7:hover) .pic-5,
+.Galery:has(.pic-7:hover) .pic-6,
+.Galery:has(.pic-7:hover) .pic-1,
+.Galery:has(.pic-7:hover) .pic-8,
+.Galery:has(.pic-7:hover) .pic-9,
+.Galery:has(.pic-7:hover) .pic-10 {
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+.Galery:has(.pic-8:hover) .pic-2,
+.Galery:has(.pic-8:hover) .pic-3,
+.Galery:has(.pic-8:hover) .pic-4,
+.Galery:has(.pic-8:hover) .pic-5,
+.Galery:has(.pic-8:hover) .pic-6,
+.Galery:has(.pic-8:hover) .pic-7,
+.Galery:has(.pic-8:hover) .pic-1,
+.Galery:has(.pic-8:hover) .pic-9,
+.Galery:has(.pic-8:hover) .pic-10 {
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+.Galery:has(.pic-9:hover) .pic-2,
+.Galery:has(.pic-9:hover) .pic-3,
+.Galery:has(.pic-9:hover) .pic-4,
+.Galery:has(.pic-9:hover) .pic-5,
+.Galery:has(.pic-9:hover) .pic-6,
+.Galery:has(.pic-9:hover) .pic-7,
+.Galery:has(.pic-9:hover) .pic-8,
+.Galery:has(.pic-9:hover) .pic-1,
+.Galery:has(.pic-9:hover) .pic-10 {
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+.Galery:has(.pic-10:hover) .pic-2,
+.Galery:has(.pic-10:hover) .pic-3,
+.Galery:has(.pic-10:hover) .pic-4,
+.Galery:has(.pic-10:hover) .pic-5,
+.Galery:has(.pic-10:hover) .pic-6,
+.Galery:has(.pic-10:hover) .pic-7,
+.Galery:has(.pic-10:hover) .pic-8,
+.Galery:has(.pic-10:hover) .pic-9,
+.Galery:has(.pic-10:hover) .pic-1 {
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 950px) {
+  .Galery {
+    width: auto;
+    height: 2200px;
+    background-color: rgb(23, 23, 23);
+    display: grid;
+    z-index: 100;
+    position: relative;
+  }
+  .Galery .Galery-grid {
+    margin: auto auto auto auto;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Galery .Galery-grid .grid-left {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 135px;
+    position: relative;
+  }
+  .Galery .Galery-grid .grid-right {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 135px;
+    position: relative;
+  }
+  .Galery .Galery-grid .pic {
+    width: 320px;
+    height: 320px;
+    margin: 30px;
+    opacity: 0.8;
+    transition: 0.3s;
+    position: relative;
+    overflow-y: hidden;
+    z-index: 1000;
+  }
+  .Galery .Galery-grid .pic img {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .Galery {
+    width: auto;
+    height: 1950px;
+    background-color: rgb(23, 23, 23);
+    display: grid;
+    z-index: 100;
+    position: relative;
+  }
+  .Galery .Galery-grid {
+    margin: auto auto auto auto;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Galery .Galery-grid .grid-left {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 135px;
+    position: relative;
+  }
+  .Galery .Galery-grid .grid-right {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 135px;
+    position: relative;
+  }
+  .Galery .Galery-grid .pic {
+    width: 280px;
+    height: 280px;
+    margin: 20px;
+    opacity: 0.8;
+    transition: 0.3s;
+    position: relative;
+    overflow-y: hidden;
+    z-index: 1000;
+  }
+  .Galery .Galery-grid .pic img {
+    width: 280px;
+    height: 280px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .Galery {
+    width: auto;
+    height: 1650px;
+    background-color: rgb(23, 23, 23);
+    display: grid;
+    z-index: 100;
+    position: relative;
+  }
+  .Galery .Galery-grid {
+    margin: auto auto auto auto;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Galery .Galery-grid .grid-left {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 135px;
+    position: relative;
+  }
+  .Galery .Galery-grid .grid-right {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 135px;
+    position: relative;
+  }
+  .Galery .Galery-grid .pic {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    opacity: 0.8;
+    transition: 0.3s;
+    position: relative;
+    overflow-y: hidden;
+    z-index: 1000;
+  }
+  .Galery .Galery-grid .pic img {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .Galery {
+    height: 3400px;
+  }
+  .Galery .Galery-grid {
+    margin: auto auto auto auto;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .Galery .Galery-grid .grid-left {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 0px;
+    position: relative;
+  }
+  .Galery .Galery-grid .grid-right {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 0px;
+    position: relative;
+  }
+  .Galery .Galery-grid .pic {
+    width: 280px;
+    height: 280px;
+    margin: 20px;
+    opacity: 0.8;
+    transition: 0.3s;
+    position: relative;
+    overflow-y: hidden;
+    z-index: 1000;
+  }
+  .Galery .Galery-grid .pic img {
+    width: 280px;
+    height: 280px;
+  }
+}
 /* Galery END */
 /* Footer */
 .footer-menu {
