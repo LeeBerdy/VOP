@@ -775,12 +775,13 @@ html:focus-within {
     grid-template-rows: 1fr 1fr;
   }
   .Galeries .content-Galeries .Galery-Barley a {
-    margin-top: -50px;
+    margin: auto;
   }
   .Galeries .content-Galeries .Galery-Barley img {
     margin: auto;
   }
   .Galeries .content-Galeries .Galery-Barley .Barley {
+    margin-top: -50px;
     position: relative;
   }
   .Galeries .content-Galeries .Galery-Barley .Barley img {
@@ -801,7 +802,7 @@ html:focus-within {
     grid-template-rows: 1fr 1fr;
   }
   .Galeries .content-Galeries .Galery-Tomas a {
-    margin-top: -50px;
+    margin: auto;
   }
   .Galeries .content-Galeries .Galery-Tomas img {
     margin: auto;
@@ -836,7 +837,7 @@ html:focus-within {
   }
   .Galeries .content-Galeries .Galery-Barley .Barley {
     position: relative;
-    margin-top: 10px;
+    margin-top: -50px;
   }
   .Galeries .content-Galeries .Galery-Barley .Barley img {
     width: 270px;
@@ -854,7 +855,7 @@ html:focus-within {
   }
   .Galeries .content-Galeries .Galery-Tomas .Tomas {
     position: relative;
-    margin-top: 10px;
+    margin-top: -50px;
   }
   .Galeries .content-Galeries .Galery-Tomas .Tomas img {
     width: 270px;
@@ -883,7 +884,7 @@ html:focus-within {
   }
   .Galeries .content-Galeries .Galery-Barley .Barley {
     position: relative;
-    margin-top: 10px;
+    margin-top: -50px;
   }
   .Galeries .content-Galeries .Galery-Barley .Barley img {
     width: 270px;
@@ -902,7 +903,7 @@ html:focus-within {
   }
   .Galeries .content-Galeries .Galery-Tomas .Tomas {
     position: relative;
-    margin-top: 10px;
+    margin-top: -40px;
   }
   .Galeries .content-Galeries .Galery-Tomas .Tomas img {
     width: 270px;
