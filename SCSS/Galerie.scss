@@ -938,6 +938,11 @@ html:focus-within {
                 margin:auto;
             }
 
+            .pic {
+                max-width:250px;
+                transform: scale(0.9);
+            }
+
             .Barley {
                 margin-top:-50px;
                 position: relative;
@@ -974,6 +979,11 @@ html:focus-within {
 
             img {
                 margin:auto;
+            }
+
+            .pic {
+                transform: scale(0.6);
+                margin-top: -20px;
             }
 
             .Tomas {
@@ -1113,6 +1123,10 @@ html:focus-within {
                 margin:-100px 50px auto auto;
                 grid-template-rows: 1fr 1fr;
 
+                .pic {
+                    transform: scale(0.7);
+                }
+
                 .Barley {
                     position: relative;
                     margin-top:-50px;
@@ -1134,6 +1148,10 @@ html:focus-within {
             .Galery-Tomas {
                 margin:-100px auto auto 50px;
                 grid-template-rows: 1fr 1fr;
+
+                .pic {
+                    transform: scale(0.5);
+                }
 
                 .Tomas {
                     position: relative;

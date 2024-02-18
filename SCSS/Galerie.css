@@ -693,6 +693,10 @@ html:focus-within {
 .Galeries .content-Galeries .Galery-Barley img {
   margin: auto;
 }
+.Galeries .content-Galeries .Galery-Barley .pic {
+  max-width: 250px;
+  transform: scale(0.9);
+}
 .Galeries .content-Galeries .Galery-Barley .Barley {
   margin-top: -50px;
   position: relative;
@@ -723,6 +727,10 @@ html:focus-within {
 }
 .Galeries .content-Galeries .Galery-Tomas img {
   margin: auto;
+}
+.Galeries .content-Galeries .Galery-Tomas .pic {
+  transform: scale(0.6);
+  margin-top: -20px;
 }
 .Galeries .content-Galeries .Galery-Tomas .Tomas {
   margin-top: -50px;
@@ -835,6 +843,9 @@ html:focus-within {
     margin: -100px 50px auto auto;
     grid-template-rows: 1fr 1fr;
   }
+  .Galeries .content-Galeries .Galery-Barley .pic {
+    transform: scale(0.7);
+  }
   .Galeries .content-Galeries .Galery-Barley .Barley {
     position: relative;
     margin-top: -50px;
@@ -852,6 +863,9 @@ html:focus-within {
   .Galeries .content-Galeries .Galery-Tomas {
     margin: -100px auto auto 50px;
     grid-template-rows: 1fr 1fr;
+  }
+  .Galeries .content-Galeries .Galery-Tomas .pic {
+    transform: scale(0.5);
   }
   .Galeries .content-Galeries .Galery-Tomas .Tomas {
     position: relative;
