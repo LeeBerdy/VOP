@@ -6,7 +6,9 @@ $Zelená:rgba(0, 125, 92, 1);
 $Bílá:rgba(251, 251, 251, 1);
 
 
+
 /* Animations */
+
 
 @keyframes Slide-left {
 
@@ -24,37 +26,60 @@ $Bílá:rgba(251, 251, 251, 1);
 @keyframes Slide-right {
 
     0% {
-        
-        transform: translate(-200px);
         filter: blur(7px);
     }
 
-    
-
     100% {
-        transform: translate(0px);
         filter: blur(0px);
     }
 }
 
-@keyframes Slide-bottom {
+@keyframes Fall { 
 
     0% {
-        transform: translateY(50px);
+        transform: scale(4);
         opacity: 0;
     }
 
     100% {
-        transform: translateY(0px);
+        transform: scale(1);
         opacity: 1;
     }
 }
+
+@keyframes Fall-1 { 
+
+    0% {
+        transform: scale(4);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(0.8);
+        opacity: 1;
+    }
+}
+
+@keyframes Fall-2 { 
+
+    0% {
+        transform: scale(4);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(0.7);
+        opacity: 1;
+    }
+}
+
 
 /* Animations END */
 
 
 
 /* Font-face */
+
 
 @font-face {
     font-family:'NotoSans-reg';
@@ -76,11 +101,13 @@ $Bílá:rgba(251, 251, 251, 1);
     src:url(../Fonts/NotoSans-Light.ttf);
 }
 
+
 /* Font-face END */
 
 
 
 /* ALL ELEMENTS */
+
 
 html, body {
     font-family: 'Notosans-reg', sans-serif;
@@ -153,10 +180,13 @@ html:focus-within {
     }
 }
 
+
 /* ALL ELEMENTS END */
 
 
+
 /* Top */
+
 
 .Top {
     position:relative;
@@ -374,7 +404,9 @@ html:focus-within {
                     transform: scale(0.18);
                 }
             }
+
         }
+
     }
 
     .home::after,
@@ -431,7 +463,6 @@ html:focus-within {
             color:$Bílá;
             
         }
-
     }
 
     .Resp-navbar.hidden {
@@ -699,7 +730,7 @@ html:focus-within {
 .Hero {
     width:auto;
     height:100vh;
-    background: $ŠedáIkony;
+    background: $TmaváŠedá;
     position: relative;
     z-index: 2500;
 
@@ -715,38 +746,25 @@ html:focus-within {
             margin:auto;
             height:100%;
             width:100%;
-            position: relative;
-            background-image:url(../Pics/Galery-pic.png);
+            background-image:url(../Pics/Tomáš/Tomas-Main.png);
             background-position: center;
             background-size:auto;
             background-repeat: no-repeat;
-            animation-name: Slide-bottom;
+            animation-name: Slide-right;
             animation-duration: 0.6s;
             z-index: 600;
-            
+            display:grid;
 
-            .head {
-                position: absolute;
-                bottom:30%;
-                left:10%;
-                
-
-                h1 {
-                    color:$Bílá;
-                    mix-blend-mode: difference;
-                    font-family:'NotoSans-semiBold';
-                    font-weight: 100;
-                    font-size: 6rem;
-                    animation: Slide-right;
-                    animation-duration: 0.5s;
-                    animation-timing-function: ease-out;
-                }
+            .logo {
+                margin:auto;
+                animation-name: Fall;
+                animation-duration: 0.4s;
+                animation-timing-function:ease-out
             }
-
-            
         }
     }
 }
+
 
 
 @media screen and (max-height:767px) {
@@ -810,17 +828,10 @@ html:focus-within {
             .Poster {
                 z-index: 600;
 
-                .head {
-                    position: absolute;
-                    bottom:15%;
-                    right:5%;
-
-                    h1 {
-                        font-size: 6rem;
-                    }
+                .logo {
+                    animation-name: Fall-1;
+                    animation-fill-mode: forwards;
                 }
-
-                
             }
         }
     }
@@ -834,18 +845,6 @@ html:focus-within {
 
             .Poster {
                 z-index: 600;
-
-                .head {
-                    position: absolute;
-                    bottom:15%;
-                    right:5%;
-
-                    h1 {
-                        font-size: 5rem;
-                    }
-                }
-
-                
             }
         }
     }
@@ -858,20 +857,7 @@ html:focus-within {
             padding:60px 30px 0 30px;
 
             .Poster {
-                
                 z-index: 600;
-
-                .head {
-                    position: absolute;
-                    bottom:15%;
-                    right:5%;
-
-                    h1 {
-                        font-size: 4rem;
-                    }
-                }
-
-                
             }
         }
     }
@@ -884,22 +870,13 @@ html:focus-within {
             padding:60px 0px 0 0px;
 
             .Poster {
-                background-position: -31rem center;
                 z-index: 600;
 
-                .head {
-                    position: absolute;
-                    bottom:25%;
-                    left:10%;
-
-                    h1 {
-                        max-width: 50px;
-                        font-size: 5rem;
-                        line-height: 80px;
-                    }
+                .logo {
+                    animation-name: Fall-2;
+                    animation-fill-mode: forwards;
+                    max-width:250px;
                 }
-
-                
             }
         }
     }
@@ -909,325 +886,376 @@ html:focus-within {
 /* Hero END */
 
 
-/* Galeries */
+
+/* Galery */
 
 
-.Galeries {
+.Galery {
     width:auto;
-    height:700px;
-    background-color: $TmaváŠedá;
-    display:grid;
+    height:2600px;
+    background-color:$TmavšíŠedá;
+    display: grid;
+    z-index: 100;
     position: relative;
 
-    .content-Galeries {
-        margin:auto;
-        max-width:1200px;
+
+    .Galery-grid {
+        margin:auto auto auto auto;
+        max-width:900px;
         display:grid;
         grid-template-columns: 1fr 1fr;
 
-        .Galery-Barley {
-            margin:-150px 100px auto auto;
+        .grid-left {
             display:grid;
-            grid-template-rows: 1fr 1fr;
-
-            a {
-                margin: auto;
-            }
-
-            img {
-                margin:auto;
-            }
-
-            .Barley {
-                margin-top:-50px;
-                position: relative;
-
-                img {
-                    width:350px;
-                    transition: 0.3s;
-                }
-            }
-
-            .Barley:hover img {
-                filter:invert(20%)
-            }
-
-            .Barley::after {
-                content:"";
-                width:365px;
-                height:365px;
-                border:2px solid $Zelená;
-                position: absolute;
-                top:-10px;
-                left:-9px;
-            }
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            margin-top:135px;
+            position: relative;
         }
 
-        .Galery-Tomas {
-            margin:-150px auto auto 100px;
+        .grid-right {
             display:grid;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            margin-bottom:135px;
+            position: relative;
+        }
 
-            a {
-                margin:auto;
-            }
+        .pic {
+            width:350px;
+            height:350px;
+            margin:50px;
+            opacity:0.8;
+            transition: 0.3s;
+            position: relative;
+            overflow-y: hidden;
+            z-index: 1000;
+        }
 
-            img {
-                margin:auto;
-            }
-
-            .Tomas {
-                margin-top: -50px;
-                position: relative;
-
-                img {
-                    width:350px;
-                    transition: 0.3s;
-                }
-                
-            }
-
-            .Tomas:hover img {
-                filter:invert(20%)
-            }
-
-            .Tomas::after {
-                content:"";
-                width:365px;
-                height:365px;
-                border:2px solid $Zelená;
-                position: absolute;
-                top:-10px;
-                left:-9px;
-            }
+        .pic:hover {
+            transform: scale(1.05);
+            opacity: 1;
+            z-index: 1500;
         }
     }
 }
 
-.Galeries::after {
-    content:"";
-    height:90%;
-    width:1px;
-    background-color: $ŠedáIkony;
-    position: absolute;
-    right:50%;
-    top:5%;
+.Galery:has(.pic-1:hover) .pic-2,
+.Galery:has(.pic-1:hover) .pic-3,
+.Galery:has(.pic-1:hover) .pic-4,
+.Galery:has(.pic-1:hover) .pic-5,
+.Galery:has(.pic-1:hover) .pic-6,
+.Galery:has(.pic-1:hover) .pic-7,
+.Galery:has(.pic-1:hover) .pic-8,
+.Galery:has(.pic-1:hover) .pic-9,
+.Galery:has(.pic-1:hover) .pic-10 {
+    filter:blur(3px);
+    opacity: 0.6;
 }
 
+.Galery:has(.pic-2:hover) .pic-1,
+.Galery:has(.pic-2:hover) .pic-3,
+.Galery:has(.pic-2:hover) .pic-4,
+.Galery:has(.pic-2:hover) .pic-5,
+.Galery:has(.pic-2:hover) .pic-6,
+.Galery:has(.pic-2:hover) .pic-7,
+.Galery:has(.pic-2:hover) .pic-8,
+.Galery:has(.pic-2:hover) .pic-9,
+.Galery:has(.pic-2:hover) .pic-10 {
+    filter:blur(3px);
+    opacity: 0.6;
+}
 
-@media screen and (max-width:1100px) {
+.Galery:has(.pic-3:hover) .pic-2,
+.Galery:has(.pic-3:hover) .pic-1,
+.Galery:has(.pic-3:hover) .pic-4,
+.Galery:has(.pic-3:hover) .pic-5,
+.Galery:has(.pic-3:hover) .pic-6,
+.Galery:has(.pic-3:hover) .pic-7,
+.Galery:has(.pic-3:hover) .pic-8,
+.Galery:has(.pic-3:hover) .pic-9,
+.Galery:has(.pic-3:hover) .pic-10 {
+    filter:blur(3px);
+    opacity: 0.6;
+}
 
-    .Galeries {
+.Galery:has(.pic-4:hover) .pic-2,
+.Galery:has(.pic-4:hover) .pic-3,
+.Galery:has(.pic-4:hover) .pic-1,
+.Galery:has(.pic-4:hover) .pic-5,
+.Galery:has(.pic-4:hover) .pic-6,
+.Galery:has(.pic-4:hover) .pic-7,
+.Galery:has(.pic-4:hover) .pic-8,
+.Galery:has(.pic-4:hover) .pic-9,
+.Galery:has(.pic-4:hover) .pic-10 {
+    filter:blur(3px);
+    opacity: 0.6;
+}
+
+.Galery:has(.pic-5:hover) .pic-2,
+.Galery:has(.pic-5:hover) .pic-3,
+.Galery:has(.pic-5:hover) .pic-4,
+.Galery:has(.pic-5:hover) .pic-1,
+.Galery:has(.pic-5:hover) .pic-6,
+.Galery:has(.pic-5:hover) .pic-7,
+.Galery:has(.pic-5:hover) .pic-8,
+.Galery:has(.pic-5:hover) .pic-9,
+.Galery:has(.pic-5:hover) .pic-10 {
+    filter:blur(3px);
+    opacity: 0.6;
+}
+
+.Galery:has(.pic-6:hover) .pic-2,
+.Galery:has(.pic-6:hover) .pic-3,
+.Galery:has(.pic-6:hover) .pic-4,
+.Galery:has(.pic-6:hover) .pic-5,
+.Galery:has(.pic-6:hover) .pic-1,
+.Galery:has(.pic-6:hover) .pic-7,
+.Galery:has(.pic-6:hover) .pic-8,
+.Galery:has(.pic-6:hover) .pic-9,
+.Galery:has(.pic-6:hover) .pic-10 {
+    filter:blur(3px);
+    opacity: 0.6;
+}
+
+.Galery:has(.pic-7:hover) .pic-2,
+.Galery:has(.pic-7:hover) .pic-3,
+.Galery:has(.pic-7:hover) .pic-4,
+.Galery:has(.pic-7:hover) .pic-5,
+.Galery:has(.pic-7:hover) .pic-6,
+.Galery:has(.pic-7:hover) .pic-1,
+.Galery:has(.pic-7:hover) .pic-8,
+.Galery:has(.pic-7:hover) .pic-9,
+.Galery:has(.pic-7:hover) .pic-10 {
+    filter:blur(3px);
+    opacity: 0.6;
+}
+
+.Galery:has(.pic-8:hover) .pic-2,
+.Galery:has(.pic-8:hover) .pic-3,
+.Galery:has(.pic-8:hover) .pic-4,
+.Galery:has(.pic-8:hover) .pic-5,
+.Galery:has(.pic-8:hover) .pic-6,
+.Galery:has(.pic-8:hover) .pic-7,
+.Galery:has(.pic-8:hover) .pic-1,
+.Galery:has(.pic-8:hover) .pic-9,
+.Galery:has(.pic-8:hover) .pic-10 {
+    filter:blur(3px);
+    opacity: 0.6;
+}
+
+.Galery:has(.pic-9:hover) .pic-2,
+.Galery:has(.pic-9:hover) .pic-3,
+.Galery:has(.pic-9:hover) .pic-4,
+.Galery:has(.pic-9:hover) .pic-5,
+.Galery:has(.pic-9:hover) .pic-6,
+.Galery:has(.pic-9:hover) .pic-7,
+.Galery:has(.pic-9:hover) .pic-8,
+.Galery:has(.pic-9:hover) .pic-1,
+.Galery:has(.pic-9:hover) .pic-10 {
+    filter:blur(3px);
+    opacity: 0.6;
+}
+
+.Galery:has(.pic-10:hover) .pic-2,
+.Galery:has(.pic-10:hover) .pic-3,
+.Galery:has(.pic-10:hover) .pic-4,
+.Galery:has(.pic-10:hover) .pic-5,
+.Galery:has(.pic-10:hover) .pic-6,
+.Galery:has(.pic-10:hover) .pic-7,
+.Galery:has(.pic-10:hover) .pic-8,
+.Galery:has(.pic-10:hover) .pic-9,
+.Galery:has(.pic-10:hover) .pic-1 {
+    filter:blur(3px);
+    opacity: 0.6;
+}
+
+@media screen and (max-width:950px) {
+
+    .Galery {
         width:auto;
-        height:700px;
-        background-color: $TmaváŠedá;
-        display:grid;
+        height:2200px;
+        background-color:$TmavšíŠedá;
+        display: grid;
+        z-index: 100;
         position: relative;
-
-        .content-Galeries {
-            margin:auto;
-            max-width:1200px;
+    
+    
+        .Galery-grid {
+            margin:auto auto auto auto;
+            max-width:900px;
             display:grid;
             grid-template-columns: 1fr 1fr;
-
-            .Galery-Barley {
-                margin:-100px 70px auto auto;
+    
+            .grid-left {
                 display:grid;
-                grid-template-rows: 1fr 1fr;
-
-                a {
-                    margin-top:-50px;
-                }
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                position: relative;
+            }
+    
+            .grid-right {
+                display:grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                position: relative;
+            }
+    
+            .pic {
+                width:320px;
+                height:320px;
+                margin:30px;
+                opacity:0.8;
+                transition: 0.3s;
+                position: relative;
+                overflow-y: hidden;
+                z-index: 1000;
 
                 img {
-                    margin:auto;
-                }
-
-                .Barley {
-                    position: relative;
-    
-                    img {
-                        width:300px;
-                    }
-                }
-
-                .Barley::after {
-                    content:"";
-                    width:315px;
-                    height:315px;
-                    border:2px solid $Zelená;
-                    position: absolute;
-                    top:-10px;
-                    left:-9px;
+                    width:320px;
+                height:320px;
                 }
             }
-
-            .Galery-Tomas {
-                margin:-100px auto auto 70px;
-                display:grid;
-                grid-template-rows: 1fr 1fr;
-
-                a {
-                    margin-top:-50px;
-                }
-
-                img {
-                    margin:auto;
-                }
-
-                .Tomas {
-                    position: relative;
-    
-                    img {
-                        width:300px;
-                    }
-                }
-
-                .Tomas::after {
-                    content:"";
-                    width:315px;
-                    height:315px;
-                    border:2px solid $Zelená;
-                    position: absolute;
-                    top:-10px;
-                    left:-9px;
-                }
-            }
-
         }
-
     }
 }
 
-@media screen and (max-width:850px) {
+@media screen and (max-width:750px) {
 
-    .Galeries {
-        height:600px;
-
-        .content-Galeries {
-            max-width:1200px;
+    .Galery {
+        width:auto;
+        height:1950px;
+        background-color:$TmavšíŠedá;
+        display: grid;
+        z-index: 100;
+        position: relative;
+    
+    
+        .Galery-grid {
+            margin:auto auto auto auto;
+            max-width:900px;
+            display:grid;
             grid-template-columns: 1fr 1fr;
-
-            .Galery-Barley {
-                margin:-100px 50px auto auto;
-                grid-template-rows: 1fr 1fr;
-
-                .Barley {
-                    position: relative;
-                    margin-top:10px;
     
-                    img {
-                        width:270px;
-                    }
-                }
-
-                .Barley::after {
-                    content:"";
-                    width:285px;
-                    height:285px;
-                    top:-10px;
-                    left:-9px;
-                }
+            .grid-left {
+                display:grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                position: relative;
             }
-
-            .Galery-Tomas {
-                margin:-100px auto auto 50px;
-                grid-template-rows: 1fr 1fr;
-
-                .Tomas {
-                    position: relative;
-                    margin-top:10px;
     
-                    img {
-                        width:270px;
-                    }
-                }
+            .grid-right {
+                display:grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                position: relative;
+            }
+    
+            .pic {
+                width:280px;
+                height:280px;
+                margin:20px;
+                opacity:0.8;
+                transition: 0.3s;
+                position: relative;
+                overflow-y: hidden;
+                z-index: 1000;
 
-                .Tomas::after {
-                    content:"";
-                    width:285px;
-                    height:285px;
-                    top:-10px;
-                    left:-9px;
+                img {
+                    width:280px;
+                height:280px;
                 }
             }
         }
     }
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:650px) {
 
-    .Galeries {
-        height:1100px;
+    .Galery {
+        width:auto;
+        height:1650px;
+        background-color:$TmavšíŠedá;
+        display: grid;
+        z-index: 100;
+        position: relative;
+    
+    
+        .Galery-grid {
+            margin:auto auto auto auto;
+            max-width:900px;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+    
+            .grid-left {
+                display:grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                position: relative;
+            }
+    
+            .grid-right {
+                display:grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                position: relative;
+            }
+    
+            .pic {
+                width:250px;
+                height:250px;
+                margin:10px;
+                opacity:0.8;
+                transition: 0.3s;
+                position: relative;
+                overflow-y: hidden;
+                z-index: 1000;
 
-        .content-Galeries {
-            max-width:1200px;
+                img {
+                    width:250px;
+                height:250px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    .Galery {
+        height:3400px;
+    
+        .Galery-grid {
+            margin:auto auto auto auto;
+            max-width:900px;
+            display:grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
-
-            .Galery-Barley {
-                margin:auto;
-                margin-top:-80px;
-                grid-template-rows: 1fr 1fr;
-
-                .Barley {
-                    position: relative;
-                    margin-top:10px;
     
-                    img {
-                        width:270px;
-                    }
-                }
-
-                .Barley::after {
-                    content:"";
-                    width:285px;
-                    height:285px;
-                    top:-10px;
-                    left:-9px;
-                }
+            .grid-left {
+                display:grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                margin-bottom:0px;
+                position: relative;
             }
-
-            .Galery-Tomas {
-                margin:auto;
-                margin-top:-20px;
-                grid-template-rows: 1fr 1fr;
-
-                .Tomas {
-                    position: relative;
-                    margin-top:10px;
     
-                    img {
-                        width:270px;
-                    }
-                }
+            .grid-right {
+                display:grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                margin-top:0px;
+                position: relative;
+            }
+    
+            .pic {
+                width:280px;
+                height:280px;
+                margin:20px;
+                opacity:0.8;
+                transition: 0.3s;
+                position: relative;
+                overflow-y: hidden;
+                z-index: 1000;
 
-                .Tomas::after {
-                    content:"";
-                    width:285px;
-                    height:285px;
-                    top:-10px;
-                    left:-9px;
+                img {
+                    width:280px;
+                height:280px;
                 }
             }
         }
     }
-
-    .Galeries::after {
-        content:"";
-        height:1px;
-        width:90%;
-        background-color: $ŠedáIkony;
-        position: absolute;
-        right:5%;
-        top:50%;
-    }
 }
-
-
-
-
-/* Galeries END */
+/* Galery END */
 
 
 
@@ -1402,7 +1430,7 @@ html:focus-within {
     background-color: $TmaváŠedá;
     display:grid;
 
-    .content-copy {
+    .content-copy { 
         color:$Bílá;
         font-size:0.9rem;
         margin:auto;
@@ -1442,4 +1470,6 @@ html:focus-within {
         }
     }
 }
+
+
 /* Footer END */

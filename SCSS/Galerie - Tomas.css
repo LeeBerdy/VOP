@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Animations */
 @keyframes Slide-left {
   0% {
@@ -11,21 +12,39 @@
 }
 @keyframes Slide-right {
   0% {
-    transform: translate(-200px);
     filter: blur(7px);
   }
   100% {
-    transform: translate(0px);
     filter: blur(0px);
   }
 }
-@keyframes Slide-bottom {
+@keyframes Fall {
   0% {
-    transform: translateY(50px);
+    transform: scale(4);
     opacity: 0;
   }
   100% {
-    transform: translateY(0px);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes Fall-1 {
+  0% {
+    transform: scale(4);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+}
+@keyframes Fall-2 {
+  0% {
+    transform: scale(4);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.7);
     opacity: 1;
   }
 }
@@ -519,7 +538,7 @@ html:focus-within {
 .Hero {
   width: auto;
   height: 100vh;
-  background: rgb(56, 56, 56);
+  background: rgb(33, 33, 33);
   position: relative;
   z-index: 2500;
 }
@@ -535,28 +554,19 @@ html:focus-within {
   margin: auto;
   height: 100%;
   width: 100%;
-  position: relative;
-  background-image: url(../Pics/Galery-pic.png);
+  background-image: url(../Pics/Tomáš/Tomas-Main.png);
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
-  animation-name: Slide-bottom;
+  animation-name: Slide-right;
   animation-duration: 0.6s;
   z-index: 600;
+  display: grid;
 }
-.Hero .content-hero .Poster .head {
-  position: absolute;
-  bottom: 30%;
-  left: 10%;
-}
-.Hero .content-hero .Poster .head h1 {
-  color: rgb(251, 251, 251);
-  mix-blend-mode: difference;
-  font-family: "NotoSans-semiBold";
-  font-weight: 100;
-  font-size: 6rem;
-  animation: Slide-right;
-  animation-duration: 0.5s;
+.Hero .content-hero .Poster .logo {
+  margin: auto;
+  animation-name: Fall;
+  animation-duration: 0.4s;
   animation-timing-function: ease-out;
 }
 
@@ -607,13 +617,9 @@ html:focus-within {
   .Hero .content-hero .Poster {
     z-index: 600;
   }
-  .Hero .content-hero .Poster .head {
-    position: absolute;
-    bottom: 15%;
-    right: 5%;
-  }
-  .Hero .content-hero .Poster .head h1 {
-    font-size: 6rem;
+  .Hero .content-hero .Poster .logo {
+    animation-name: Fall-1;
+    animation-fill-mode: forwards;
   }
 }
 @media screen and (max-width: 850px) {
@@ -623,14 +629,6 @@ html:focus-within {
   .Hero .content-hero .Poster {
     z-index: 600;
   }
-  .Hero .content-hero .Poster .head {
-    position: absolute;
-    bottom: 15%;
-    right: 5%;
-  }
-  .Hero .content-hero .Poster .head h1 {
-    font-size: 5rem;
-  }
 }
 @media screen and (max-width: 550px) {
   .Hero .content-hero {
@@ -639,292 +637,352 @@ html:focus-within {
   .Hero .content-hero .Poster {
     z-index: 600;
   }
-  .Hero .content-hero .Poster .head {
-    position: absolute;
-    bottom: 15%;
-    right: 5%;
-  }
-  .Hero .content-hero .Poster .head h1 {
-    font-size: 4rem;
-  }
 }
 @media screen and (max-width: 435px) {
   .Hero .content-hero {
     padding: 60px 0px 0 0px;
   }
   .Hero .content-hero .Poster {
-    background-position: -31rem center;
     z-index: 600;
   }
-  .Hero .content-hero .Poster .head {
-    position: absolute;
-    bottom: 25%;
-    left: 10%;
-  }
-  .Hero .content-hero .Poster .head h1 {
-    max-width: 50px;
-    font-size: 5rem;
-    line-height: 80px;
+  .Hero .content-hero .Poster .logo {
+    animation-name: Fall-2;
+    animation-fill-mode: forwards;
+    max-width: 250px;
   }
 }
 /* Hero END */
-/* Galeries */
-.Galeries {
+/* Galery */
+.Galery {
   width: auto;
-  height: 700px;
-  background-color: rgb(33, 33, 33);
+  height: 2600px;
+  background-color: rgb(23, 23, 23);
   display: grid;
+  z-index: 100;
   position: relative;
 }
-.Galeries .content-Galeries {
-  margin: auto;
-  max-width: 1200px;
+.Galery .Galery-grid {
+  margin: auto auto auto auto;
+  max-width: 900px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.Galeries .content-Galeries .Galery-Barley {
-  margin: -150px 100px auto auto;
+.Galery .Galery-grid .grid-left {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-}
-.Galeries .content-Galeries .Galery-Barley a {
-  margin: auto;
-}
-.Galeries .content-Galeries .Galery-Barley img {
-  margin: auto;
-}
-.Galeries .content-Galeries .Galery-Barley .Barley {
-  margin-top: -50px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 135px;
   position: relative;
 }
-.Galeries .content-Galeries .Galery-Barley .Barley img {
-  width: 350px;
-  transition: 0.3s;
-}
-.Galeries .content-Galeries .Galery-Barley .Barley:hover img {
-  filter: invert(20%);
-}
-.Galeries .content-Galeries .Galery-Barley .Barley::after {
-  content: "";
-  width: 365px;
-  height: 365px;
-  border: 2px solid rgb(0, 125, 92);
-  position: absolute;
-  top: -10px;
-  left: -9px;
-}
-.Galeries .content-Galeries .Galery-Tomas {
-  margin: -150px auto auto 100px;
+.Galery .Galery-grid .grid-right {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-}
-.Galeries .content-Galeries .Galery-Tomas a {
-  margin: auto;
-}
-.Galeries .content-Galeries .Galery-Tomas img {
-  margin: auto;
-}
-.Galeries .content-Galeries .Galery-Tomas .Tomas {
-  margin-top: -50px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  margin-bottom: 135px;
   position: relative;
 }
-.Galeries .content-Galeries .Galery-Tomas .Tomas img {
+.Galery .Galery-grid .pic {
   width: 350px;
+  height: 350px;
+  margin: 50px;
+  opacity: 0.8;
   transition: 0.3s;
+  position: relative;
+  overflow-y: hidden;
+  z-index: 1000;
 }
-.Galeries .content-Galeries .Galery-Tomas .Tomas:hover img {
-  filter: invert(20%);
-}
-.Galeries .content-Galeries .Galery-Tomas .Tomas::after {
-  content: "";
-  width: 365px;
-  height: 365px;
-  border: 2px solid rgb(0, 125, 92);
-  position: absolute;
-  top: -10px;
-  left: -9px;
+.Galery .Galery-grid .pic:hover {
+  transform: scale(1.05);
+  opacity: 1;
+  z-index: 1500;
 }
 
-.Galeries::after {
-  content: "";
-  height: 90%;
-  width: 1px;
-  background-color: rgb(56, 56, 56);
-  position: absolute;
-  right: 50%;
-  top: 5%;
+.Galery:has(.pic-1:hover) .pic-2,
+.Galery:has(.pic-1:hover) .pic-3,
+.Galery:has(.pic-1:hover) .pic-4,
+.Galery:has(.pic-1:hover) .pic-5,
+.Galery:has(.pic-1:hover) .pic-6,
+.Galery:has(.pic-1:hover) .pic-7,
+.Galery:has(.pic-1:hover) .pic-8,
+.Galery:has(.pic-1:hover) .pic-9,
+.Galery:has(.pic-1:hover) .pic-10 {
+  filter: blur(3px);
+  opacity: 0.6;
 }
 
-@media screen and (max-width: 1100px) {
-  .Galeries {
+.Galery:has(.pic-2:hover) .pic-1,
+.Galery:has(.pic-2:hover) .pic-3,
+.Galery:has(.pic-2:hover) .pic-4,
+.Galery:has(.pic-2:hover) .pic-5,
+.Galery:has(.pic-2:hover) .pic-6,
+.Galery:has(.pic-2:hover) .pic-7,
+.Galery:has(.pic-2:hover) .pic-8,
+.Galery:has(.pic-2:hover) .pic-9,
+.Galery:has(.pic-2:hover) .pic-10 {
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+.Galery:has(.pic-3:hover) .pic-2,
+.Galery:has(.pic-3:hover) .pic-1,
+.Galery:has(.pic-3:hover) .pic-4,
+.Galery:has(.pic-3:hover) .pic-5,
+.Galery:has(.pic-3:hover) .pic-6,
+.Galery:has(.pic-3:hover) .pic-7,
+.Galery:has(.pic-3:hover) .pic-8,
+.Galery:has(.pic-3:hover) .pic-9,
+.Galery:has(.pic-3:hover) .pic-10 {
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+.Galery:has(.pic-4:hover) .pic-2,
+.Galery:has(.pic-4:hover) .pic-3,
+.Galery:has(.pic-4:hover) .pic-1,
+.Galery:has(.pic-4:hover) .pic-5,
+.Galery:has(.pic-4:hover) .pic-6,
+.Galery:has(.pic-4:hover) .pic-7,
+.Galery:has(.pic-4:hover) .pic-8,
+.Galery:has(.pic-4:hover) .pic-9,
+.Galery:has(.pic-4:hover) .pic-10 {
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+.Galery:has(.pic-5:hover) .pic-2,
+.Galery:has(.pic-5:hover) .pic-3,
+.Galery:has(.pic-5:hover) .pic-4,
+.Galery:has(.pic-5:hover) .pic-1,
+.Galery:has(.pic-5:hover) .pic-6,
+.Galery:has(.pic-5:hover) .pic-7,
+.Galery:has(.pic-5:hover) .pic-8,
+.Galery:has(.pic-5:hover) .pic-9,
+.Galery:has(.pic-5:hover) .pic-10 {
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+.Galery:has(.pic-6:hover) .pic-2,
+.Galery:has(.pic-6:hover) .pic-3,
+.Galery:has(.pic-6:hover) .pic-4,
+.Galery:has(.pic-6:hover) .pic-5,
+.Galery:has(.pic-6:hover) .pic-1,
+.Galery:has(.pic-6:hover) .pic-7,
+.Galery:has(.pic-6:hover) .pic-8,
+.Galery:has(.pic-6:hover) .pic-9,
+.Galery:has(.pic-6:hover) .pic-10 {
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+.Galery:has(.pic-7:hover) .pic-2,
+.Galery:has(.pic-7:hover) .pic-3,
+.Galery:has(.pic-7:hover) .pic-4,
+.Galery:has(.pic-7:hover) .pic-5,
+.Galery:has(.pic-7:hover) .pic-6,
+.Galery:has(.pic-7:hover) .pic-1,
+.Galery:has(.pic-7:hover) .pic-8,
+.Galery:has(.pic-7:hover) .pic-9,
+.Galery:has(.pic-7:hover) .pic-10 {
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+.Galery:has(.pic-8:hover) .pic-2,
+.Galery:has(.pic-8:hover) .pic-3,
+.Galery:has(.pic-8:hover) .pic-4,
+.Galery:has(.pic-8:hover) .pic-5,
+.Galery:has(.pic-8:hover) .pic-6,
+.Galery:has(.pic-8:hover) .pic-7,
+.Galery:has(.pic-8:hover) .pic-1,
+.Galery:has(.pic-8:hover) .pic-9,
+.Galery:has(.pic-8:hover) .pic-10 {
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+.Galery:has(.pic-9:hover) .pic-2,
+.Galery:has(.pic-9:hover) .pic-3,
+.Galery:has(.pic-9:hover) .pic-4,
+.Galery:has(.pic-9:hover) .pic-5,
+.Galery:has(.pic-9:hover) .pic-6,
+.Galery:has(.pic-9:hover) .pic-7,
+.Galery:has(.pic-9:hover) .pic-8,
+.Galery:has(.pic-9:hover) .pic-1,
+.Galery:has(.pic-9:hover) .pic-10 {
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+.Galery:has(.pic-10:hover) .pic-2,
+.Galery:has(.pic-10:hover) .pic-3,
+.Galery:has(.pic-10:hover) .pic-4,
+.Galery:has(.pic-10:hover) .pic-5,
+.Galery:has(.pic-10:hover) .pic-6,
+.Galery:has(.pic-10:hover) .pic-7,
+.Galery:has(.pic-10:hover) .pic-8,
+.Galery:has(.pic-10:hover) .pic-9,
+.Galery:has(.pic-10:hover) .pic-1 {
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 950px) {
+  .Galery {
     width: auto;
-    height: 700px;
-    background-color: rgb(33, 33, 33);
+    height: 2200px;
+    background-color: rgb(23, 23, 23);
     display: grid;
+    z-index: 100;
     position: relative;
   }
-  .Galeries .content-Galeries {
-    margin: auto;
-    max-width: 1200px;
+  .Galery .Galery-grid {
+    margin: auto auto auto auto;
+    max-width: 900px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .Galeries .content-Galeries .Galery-Barley {
-    margin: -100px 70px auto auto;
+  .Galery .Galery-grid .grid-left {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-  }
-  .Galeries .content-Galeries .Galery-Barley a {
-    margin-top: -50px;
-  }
-  .Galeries .content-Galeries .Galery-Barley img {
-    margin: auto;
-  }
-  .Galeries .content-Galeries .Galery-Barley .Barley {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     position: relative;
   }
-  .Galeries .content-Galeries .Galery-Barley .Barley img {
-    width: 300px;
-  }
-  .Galeries .content-Galeries .Galery-Barley .Barley::after {
-    content: "";
-    width: 315px;
-    height: 315px;
-    border: 2px solid rgb(0, 125, 92);
-    position: absolute;
-    top: -10px;
-    left: -9px;
-  }
-  .Galeries .content-Galeries .Galery-Tomas {
-    margin: -100px auto auto 70px;
+  .Galery .Galery-grid .grid-right {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-  }
-  .Galeries .content-Galeries .Galery-Tomas a {
-    margin-top: -50px;
-  }
-  .Galeries .content-Galeries .Galery-Tomas img {
-    margin: auto;
-  }
-  .Galeries .content-Galeries .Galery-Tomas .Tomas {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     position: relative;
   }
-  .Galeries .content-Galeries .Galery-Tomas .Tomas img {
-    width: 300px;
+  .Galery .Galery-grid .pic {
+    width: 320px;
+    height: 320px;
+    margin: 30px;
+    opacity: 0.8;
+    transition: 0.3s;
+    position: relative;
+    overflow-y: hidden;
+    z-index: 1000;
   }
-  .Galeries .content-Galeries .Galery-Tomas .Tomas::after {
-    content: "";
-    width: 315px;
-    height: 315px;
-    border: 2px solid rgb(0, 125, 92);
-    position: absolute;
-    top: -10px;
-    left: -9px;
+  .Galery .Galery-grid .pic img {
+    width: 320px;
+    height: 320px;
   }
 }
-@media screen and (max-width: 850px) {
-  .Galeries {
-    height: 600px;
+@media screen and (max-width: 750px) {
+  .Galery {
+    width: auto;
+    height: 1950px;
+    background-color: rgb(23, 23, 23);
+    display: grid;
+    z-index: 100;
+    position: relative;
   }
-  .Galeries .content-Galeries {
-    max-width: 1200px;
+  .Galery .Galery-grid {
+    margin: auto auto auto auto;
+    max-width: 900px;
+    display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .Galeries .content-Galeries .Galery-Barley {
-    margin: -100px 50px auto auto;
-    grid-template-rows: 1fr 1fr;
-  }
-  .Galeries .content-Galeries .Galery-Barley .Barley {
+  .Galery .Galery-grid .grid-left {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     position: relative;
-    margin-top: 10px;
   }
-  .Galeries .content-Galeries .Galery-Barley .Barley img {
-    width: 270px;
-  }
-  .Galeries .content-Galeries .Galery-Barley .Barley::after {
-    content: "";
-    width: 285px;
-    height: 285px;
-    top: -10px;
-    left: -9px;
-  }
-  .Galeries .content-Galeries .Galery-Tomas {
-    margin: -100px auto auto 50px;
-    grid-template-rows: 1fr 1fr;
-  }
-  .Galeries .content-Galeries .Galery-Tomas .Tomas {
+  .Galery .Galery-grid .grid-right {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     position: relative;
-    margin-top: 10px;
   }
-  .Galeries .content-Galeries .Galery-Tomas .Tomas img {
-    width: 270px;
+  .Galery .Galery-grid .pic {
+    width: 280px;
+    height: 280px;
+    margin: 20px;
+    opacity: 0.8;
+    transition: 0.3s;
+    position: relative;
+    overflow-y: hidden;
+    z-index: 1000;
   }
-  .Galeries .content-Galeries .Galery-Tomas .Tomas::after {
-    content: "";
-    width: 285px;
-    height: 285px;
-    top: -10px;
-    left: -9px;
+  .Galery .Galery-grid .pic img {
+    width: 280px;
+    height: 280px;
   }
 }
-@media screen and (max-width: 700px) {
-  .Galeries {
-    height: 1100px;
+@media screen and (max-width: 650px) {
+  .Galery {
+    width: auto;
+    height: 1650px;
+    background-color: rgb(23, 23, 23);
+    display: grid;
+    z-index: 100;
+    position: relative;
   }
-  .Galeries .content-Galeries {
-    max-width: 1200px;
+  .Galery .Galery-grid {
+    margin: auto auto auto auto;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Galery .Galery-grid .grid-left {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    position: relative;
+  }
+  .Galery .Galery-grid .grid-right {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    position: relative;
+  }
+  .Galery .Galery-grid .pic {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    opacity: 0.8;
+    transition: 0.3s;
+    position: relative;
+    overflow-y: hidden;
+    z-index: 1000;
+  }
+  .Galery .Galery-grid .pic img {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .Galery {
+    height: 3400px;
+  }
+  .Galery .Galery-grid {
+    margin: auto auto auto auto;
+    max-width: 900px;
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
   }
-  .Galeries .content-Galeries .Galery-Barley {
-    margin: auto;
-    margin-top: -80px;
-    grid-template-rows: 1fr 1fr;
-  }
-  .Galeries .content-Galeries .Galery-Barley .Barley {
+  .Galery .Galery-grid .grid-left {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 0px;
     position: relative;
-    margin-top: 10px;
   }
-  .Galeries .content-Galeries .Galery-Barley .Barley img {
-    width: 270px;
-  }
-  .Galeries .content-Galeries .Galery-Barley .Barley::after {
-    content: "";
-    width: 285px;
-    height: 285px;
-    top: -10px;
-    left: -9px;
-  }
-  .Galeries .content-Galeries .Galery-Tomas {
-    margin: auto;
-    margin-top: -20px;
-    grid-template-rows: 1fr 1fr;
-  }
-  .Galeries .content-Galeries .Galery-Tomas .Tomas {
+  .Galery .Galery-grid .grid-right {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 0px;
     position: relative;
-    margin-top: 10px;
   }
-  .Galeries .content-Galeries .Galery-Tomas .Tomas img {
-    width: 270px;
+  .Galery .Galery-grid .pic {
+    width: 280px;
+    height: 280px;
+    margin: 20px;
+    opacity: 0.8;
+    transition: 0.3s;
+    position: relative;
+    overflow-y: hidden;
+    z-index: 1000;
   }
-  .Galeries .content-Galeries .Galery-Tomas .Tomas::after {
-    content: "";
-    width: 285px;
-    height: 285px;
-    top: -10px;
-    left: -9px;
-  }
-  .Galeries::after {
-    content: "";
-    height: 1px;
-    width: 90%;
-    background-color: rgb(56, 56, 56);
-    position: absolute;
-    right: 5%;
-    top: 50%;
+  .Galery .Galery-grid .pic img {
+    width: 280px;
+    height: 280px;
   }
 }
-/* Galeries END */
+/* Galery END */
 /* Footer */
 .footer-menu {
   width: auto;
@@ -1080,4 +1138,4 @@ html:focus-within {
     font-size: 0.6rem;
   }
 }
-/* Footer END *//*# sourceMappingURL=Galerie.css.map */
+/* Footer END *//*# sourceMappingURL=Galerie - Tomas.css.map */
