@@ -944,14 +944,14 @@ html:focus-within {
 @media screen and (max-width:1100px) {
 
     .Hero {
-        height:95vh;
+        height:97vh;
 
         .content-hero {
-            height:95vh;
+            height:97vh;
         }
     }
 
-    @media screen and (max-height:680px) {
+    @media screen and (max-height:640px) {
         .Hero {
             height:600px;
     
@@ -961,7 +961,7 @@ html:focus-within {
         }
     }
 
-    @media screen and (min-height:880px) {
+    @media screen and (min-height:840px) {
         .Hero {
             height:800px;
     
