@@ -114,11 +114,13 @@ html:focus-within {
   }
 }
 input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  -webkit-transition: white 9999s ease-out, background-color 9999s ease-out;
-  -webkit-transition-delay: 9999s;
+input:-webkit-autofill:focus {
+  -webkit-transition: background-color 600000s 0s, color 600000s 0s;
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+input[data-autocompleted] {
+  background-color: transparent !important;
 }
 
 /* ALL ELEMENTS END */
