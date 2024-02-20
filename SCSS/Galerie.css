@@ -354,6 +354,12 @@ html:focus-within {
     height: 95px;
     background: linear-gradient(rgb(33, 33, 33), transparent);
   }
+  .Top .Navbar .content-navbar {
+    grid-template-rows: 60px;
+  }
+  .Top .Navbar .content-navbar .Logo {
+    margin-top: -90px;
+  }
   .Top .Resp-navbar {
     display: flex;
   }

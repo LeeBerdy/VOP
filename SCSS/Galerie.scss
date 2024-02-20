@@ -442,7 +442,15 @@ html:focus-within {
 
         .Navbar {
             height:95px;
-            background:linear-gradient($TmaváŠedá, transparent)
+            background:linear-gradient($TmaváŠedá, transparent);
+
+            .content-navbar {
+                grid-template-rows: 60px;
+
+                .Logo {
+                    margin-top:-90px;
+                }
+            }
         }
 
         .Resp-navbar {
