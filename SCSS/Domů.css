@@ -254,7 +254,7 @@ input[data-autocompleted] {
     transform: scale(0.25);
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 435px) {
   .Top .Navbar .content-navbar .burgermenu {
     width: 35px;
     height: 30px;
@@ -275,7 +275,7 @@ input[data-autocompleted] {
     bottom: -24px;
   }
   .Top .Navbar .content-navbar .Logo {
-    margin-top: -90px;
+    margin-top: -97px !important;
     grid-column: 2/3;
     transform: scale(0.18);
   }
@@ -301,7 +301,7 @@ input[data-autocompleted] {
     bottom: -24px;
   }
   .Top .Navbar .content-navbar .Logo {
-    margin-top: -90px;
+    margin-top: -97px !important;
     grid-column: 2/3;
     transform: scale(0.18);
   }
