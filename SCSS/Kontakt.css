@@ -555,7 +555,7 @@ html:focus-within {
   height: 100%;
   width: 100%;
   position: relative;
-  background-image: url(../Pics/Ceník\ -\ Main.png);
+  background-image: url(../Pics/Contact-Hero.png);
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
@@ -565,7 +565,7 @@ html:focus-within {
 }
 .Hero .content-hero .Poster .head {
   position: absolute;
-  top: 30%;
+  bottom: 30%;
   right: 10%;
 }
 .Hero .content-hero .Poster .head h1 {
@@ -687,722 +687,406 @@ html:focus-within {
   }
 }
 /* Hero END */
-/* Questions */
-.questions {
-  height: auto;
+/* Strip */
+.strip {
   width: auto;
+  height: 150px;
   background-color: rgb(33, 33, 33);
-  display: flex;
-  position: relative;
-  z-index: 2000;
-  margin-bottom: -200px;
 }
-.questions .content-questions {
-  margin: auto;
-  max-width: 1400px;
-  height: 1000px;
+
+/* Strip END */
+/* Contac form */
+.contact-form {
+  width: auto;
+  height: 700px;
+  background-image: url("../Pics/5.květen.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   position: relative;
 }
-.questions .content-questions p, .questions .content-questions h2, .questions .content-questions h3, .questions .content-questions li {
+.contact-form .dark-background {
+  background-color: rgba(33, 33, 33, 0.959);
+  width: auto;
+  display: grid;
+}
+.contact-form .dark-background .content-con-form {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.contact-form .dark-background .content-con-form .content-form-left {
+  margin: auto;
+  height: 700px;
+  max-width: 800px;
+  padding: 0px 100px 0px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.contact-form .dark-background .content-con-form .content-form-left .title {
+  margin: auto;
+  margin-top: 50px;
+}
+.contact-form .dark-background .content-con-form .content-form-left .title h2 {
+  font-family: "NotoSans-semiBold", sans-serif;
   color: rgb(251, 251, 251);
   font-weight: 100;
-}
-.questions .content-questions h2, .questions .content-questions h3 {
-  font-family: "NotoSans-semiBold", sans-serif;
-}
-.questions .content-questions p {
-  font-family: "NotoSans-light", sans-serif;
-  font-size: 1.2rem;
-  line-height: 30px;
-  margin: 40px 20px;
-  max-width: 500px;
-}
-.questions .content-questions h2, .questions .content-questions h3 {
+  text-align: center;
   border-bottom: 3px solid rgb(0, 125, 92);
+  width: 200px;
 }
-.questions .content-questions .Left {
+.contact-form .dark-background .content-con-form .content-form-left .text {
   margin: auto;
-  padding: 50px;
-  margin-top: 120px;
+  margin-left: 0px;
+  margin-top: 30px;
 }
-.questions .content-questions .Left h2 {
-  margin: auto;
-  margin-bottom: 60px;
-  text-align: center;
-  max-width: 220px;
-}
-.questions .content-questions .Left .box {
-  margin-top: 50px;
-  padding: 20px 40px;
-  max-width: 420px;
-  border: 2px solid rgb(56, 56, 56);
-}
-.questions .content-questions .Left .box h3 {
-  max-width: 250px;
-  border: 0px;
-}
-.questions .content-questions .Left .box ul {
-  margin-top: 40px;
-}
-.questions .content-questions .Left .box li {
+.contact-form .dark-background .content-con-form .content-form-left .text p {
   font-family: "NotoSans-light", sans-serif;
+  color: rgb(251, 251, 251);
+  font-weight: 100;
   font-size: 1.2rem;
-  margin: 25px 20px;
+  margin: 10px 0px;
 }
-.questions .content-questions .Right {
+.contact-form .dark-background .content-con-form .content-form-left .text span {
+  font-family: "NotoSans-semiBold", sans-serif;
+  color: rgb(0, 125, 92);
+}
+.contact-form .dark-background .content-con-form .content-form-left .map {
+  margin: 20px 150px auto 0px;
+  filter: grayscale(50%);
+}
+.contact-form .dark-background .content-con-form .content-form-left .map iframe {
+  filter: invert(85%);
+  border-radius: 10px;
+  width: 150%;
+}
+.contact-form .dark-background .content-con-form .content-form-right {
+  padding: 0px 20px 0px 100px;
+  display: grid;
+}
+.contact-form .dark-background .content-con-form .content-form-right .con-form {
   margin: auto;
-  padding: 50px;
-  margin-top: 120px;
+  width: 100%;
+  height: 500px;
 }
-.questions .content-questions .Right h2 {
+.contact-form .dark-background .content-con-form .content-form-right .con-form .fill-box {
+  position: relative;
+}
+.contact-form .dark-background .content-con-form .content-form-right .con-form input {
+  padding-top: 30px;
+  height: 70px;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(251, 251, 251);
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  position: relative;
+  color: rgb(251, 251, 251);
+  font-size: 1.3rem;
+  font-family: "NotoSans-light", sans-serif;
+}
+.contact-form .dark-background .content-con-form .content-form-right .con-form .input-name {
+  padding-left: 80px;
+}
+.contact-form .dark-background .content-con-form .content-form-right .con-form .input-email {
+  padding-left: 70px;
+}
+.contact-form .dark-background .content-con-form .content-form-right .con-form .input-phone {
+  padding-left: 95px;
+}
+.contact-form .dark-background .content-con-form .content-form-right .con-form label {
+  position: absolute;
+  top: 35px;
+  left: 10px;
+  color: rgb(251, 251, 251);
+  font-size: 1.2rem;
+}
+.contact-form .dark-background .content-con-form .content-form-right .con-form textarea {
+  width: 100%;
+  height: 180px;
+  background-color: rgba(33, 33, 33, 0.877);
+  margin-top: 60px;
+  resize: none;
+  font-family: "NotoSans-light", sans-serif;
+  color: rgb(251, 251, 251);
+  font-size: 1.3rem;
+  padding: 15px;
+}
+.contact-form .dark-background .content-con-form .content-form-right .con-form input:focus,
+.contact-form .dark-background .content-con-form .content-form-right .con-form textarea:focus {
+  outline: none;
+}
+.contact-form .dark-background .content-con-form .content-form-right .con-form .Submit {
+  display: grid;
+}
+.contact-form .dark-background .content-con-form .content-form-right .con-form .Submit button {
+  width: 200px;
+  height: 50px;
   margin: auto;
-  margin-bottom: 25px;
-  text-align: center;
-  max-width: 300px;
+  margin-top: 50px;
+  background-color: rgb(0, 125, 92);
+  color: rgb(251, 251, 251);
+  border: 0px;
+  font-family: "NotoSans-semiBold", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 100;
+  cursor: pointer;
+  transition: 0.3s;
 }
-.questions .content-questions .Right h3 {
-  text-align: center;
-  margin: auto 20px auto auto;
-  max-width: 70px;
-  margin-bottom: -30px;
+.contact-form .dark-background .content-con-form .content-form-right .con-form .Submit button:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.144);
 }
-.questions .content-questions .Right p {
-  text-align: right;
+@media screen and (max-width: 850px) {
+  .contact-form .dark-background .content-con-form .content-form-left {
+    margin-right: 0;
+    margin-top: 20px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-left .con-form-text-2 {
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-right {
+    margin-left: 0;
+    margin-top: -50px;
+  }
 }
-.questions .content-questions .Right .pay {
-  margin-top: 100px;
+@media screen and (max-width: 850px) {
+  .contact-form .dark-background .content-con-form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
-.questions .content-questions::after {
+
+.contact-form::after {
   content: "";
-  width: 2px;
+  width: 1px;
   height: 90%;
-  background-color: rgb(56, 56, 56);
+  background-color: rgb(251, 251, 251);
   position: absolute;
   inset: 0;
   margin: auto;
 }
 
 @media screen and (max-width: 1100px) {
-  .questions .content-questions {
-    height: 950px;
+  .contact-form {
+    height: 600px;
   }
-  .questions .content-questions p {
+  .contact-form .dark-background .content-con-form .content-form-left {
+    padding: 0px 50px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-left p {
     font-size: 1rem;
-    margin: 30px 20px;
-  }
-  .questions .content-questions h2 {
-    font-size: 1.3rem;
-  }
-  .questions .content-questions h3 {
-    font-size: 1.1rem;
-  }
-  .questions .content-questions .Left h2 {
-    max-width: 200px;
-  }
-  .questions .content-questions .Left .box {
-    padding-bottom: 10px;
-  }
-  .questions .content-questions .Left .box li {
-    font-size: 1rem;
-    margin: 25px 20px;
-  }
-  .questions .content-questions .Right h2 {
-    max-width: 260px;
-  }
-  .questions .content-questions .Right h3 {
-    margin-bottom: -20px;
-  }
-  .questions .content-questions .Right .pay {
-    margin-top: 80px;
-  }
-}
-@media screen and (max-width: 850px) {
-  .questions .content-questions {
-    height: 900px;
-  }
-  .questions .content-questions p {
-    font-size: 0.9rem;
-    margin: 25px 20px;
-  }
-  .questions .content-questions h2 {
-    font-size: 1.2rem;
-  }
-  .questions .content-questions h3 {
-    font-size: 1rem;
-  }
-  .questions .content-questions .Left {
-    padding: 30px;
-    margin-top: 80px;
-  }
-  .questions .content-questions .Left h2 {
-    max-width: 175px;
-  }
-  .questions .content-questions .Left .box {
-    padding-bottom: 10px;
-  }
-  .questions .content-questions .Left .box ul {
-    margin-top: 25px;
-  }
-  .questions .content-questions .Left .box li {
-    font-size: 0.9rem;
-    margin: 20px 10px;
-  }
-  .questions .content-questions .Right {
-    padding: 30px;
-    margin-top: 80px;
-  }
-  .questions .content-questions .Right h2 {
-    max-width: 240px;
-  }
-  .questions .content-questions .Right h3 {
-    margin-bottom: -15px;
-    max-width: 60px;
-  }
-  .questions .content-questions .Right .pay {
-    margin-top: 60px;
-  }
-}
-@media screen and (max-width: 650px) {
-  .questions .content-questions {
-    height: 1300px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    position: relative;
-  }
-  .questions .content-questions .Left {
-    margin-top: 50px;
-  }
-  .questions .content-questions .Left .box {
-    margin: auto;
-    margin-top: 60px;
-    padding: 20px 40px;
-    max-width: 340px;
-  }
-  .questions .content-questions .Right {
-    margin-top: 60px;
-  }
-  .questions .content-questions .Right h2 {
-    margin-bottom: 40px;
-  }
-  .questions .content-questions::after {
-    content: "";
-    width: 90%;
-    height: 2px;
-    background-color: rgb(56, 56, 56);
-    position: absolute;
-    inset: 0;
-    margin: auto;
-    margin-top: 700px;
-  }
-}
-@media screen and (max-width: 550px) {
-  .questions .content-questions {
-    height: 1300px;
-  }
-  .questions .content-questions p {
-    font-size: 0.8rem;
-    margin: 15px 20px;
-  }
-  .questions .content-questions h2 {
-    font-size: 1.1rem;
-  }
-  .questions .content-questions h3 {
-    font-size: 0.9rem;
-  }
-  .questions .content-questions .Left {
-    margin-top: 50px;
-  }
-  .questions .content-questions .Left h2 {
-    margin-bottom: 40px;
-    max-width: 160px;
-  }
-  .questions .content-questions .Left .box {
-    margin: auto;
-    margin-top: 60px;
-    padding: 20px 40px;
-    max-width: 340px;
-  }
-  .questions .content-questions .Left .box li {
-    font-size: 0.8rem;
-  }
-  .questions .content-questions .Right {
-    margin-top: 80px;
-  }
-  .questions .content-questions .Right h2 {
-    max-width: 220px;
-  }
-  .questions .content-questions .Right h3 {
-    max-width: 55px;
-  }
-  .questions .content-questions::after {
-    content: "";
-    width: 90%;
-    height: 2px;
-    background-color: rgb(56, 56, 56);
-    position: absolute;
-    inset: 0;
-    margin: auto;
-    margin-top: 680px;
-  }
-}
-@media screen and (max-width: 435px) {
-  .questions .content-questions {
-    height: 1200px;
-  }
-  .questions .content-questions p {
-    font-size: 0.8rem;
-    margin: 15px 20px;
-    line-height: 23px;
-  }
-  .questions .content-questions h2 {
-    font-size: 1.1rem;
-  }
-  .questions .content-questions h3 {
-    font-size: 0.9rem;
-  }
-  .questions .content-questions .Left {
-    margin-top: 80px;
-    padding: 10px;
-  }
-  .questions .content-questions .Left h2 {
-    margin-bottom: 40px;
-    max-width: 160px;
-  }
-  .questions .content-questions .Left .box {
-    margin: auto;
-    margin-top: 60px;
-    padding: 15px 20px;
-    max-width: 280px;
-  }
-  .questions .content-questions .Left .box li {
-    font-size: 0.8rem;
-  }
-  .questions .content-questions .Right {
-    margin-top: 80px;
-    padding: 10px;
-  }
-  .questions .content-questions .Right h2 {
-    max-width: 220px;
-  }
-  .questions .content-questions .Right h3 {
-    max-width: 55px;
-    margin-bottom: 0px;
-  }
-  .questions .content-questions::after {
-    content: "";
-    width: 90%;
-    height: 2px;
-    background-color: rgb(56, 56, 56);
-    position: absolute;
-    inset: 0;
-    margin: auto;
-    margin-top: 660px;
-  }
-}
-/* Questions END */
-/* Process */
-.process-bg {
-  width: auto;
-  height: 1200px;
-  background-image: url(../Pics/prices-steps-bg.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: 1000;
-  display: flex;
-}
-.process-bg .process {
-  height: 900px;
-  width: 100%;
-  background-color: rgba(23, 23, 23, 0.945);
-  margin: auto;
-  display: flex;
-}
-.process-bg .process .content-process {
-  margin: auto;
-  margin-top: 100px;
-  max-width: 1400px;
-  padding: 20px 50px;
-}
-.process-bg .process .content-process h2 {
-  color: rgb(251, 251, 251);
-  font-family: "NotoSans-semiBold", sans-serif;
-  font-weight: 100;
-  border-bottom: 3px solid rgb(0, 125, 92);
-  margin: auto;
-  margin-bottom: 60px;
-  text-align: center;
-  max-width: 600px;
-}
-.process-bg .process .content-process li {
-  color: rgb(251, 251, 251);
-  font-family: "NotoSans-light", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 100;
-  line-height: 30px;
-  margin: 45px 20px;
-  max-width: 1000px;
-  letter-spacing: 0px;
-}
-.process-bg .process .content-process span {
-  font-family: "NotoSans-semiBold", sans-serif;
-}
-.process-bg .process .content-process a {
-  text-decoration: none;
-  color: rgb(251, 251, 251);
-}
-
-@media screen and (max-width: 1100px) {
-  .process-bg .process .content-process h2 {
-    font-size: 1.3rem;
-    max-width: 530px;
-  }
-  .process-bg .process .content-process li {
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width: 850px) {
-  .process-bg .process .content-process {
-    padding: 30px;
-  }
-  .process-bg .process .content-process h2 {
-    font-size: 1.2rem;
-    max-width: 480px;
-  }
-  .process-bg .process .content-process li {
-    font-size: 0.9rem;
-    margin: 35px 20px;
-    line-height: 28px;
-  }
-}
-@media screen and (max-width: 650px) {
-  .process-bg .process .content-process {
-    padding: 30px;
-  }
-  .process-bg .process .content-process h2 {
-    font-size: 1.2rem;
-    max-width: 480px;
-  }
-  .process-bg .process .content-process li {
-    font-size: 0.9rem;
-    margin: 25px 20px;
-  }
-}
-@media screen and (max-width: 550px) {
-  .process-bg .process .content-process {
-    padding: 30px;
-    padding-top: 10px;
-  }
-  .process-bg .process .content-process h2 {
-    font-size: 1rem;
-    max-width: 400px;
-    margin-bottom: 30px;
-  }
-  .process-bg .process .content-process li {
-    font-size: 0.8rem;
-    margin: 25px 20px;
     line-height: 25px;
   }
-}
-@media screen and (max-width: 435px) {
-  .process-bg .process .content-process {
-    margin-top: 160px;
-    padding: 30px;
-    padding-top: 0px;
+  .contact-form .dark-background .content-con-form .content-form-left .con-form-text-1 {
+    margin-top: -100px;
   }
-  .process-bg .process .content-process h2 {
-    font-size: 0.8rem;
-    max-width: 320px;
-    margin-bottom: 20px;
-  }
-  .process-bg .process .content-process li {
-    font-size: 0.8rem;
-    margin: 20px 20px;
-    line-height: 20px;
-  }
-}
-@media screen and (max-width: 390px) {
-  .process-bg .process .content-process {
-    margin-top: 100px;
-    padding: 30px;
-    padding-top: 0px;
-  }
-}
-/* Process END */
-/* Contact */
-.Contact {
-  width: auto;
-  height: 400px;
-  background-color: rgb(33, 33, 33);
-  display: flex;
-  position: relative;
-  z-index: 2000;
-  margin-top: -150px;
-}
-.Contact .content-Contact {
-  width: 1200px;
-  min-width: 700px;
-  height: 100%;
-  margin: auto;
-  color: rgb(251, 251, 251);
-  padding: 0px 50px;
-  position: relative;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
-.Contact .content-Contact .Contact-text {
-  margin: auto;
-  padding: 0px 50px;
-}
-.Contact .content-Contact .Contact-text h3 {
-  font-family: "NotoSans-Bold", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 100;
-  max-width: 360px;
-  border-bottom: 3px solid rgb(0, 125, 92);
-  text-align: center;
-}
-.Contact .content-Contact .Contact-text p {
-  font-family: "NotoSans-light", sans-serif;
-  font-size: 1.2rem;
-  max-width: 600px;
-  padding-top: 10px;
-  padding-left: 20px;
-}
-.Contact .content-Contact .Contact-butt {
-  margin: auto;
-  margin-left: 20px;
-  margin-top: 210px;
-  transition: 0.3s;
-}
-.Contact .content-Contact .Contact-butt a {
-  text-decoration: none;
-  color: rgb(251, 251, 251);
-  display: flex;
-  background-color: rgb(0, 125, 92);
-  width: 220px;
-  height: 50px;
-}
-.Contact .content-Contact .Contact-butt a h3 {
-  margin: auto;
-  font-size: 1rem;
-  font-weight: 100;
-}
-.Contact .content-Contact .Contact-butt:hover {
-  transform: scale(1.02);
-  box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.144);
-}
-
-@media screen and (max-width: 1100px) {
-  .Contact {
-    height: 400px;
-  }
-  .Contact .content-Contact {
-    width: 1200px;
-    min-width: 700px;
-    height: 100%;
+  .contact-form .dark-background .content-con-form .content-form-left .con-form-text-2 {
     margin: auto;
-    padding: 0px 50px;
-    grid-template-columns: 2fr 1fr;
+    max-width: 300px;
+    margin-top: 50px;
   }
-  .Contact .content-Contact .Contact-text {
-    margin: auto;
-    padding: 0px 50px;
+  .contact-form .dark-background .content-con-form .content-form-right {
+    padding: 0px 70px;
   }
-  .Contact .content-Contact .Contact-text h3 {
+  .contact-form .dark-background .content-con-form .content-form-right .con-form {
+    height: 500px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-right .con-form input {
+    padding-top: 30px;
+    height: 60px;
     font-size: 1rem;
-    max-width: 310px;
   }
-  .Contact .content-Contact .Contact-text p {
+  .contact-form .dark-background .content-con-form .content-form-right .con-form .input-name {
+    padding-left: 70px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-right .con-form .input-email {
+    padding-left: 60px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-right .con-form .input-phone {
+    padding-left: 85px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-right .con-form label {
+    top: 35px;
+    left: 10px;
     font-size: 1rem;
-    max-width: 600px;
-    padding-top: 10px;
-    padding-left: 20px;
   }
-  .Contact .content-Contact .Contact-butt {
-    margin: auto;
-    margin-left: 20px;
-    margin-top: 210px;
+  .contact-form .dark-background .content-con-form .content-form-right .con-form textarea {
+    font-size: 1rem;
   }
-  .Contact .content-Contact .Contact-butt a {
-    width: 220px;
+  .contact-form .dark-background .content-con-form .content-form-right .con-form .Submit button {
+    width: 180px;
     height: 50px;
-  }
-  .Contact .content-Contact .Contact-butt a h3 {
     margin: auto;
+    margin-top: 35px;
     font-size: 1rem;
   }
 }
 @media screen and (max-width: 850px) {
-  .Contact {
+  .contact-form {
+    height: 900px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-left {
+    padding: 0px 50px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-left p {
+    font-size: 0.9rem;
+    line-height: 25px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-left .con-form-text-1 {
+    margin-top: -110px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-left .con-form-text-2 {
+    margin: auto;
+    max-width: 300px;
+    margin-top: 20px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-right {
+    padding: 0px 50px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-right .con-form {
     height: 400px;
+    margin-top: -50px;
   }
-  .Contact .content-Contact {
-    width: 1200px;
-    min-width: 700px;
-    height: 100%;
-    margin: auto;
-    padding: 0px 50px;
-    grid-template-columns: 2fr 1fr;
+  .contact-form .dark-background .content-con-form .content-form-right .con-form input {
+    padding-top: 30px;
+    height: 60px;
+    font-size: 1rem;
   }
-  .Contact .content-Contact .Contact-text {
-    margin: auto;
-    padding: 0px 50px;
+  .contact-form .dark-background .content-con-form .content-form-right .con-form .input-name {
+    padding-left: 70px;
   }
-  .Contact .content-Contact .Contact-text h3 {
-    font-size: 0.9rem;
-    max-width: 280px;
+  .contact-form .dark-background .content-con-form .content-form-right .con-form .input-email {
+    padding-left: 60px;
   }
-  .Contact .content-Contact .Contact-text p {
-    font-size: 0.9rem;
-    max-width: 600px;
-    padding-top: 10px;
-    padding-left: 20px;
+  .contact-form .dark-background .content-con-form .content-form-right .con-form .input-phone {
+    padding-left: 85px;
   }
-  .Contact .content-Contact .Contact-butt {
-    margin: auto;
-    margin-left: 20px;
-    margin-top: 210px;
+  .contact-form .dark-background .content-con-form .content-form-right .con-form label {
+    top: 35px;
+    left: 10px;
+    font-size: 1rem;
   }
-  .Contact .content-Contact .Contact-butt a {
-    width: 180px;
+  .contact-form .dark-background .content-con-form .content-form-right .con-form .Submit button {
+    width: 150px;
     height: 40px;
-  }
-  .Contact .content-Contact .Contact-butt a h3 {
     margin: auto;
-    font-size: 0.8rem;
-  }
-}
-@media screen and (max-width: 750px) {
-  .Contact {
-    height: 300px;
-    justify-items: center;
-  }
-  .Contact .content-Contact {
-    width: 1200px;
-    min-width: 500px;
-    height: 100%;
-    margin: auto;
-    padding: 0px 50px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-  .Contact .content-Contact .Contact-text {
-    margin: auto;
-    margin-bottom: 0px;
-    margin-left: 20px;
-    padding: 0px 0px;
-  }
-  .Contact .content-Contact .Contact-text h3 {
-    font-size: 0.9rem;
-    max-width: 280px;
-  }
-  .Contact .content-Contact .Contact-text p {
-    font-size: 0.9rem;
-    max-width: 400px;
-    padding-top: 10px;
-    padding-left: 0px;
-  }
-  .Contact .content-Contact .Contact-butt {
-    margin: 40px 40px auto auto;
-  }
-  .Contact .content-Contact .Contact-butt a {
-    width: 180px;
-    height: 40px;
-  }
-  .Contact .content-Contact .Contact-butt a h3 {
-    margin: auto;
-    font-size: 0.8rem;
+    margin-top: 35px;
   }
 }
 @media screen and (max-width: 550px) {
-  .Contact {
-    height: 300px;
-    justify-items: center;
+  .contact-form {
+    height: 900px;
   }
-  .Contact .content-Contact {
-    width: 1200px;
-    min-width: 400px;
-    height: 100%;
+  .contact-form .dark-background .content-con-form .content-form-left {
+    padding: 0px 50px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-left p {
+    font-size: 0.8rem;
+    line-height: 25px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-left .con-form-text-1 {
+    margin-top: -110px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-left .con-form-text-2 {
     margin: auto;
-    padding: 0px 30px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    max-width: 300px;
+    margin-top: 20px;
   }
-  .Contact .content-Contact .Contact-text {
-    margin: auto;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    padding: 0px 0px;
+  .contact-form .dark-background .content-con-form .content-form-right .con-form {
+    height: 400px;
+    margin-top: -50px;
   }
-  .Contact .content-Contact .Contact-text h3 {
+  .contact-form .dark-background .content-con-form .content-form-right .con-form input {
+    padding-top: 30px;
+    height: 60px;
+    font-size: 1rem;
+  }
+  .contact-form .dark-background .content-con-form .content-form-right .con-form .input-name {
+    padding-left: 70px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-right .con-form .input-email {
+    padding-left: 60px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-right .con-form .input-phone {
+    padding-left: 85px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-right .con-form label {
+    top: 35px;
+    left: 10px;
     font-size: 0.9rem;
-    max-width: 280px;
   }
-  .Contact .content-Contact .Contact-text p {
-    font-size: 0.8rem;
-    max-width: 400px;
-    padding-top: 10px;
-    padding-left: 0px;
+  .contact-form .dark-background .content-con-form .content-form-right .con-form textarea {
+    font-size: 0.9rem;
   }
-  .Contact .content-Contact .Contact-butt {
-    margin: 40px 40px auto auto;
-  }
-  .Contact .content-Contact .Contact-butt a {
-    width: 180px;
+  .contact-form .dark-background .content-con-form .content-form-right .con-form .Submit button {
+    width: 140px;
     height: 40px;
-  }
-  .Contact .content-Contact .Contact-butt a h3 {
     margin: auto;
+    margin-top: 35px;
     font-size: 0.8rem;
   }
 }
-@media screen and (max-width: 435px) {
-  .Contact {
-    height: 300px;
-    justify-items: center;
+@media screen and (max-width: 430px) {
+  .contact-form {
+    height: 900px;
   }
-  .Contact .content-Contact {
-    width: 1200px;
-    min-width: 300px;
-    height: 100%;
-    margin: auto;
-    padding: 0px 30px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+  .contact-form .dark-background .content-con-form .content-form-left {
+    padding: 0px 20px;
   }
-  .Contact .content-Contact .Contact-text {
-    margin: auto;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    padding: 0px 0px;
-  }
-  .Contact .content-Contact .Contact-text h3 {
+  .contact-form .dark-background .content-con-form .content-form-left p {
     font-size: 0.8rem;
-    max-width: 250px;
+    line-height: 22px;
   }
-  .Contact .content-Contact .Contact-text p {
-    font-size: 0.8rem;
-    max-width: 400px;
-    padding-top: 10px;
-    padding-left: 0px;
+  .contact-form .dark-background .content-con-form .content-form-left .con-form-text-1 {
+    margin-top: -110px;
   }
-  .Contact .content-Contact .Contact-butt {
-    margin: 40px 40px auto auto;
+  .contact-form .dark-background .content-con-form .content-form-left .con-form-text-2 {
+    margin: auto;
+    max-width: 300px;
+    margin-top: 20px;
   }
-  .Contact .content-Contact .Contact-butt a {
-    width: 180px;
+  .contact-form .dark-background .content-con-form .content-form-right {
+    padding: 0px 20px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-right .con-form {
+    height: 400px;
+    margin-top: -50px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-right .con-form input {
+    padding-top: 30px;
+    height: 60px;
+    font-size: 1rem;
+  }
+  .contact-form .dark-background .content-con-form .content-form-right .con-form .input-name {
+    padding-left: 70px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-right .con-form .input-email {
+    padding-left: 60px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-right .con-form .input-phone {
+    padding-left: 85px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-right .con-form label {
+    top: 35px;
+    left: 10px;
+    font-size: 0.9rem;
+  }
+  .contact-form .dark-background .content-con-form .content-form-right .con-form .Submit button {
+    width: 140px;
     height: 40px;
-  }
-  .Contact .content-Contact .Contact-butt a h3 {
     margin: auto;
+    margin-top: 35px;
     font-size: 0.8rem;
   }
 }
-/* Contact END */
+/* contact form END */
+/* Contact form END */
 /* Footer */
 .footer-menu {
   width: auto;
@@ -1558,4 +1242,4 @@ html:focus-within {
     font-size: 0.6rem;
   }
 }
-/* Footer END *//*# sourceMappingURL=Ceník.css.map */
+/* Footer END *//*# sourceMappingURL=Kontakt.css.map */
