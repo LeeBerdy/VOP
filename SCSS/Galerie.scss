@@ -1025,7 +1025,7 @@ html:focus-within {
 .Galeries::after {
     content:"";
     height:90%;
-    width:1px;
+    width:2px;
     background-color: $ŠedáIkony;
     position: absolute;
     right:50%;
@@ -1242,7 +1242,7 @@ html:focus-within {
 
     .Galeries::after {
         content:"";
-        height:1px;
+        height:2px;
         width:90%;
         background-color: $ŠedáIkony;
         position: absolute;

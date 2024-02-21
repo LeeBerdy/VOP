@@ -762,7 +762,7 @@ html:focus-within {
 .Galeries::after {
   content: "";
   height: 90%;
-  width: 1px;
+  width: 2px;
   background-color: rgb(56, 56, 56);
   position: absolute;
   right: 50%;
@@ -937,7 +937,7 @@ html:focus-within {
   }
   .Galeries::after {
     content: "";
-    height: 1px;
+    height: 2px;
     width: 90%;
     background-color: rgb(56, 56, 56);
     position: absolute;
