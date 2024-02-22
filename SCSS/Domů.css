@@ -399,6 +399,10 @@ input[data-autocompleted] {
 .Top .Resp-navbar ul {
   margin: 15vh auto auto 5vw;
 }
+.Top .Resp-navbar ul .Resp-AC {
+  color: rgb(251, 251, 251);
+  cursor: pointer;
+}
 .Top .Resp-navbar li {
   list-style: none;
   margin: 1em;
@@ -412,6 +416,35 @@ input[data-autocompleted] {
 }
 .Top .Resp-navbar.hidden {
   transform: translateX(0%);
+}
+.Top .Resp-tabulka {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: hsla(0, 0%, 9%, 0.7);
+  -webkit-backdrop-filter: blur(0.8em);
+          backdrop-filter: blur(0.8em);
+  top: 0px;
+  left: 0px;
+  z-index: 6500;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+.Top .Resp-tabulka .exit-arrow {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(139, 139, 139);
+  border-radius: 50%;
+  top: 50px;
+  right: 48%;
+}
+.Top .Roll {
+  transform: scaleY(1);
+}
+.Top .Hide {
+  transform: scaleY(0);
 }
 @media screen and (max-width: 1100px) {
   .Top .Navbar {
