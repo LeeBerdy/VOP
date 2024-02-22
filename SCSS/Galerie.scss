@@ -191,8 +191,21 @@ html:focus-within {
                 padding:auto 20px;
             }
 
+            .parent {
+                position: relative;
+            }
+
+            .close {
+                position:absolute;
+                top:0px;
+                right:-98px;
+                color:$Bílá;
+            }
+
             .AC {
-                background:linear-gradient(to right, $Zelená, rgba(0, 125, 92, 0.2));
+                position: relative;
+                cursor: pointer;
+                background:linear-gradient(to right, $Zelená, rgb(0, 71, 52));
                 width:150px;
                 height:38px;
                 border-radius: 20px;
@@ -204,6 +217,57 @@ html:focus-within {
                     margin:auto;
                     font-size: 1rem;
                 }
+            }
+
+            .Tabulka {
+                position: absolute;
+                width:0px;
+                height:0px;
+                background-color: hsla(0, 0%, 9%, 0.7);
+                backdrop-filter: blur(0.5em);
+                border-radius: 10px;
+                top:38px;
+                right:0px;
+                transition: 0.3s;
+                
+                li {
+                    text-align: left;
+                    opacity:0;
+                    transition: 0.1s;
+                    font-size: 0rem;
+                    padding:10px;
+                    font-family:'NotoSans-light';
+                    color:$Bílá;
+
+                    span {
+                        color:rgb(0, 141, 103);
+                        font-family:'NotoSans-semiBold';
+                        font-weight: 100;
+                    }
+                }
+
+                ol {
+                    padding:10px
+                }
+            }
+
+            .Tabulka.changed {
+                width:600px;
+                height:450px;
+
+                li {
+                    opacity:1;
+                    transition: 0.3s;
+                    font-size: 1.2rem;
+                }
+            }
+
+
+            .AC.changed {
+                color:transparent;
+                background: transparent;
+                border:2px solid $Zelená;
+                transition: 0.1s;
             }
 
             .AC:hover {
@@ -301,13 +365,13 @@ html:focus-within {
 
                 .burgermenu {
                     display:flex;
+                    
                 }
 
                 .Logo {
                     margin-top:-75px;
                     grid-column: 2/3;
                     transform: scale(0.25);
-                    
                 }
             }
 
@@ -374,7 +438,9 @@ html:focus-within {
                     transform: scale(0.18);
                 }
             }
+
         }
+
     }
 
     .home::after,
