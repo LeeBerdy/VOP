@@ -628,7 +628,7 @@ html:focus-within {
   }
   .Hero .content-hero .Poster .head {
     position: absolute;
-    top: 15%;
+    bottom: 15%;
     right: 5%;
   }
   .Hero .content-hero .Poster .head h1 {
@@ -644,7 +644,7 @@ html:focus-within {
   }
   .Hero .content-hero .Poster .head {
     position: absolute;
-    top: 20%;
+    bottom: 15%;
     right: 5%;
   }
   .Hero .content-hero .Poster .head h1 {
@@ -660,7 +660,7 @@ html:focus-within {
   }
   .Hero .content-hero .Poster .head {
     position: absolute;
-    top: 25%;
+    bottom: 15%;
     right: 5%;
   }
   .Hero .content-hero .Poster .head h1 {
@@ -672,17 +672,17 @@ html:focus-within {
     padding: 60px 0px 0 0px;
   }
   .Hero .content-hero .Poster {
-    background-position: -34rem center;
+    background-position: -28rem center;
     z-index: 600;
   }
   .Hero .content-hero .Poster .head {
     position: absolute;
-    bottom: 25%;
+    bottom: 15%;
     left: 10%;
   }
   .Hero .content-hero .Poster .head h1 {
     max-width: 50px;
-    font-size: 5rem;
+    font-size: 4.5rem;
     line-height: 80px;
   }
 }
@@ -690,86 +690,87 @@ html:focus-within {
 /* Strip */
 .strip {
   width: auto;
-  height: 150px;
+  height: 130px;
   background-color: rgb(33, 33, 33);
 }
 
+@media screen and (max-width: 550px) {
+  .strip {
+    height: 100px;
+  }
+}
 /* Strip END */
-/* Contac form */
+/* Contact form */
 .contact-form {
   width: auto;
-  height: 700px;
+  min-height: 700px;
   background-image: url("../Pics/5.květen.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: grid;
-  position: relative;
 }
 .contact-form .dark-background {
-  background-color: rgba(33, 33, 33, 0.959);
+  background-color: rgba(33, 33, 33, 0.945);
   width: auto;
-  display: grid;
+  display: flex;
 }
 .contact-form .dark-background .content-con-form {
   max-width: 1400px;
+  padding: 0px 50px;
   margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-grow: 1;
+  gap: 10rem;
+  position: relative;
 }
 .contact-form .dark-background .content-con-form .content-form-left {
+  flex-grow: 1;
   margin: auto;
-  height: 700px;
-  max-width: 800px;
-  padding: 0px 100px 0px 20px;
-  display: flex;
-  flex-direction: column;
 }
-.contact-form .dark-background .content-con-form .content-form-left .title {
-  margin: auto;
-  margin-top: 50px;
-}
-.contact-form .dark-background .content-con-form .content-form-left .title h2 {
+.contact-form .dark-background .content-con-form .content-form-left h2 {
   font-family: "NotoSans-semiBold", sans-serif;
   color: rgb(251, 251, 251);
   font-weight: 100;
-  text-align: center;
   border-bottom: 3px solid rgb(0, 125, 92);
-  width: 200px;
-}
-.contact-form .dark-background .content-con-form .content-form-left .text {
+  text-align: center;
   margin: auto;
-  margin-left: 0px;
-  margin-top: 30px;
+  max-width: 220px;
 }
-.contact-form .dark-background .content-con-form .content-form-left .text p {
+.contact-form .dark-background .content-con-form .content-form-left p {
+  padding: 10px 0px;
+  text-align: left;
   font-family: "NotoSans-light", sans-serif;
-  color: rgb(251, 251, 251);
-  font-weight: 100;
   font-size: 1.2rem;
-  margin: 10px 0px;
+  color: rgb(251, 251, 251);
 }
-.contact-form .dark-background .content-con-form .content-form-left .text span {
+.contact-form .dark-background .content-con-form .content-form-left span {
   font-family: "NotoSans-semiBold", sans-serif;
   color: rgb(0, 125, 92);
 }
+.contact-form .dark-background .content-con-form .content-form-left .con-form-title {
+  max-width: 500px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin-top: 0px;
+}
 .contact-form .dark-background .content-con-form .content-form-left .map {
-  margin: 20px 150px auto 0px;
-  filter: grayscale(50%);
+  margin-top: 50px;
+  filter: saturate(0%);
 }
 .contact-form .dark-background .content-con-form .content-form-left .map iframe {
   filter: invert(85%);
   border-radius: 10px;
-  width: 150%;
+  width: 100%;
 }
 .contact-form .dark-background .content-con-form .content-form-right {
-  padding: 0px 20px 0px 100px;
   display: grid;
+  flex-grow: 1;
 }
 .contact-form .dark-background .content-con-form .content-form-right .con-form {
   margin: auto;
   width: 100%;
-  height: 500px;
+  min-height: 500px;
 }
 .contact-form .dark-background .content-con-form .content-form-right .con-form .fill-box {
   position: relative;
@@ -806,7 +807,7 @@ html:focus-within {
 }
 .contact-form .dark-background .content-con-form .content-form-right .con-form textarea {
   width: 100%;
-  height: 180px;
+  min-height: 180px;
   background-color: rgba(33, 33, 33, 0.877);
   margin-top: 60px;
   resize: none;
@@ -840,32 +841,10 @@ html:focus-within {
   transform: scale(1.02);
   box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.144);
 }
-@media screen and (max-width: 850px) {
-  .contact-form .dark-background .content-con-form .content-form-left {
-    margin-right: 0;
-    margin-top: 20px;
-  }
-  .contact-form .dark-background .content-con-form .content-form-left .con-form-text-2 {
-    width: 80%;
-    margin: auto;
-    margin-top: 80px;
-  }
-  .contact-form .dark-background .content-con-form .content-form-right {
-    margin-left: 0;
-    margin-top: -50px;
-  }
-}
-@media screen and (max-width: 850px) {
-  .contact-form .dark-background .content-con-form {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-}
-
-.contact-form::after {
+.contact-form .dark-background .content-con-form::after {
   content: "";
   width: 1px;
-  height: 90%;
+  height: 110%;
   background-color: rgb(251, 251, 251);
   position: absolute;
   inset: 0;
@@ -873,29 +852,17 @@ html:focus-within {
 }
 
 @media screen and (max-width: 1100px) {
-  .contact-form {
-    height: 600px;
-  }
-  .contact-form .dark-background .content-con-form .content-form-left {
-    padding: 0px 50px;
+  .contact-form .dark-background .content-con-form .content-form-left h2 {
+    font-size: 1.4rem;
+    max-width: 200px;
   }
   .contact-form .dark-background .content-con-form .content-form-left p {
     font-size: 1rem;
-    line-height: 25px;
   }
-  .contact-form .dark-background .content-con-form .content-form-left .con-form-text-1 {
-    margin-top: -100px;
-  }
-  .contact-form .dark-background .content-con-form .content-form-left .con-form-text-2 {
-    margin: auto;
-    max-width: 300px;
-    margin-top: 50px;
-  }
-  .contact-form .dark-background .content-con-form .content-form-right {
-    padding: 0px 70px;
-  }
-  .contact-form .dark-background .content-con-form .content-form-right .con-form {
-    height: 500px;
+  .contact-form .dark-background .content-con-form .content-form-right .con-form label {
+    top: 35px;
+    left: 10px;
+    font-size: 1rem;
   }
   .contact-form .dark-background .content-con-form .content-form-right .con-form input {
     padding-top: 30px;
@@ -910,11 +877,6 @@ html:focus-within {
   }
   .contact-form .dark-background .content-con-form .content-form-right .con-form .input-phone {
     padding-left: 85px;
-  }
-  .contact-form .dark-background .content-con-form .content-form-right .con-form label {
-    top: 35px;
-    left: 10px;
-    font-size: 1rem;
   }
   .contact-form .dark-background .content-con-form .content-form-right .con-form textarea {
     font-size: 1rem;
@@ -928,98 +890,88 @@ html:focus-within {
   }
 }
 @media screen and (max-width: 850px) {
-  .contact-form {
-    height: 900px;
+  .contact-form .dark-background .content-con-form {
+    padding: 0px 20px;
+    gap: 6rem;
   }
-  .contact-form .dark-background .content-con-form .content-form-left {
-    padding: 0px 50px;
+  .contact-form .dark-background .content-con-form .content-form-left h2 {
+    font-size: 1.3rem;
+    max-width: 185px;
   }
   .contact-form .dark-background .content-con-form .content-form-left p {
+    padding: 8px 0px;
     font-size: 0.9rem;
-    line-height: 25px;
   }
-  .contact-form .dark-background .content-con-form .content-form-left .con-form-text-1 {
-    margin-top: -110px;
+  .contact-form .dark-background .content-con-form .content-form-left .map {
+    margin-top: 50px;
+    filter: saturate(0%);
   }
-  .contact-form .dark-background .content-con-form .content-form-left .con-form-text-2 {
-    margin: auto;
-    max-width: 300px;
-    margin-top: 20px;
+  .contact-form .dark-background .content-con-form .content-form-left .map iframe {
+    filter: invert(85%);
+    border-radius: 10px;
+    width: 100%;
+    max-height: 250px;
   }
-  .contact-form .dark-background .content-con-form .content-form-right {
-    padding: 0px 50px;
-  }
-  .contact-form .dark-background .content-con-form .content-form-right .con-form {
-    height: 400px;
-    margin-top: -50px;
+  .contact-form .dark-background .content-con-form .content-form-right .con-form label {
+    top: 35px;
+    left: 10px;
+    font-size: 1rem;
   }
   .contact-form .dark-background .content-con-form .content-form-right .con-form input {
     padding-top: 30px;
     height: 60px;
     font-size: 1rem;
   }
-  .contact-form .dark-background .content-con-form .content-form-right .con-form .input-name {
-    padding-left: 70px;
-  }
-  .contact-form .dark-background .content-con-form .content-form-right .con-form .input-email {
-    padding-left: 60px;
-  }
-  .contact-form .dark-background .content-con-form .content-form-right .con-form .input-phone {
-    padding-left: 85px;
-  }
-  .contact-form .dark-background .content-con-form .content-form-right .con-form label {
-    top: 35px;
-    left: 10px;
+  .contact-form .dark-background .content-con-form .content-form-right .con-form textarea {
     font-size: 1rem;
   }
   .contact-form .dark-background .content-con-form .content-form-right .con-form .Submit button {
-    width: 150px;
-    height: 40px;
+    width: 180px;
+    height: 50px;
     margin: auto;
     margin-top: 35px;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 550px) {
-  .contact-form {
-    height: 900px;
+  .contact-form .dark-background .content-con-form {
+    padding: 0px 20px;
+    gap: 6rem;
+    flex-direction: column;
   }
   .contact-form .dark-background .content-con-form .content-form-left {
-    padding: 0px 50px;
+    margin-top: 50px;
   }
-  .contact-form .dark-background .content-con-form .content-form-left p {
+  .contact-form .dark-background .content-con-form .content-form-left h2 {
+    font-size: 1.1rem;
+  }
+  .contact-form .dark-background .content-con-form .content-form-left .con-form-text p {
+    padding: 8px 0px;
     font-size: 0.8rem;
-    line-height: 25px;
   }
-  .contact-form .dark-background .content-con-form .content-form-left .con-form-text-1 {
-    margin-top: -110px;
+  .contact-form .dark-background .content-con-form .content-form-left .map {
+    margin-top: 50px;
+    filter: saturate(0%);
   }
-  .contact-form .dark-background .content-con-form .content-form-left .con-form-text-2 {
-    margin: auto;
-    max-width: 300px;
-    margin-top: 20px;
+  .contact-form .dark-background .content-con-form .content-form-left .map iframe {
+    filter: invert(85%);
+    border-radius: 10px;
+    width: 100%;
+    max-height: 250px;
   }
   .contact-form .dark-background .content-con-form .content-form-right .con-form {
-    height: 400px;
-    margin-top: -50px;
-  }
-  .contact-form .dark-background .content-con-form .content-form-right .con-form input {
-    padding-top: 30px;
-    height: 60px;
-    font-size: 1rem;
-  }
-  .contact-form .dark-background .content-con-form .content-form-right .con-form .input-name {
-    padding-left: 70px;
-  }
-  .contact-form .dark-background .content-con-form .content-form-right .con-form .input-email {
-    padding-left: 60px;
-  }
-  .contact-form .dark-background .content-con-form .content-form-right .con-form .input-phone {
-    padding-left: 85px;
+    width: 90%;
+    padding-bottom: 50px;
   }
   .contact-form .dark-background .content-con-form .content-form-right .con-form label {
     top: 35px;
     left: 10px;
     font-size: 0.9rem;
+  }
+  .contact-form .dark-background .content-con-form .content-form-right .con-form input {
+    padding-top: 30px;
+    height: 60px;
+    font-size: 1rem;
   }
   .contact-form .dark-background .content-con-form .content-form-right .con-form textarea {
     font-size: 0.9rem;
@@ -1031,50 +983,57 @@ html:focus-within {
     margin-top: 35px;
     font-size: 0.8rem;
   }
+  .contact-form .dark-background .content-con-form::after {
+    content: "";
+    width: 95%;
+    height: 1px;
+    background-color: rgb(139, 139, 139);
+    position: absolute;
+    inset: 0;
+    margin: auto;
+  }
 }
-@media screen and (max-width: 430px) {
-  .contact-form {
-    height: 900px;
+@media screen and (max-width: 435px) {
+  .contact-form .dark-background .content-con-form {
+    padding: 0px 20px;
+    gap: 6rem;
+    flex-direction: column;
   }
   .contact-form .dark-background .content-con-form .content-form-left {
-    padding: 0px 20px;
+    margin-top: 50px;
   }
-  .contact-form .dark-background .content-con-form .content-form-left p {
+  .contact-form .dark-background .content-con-form .content-form-left h2 {
+    font-size: 1.1rem;
+  }
+  .contact-form .dark-background .content-con-form .content-form-left .con-form-text p {
+    padding: 8px 0px;
     font-size: 0.8rem;
-    line-height: 22px;
   }
-  .contact-form .dark-background .content-con-form .content-form-left .con-form-text-1 {
-    margin-top: -110px;
+  .contact-form .dark-background .content-con-form .content-form-left .map {
+    margin-top: 50px;
+    filter: saturate(0%);
   }
-  .contact-form .dark-background .content-con-form .content-form-left .con-form-text-2 {
-    margin: auto;
-    max-width: 300px;
-    margin-top: 20px;
-  }
-  .contact-form .dark-background .content-con-form .content-form-right {
-    padding: 0px 20px;
+  .contact-form .dark-background .content-con-form .content-form-left .map iframe {
+    filter: invert(85%);
+    border-radius: 10px;
+    width: 100%;
+    max-height: 250px;
   }
   .contact-form .dark-background .content-con-form .content-form-right .con-form {
-    height: 400px;
-    margin-top: -50px;
+    width: 90%;
+    padding-bottom: 50px;
+  }
+  .contact-form .dark-background .content-con-form .content-form-right .con-form label {
+    top: 35px;
+    left: 10px;
+    font-size: 0.9rem;
   }
   .contact-form .dark-background .content-con-form .content-form-right .con-form input {
     padding-top: 30px;
     height: 60px;
     font-size: 1rem;
   }
-  .contact-form .dark-background .content-con-form .content-form-right .con-form .input-name {
-    padding-left: 70px;
-  }
-  .contact-form .dark-background .content-con-form .content-form-right .con-form .input-email {
-    padding-left: 60px;
-  }
-  .contact-form .dark-background .content-con-form .content-form-right .con-form .input-phone {
-    padding-left: 85px;
-  }
-  .contact-form .dark-background .content-con-form .content-form-right .con-form label {
-    top: 35px;
-    left: 10px;
+  .contact-form .dark-background .content-con-form .content-form-right .con-form textarea {
     font-size: 0.9rem;
   }
   .contact-form .dark-background .content-con-form .content-form-right .con-form .Submit button {
@@ -1084,9 +1043,76 @@ html:focus-within {
     margin-top: 35px;
     font-size: 0.8rem;
   }
+  .contact-form .dark-background .content-con-form::after {
+    content: "";
+    width: 95%;
+    height: 1px;
+    background-color: rgb(139, 139, 139);
+    position: absolute;
+    inset: 0;
+    margin: auto;
+  }
 }
 /* contact form END */
-/* Contact form END */
+/* Opening */
+.opening {
+  width: auto;
+  display: flex;
+  min-height: 300px;
+  background-color: rgb(23, 23, 23);
+}
+.opening .content-opening {
+  margin: auto;
+  max-width: 900px;
+  padding: 30px 30px;
+}
+.opening .content-opening h2, .opening .content-opening p {
+  text-align: center;
+  color: rgb(251, 251, 251);
+  font-weight: 100;
+  font-family: "NotoSans-semiBold", sans-serif;
+}
+.opening .content-opening h2 {
+  margin-bottom: 20px;
+}
+.opening .content-opening p {
+  font-family: "NotoSans-light", sans-serif;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .opening {
+    min-height: 250px;
+  }
+  .opening .content-opening {
+    margin: auto;
+    max-width: 900px;
+  }
+  .opening .content-opening h2 {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+  }
+  .opening .content-opening p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .opening {
+    min-height: 220px;
+  }
+  .opening .content-opening {
+    margin: auto;
+    max-width: 900px;
+  }
+  .opening .content-opening h2 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+  .opening .content-opening p {
+    font-size: 0.9rem;
+  }
+}
+/* Opening END */
 /* Footer */
 .footer-menu {
   width: auto;

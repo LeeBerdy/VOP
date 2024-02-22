@@ -834,7 +834,7 @@ html:focus-within {
 
                 .head {
                     position: absolute;
-                    top:15%;
+                    bottom:15%;
                     right:5%;
 
                     h1 {
@@ -859,7 +859,7 @@ html:focus-within {
 
                 .head {
                     position: absolute;
-                    top:20%;
+                    bottom:15%;
                     right:5%;
 
                     h1 {
@@ -885,7 +885,7 @@ html:focus-within {
 
                 .head {
                     position: absolute;
-                    top:25%;
+                    bottom:15%;
                     right:5%;
 
                     h1 {
@@ -906,17 +906,17 @@ html:focus-within {
             padding:60px 0px 0 0px;
 
             .Poster {
-                background-position: -34rem center;
+                background-position: -28rem center;
                 z-index: 600;
 
                 .head {
                     position: absolute;
-                    bottom:25%;
+                    bottom:15%;
                     left:10%;
 
                     h1 {
                         max-width: 50px;
-                        font-size: 5rem;
+                        font-size: 4.5rem;
                         line-height: 80px;
                     }
                 }
@@ -937,8 +937,15 @@ html:focus-within {
 
 .strip {
     width:auto;
-    height:150px;
+    height:130px;
     background-color: $TmaváŠedá
+}
+
+@media screen and (max-width:550px) {
+
+    .strip {
+        height:100px;
+    }
 }
 
 
@@ -946,92 +953,87 @@ html:focus-within {
 
 
 
-/* Contac form */
+/* Contact form */
 
 
 .contact-form {
     width:auto;
-    height:700px;
+    min-height:700px;
     background-image: url("../Pics/5.květen.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
-    position: relative;
 
     .dark-background {
-        background-color:rgba(33, 33, 33, 0.959);
+        background-color:rgba(33, 33, 33, 0.945);
         width:auto;
-        display: grid;
+        display: flex;
 
         .content-con-form {
             max-width:1400px;
+            padding:0px 50px;
             margin:auto;
             display:flex;
-            flex-direction: row;
+            flex-grow: 1;
+            gap:10rem;
+            position: relative;
             
 
             .content-form-left {
+                flex-grow: 1;
                 margin:auto;
-                height: 700px;
-                max-width: 800px;
-                padding:0px 100px 0px 20px;
-                display: flex;
-                flex-direction: column;
 
-                .title {
-                    margin:auto;
-                    margin-top: 50px;
-
-                    h2 {
-                        font-family:'NotoSans-semiBold', sans-serif;
-                        color:$Bílá;
-                        font-weight: 100;
-                        text-align: center;
-                        border-bottom: 3px solid $Zelená;
-                        width:200px;
-                    }
+                h2 {
+                    font-family:'NotoSans-semiBold', sans-serif;
+                    color:$Bílá;
+                    font-weight: 100;
+                    border-bottom:3px solid $Zelená;
+                    text-align: center;
+                    margin: auto;
+                    max-width: 220px;
                 }
 
-                .text {
-                    margin: auto;
-                    margin-left: 0px;
-                    margin-top:30px;
+                p {
+                    padding:10px 0px;
+                    text-align: left;
+                    font-family: 'NotoSans-light', sans-serif;
+                    font-size: 1.2rem;
+                    color:$Bílá;
+                }
 
-                    p {
-                        font-family:'NotoSans-light', sans-serif;
-                        color:$Bílá;
-                        font-weight: 100;
-                        font-size: 1.2rem;
-                        margin:10px 0px;
-                    }
+                span {
+                    font-family:'NotoSans-semiBold', sans-serif;
+                    color:$Zelená;
+                }
 
-                    span {
-                        font-family:'NotoSans-semiBold', sans-serif;
-                        color:$Zelená;
-                    }
+                .con-form-title {
+                    max-width:500px;
+                    font-weight: 100;
+                    letter-spacing: 1px;
+                    margin-top:0px;
                 }
 
                 .map {
-                    margin:20px 150px auto 0px;
-                    filter:grayscale(50%);
-
+                    margin-top: 50px;
+                    filter:saturate(0%);
+                    
                     iframe {
                         filter:invert(85%);
                         border-radius: 10px;
-                        width: 150%;
+                        width: 100%;
                     }
                 }
             }
 
             .content-form-right {
-                padding:0px 20px 0px 100px;
                 display:grid;
+                flex-grow: 1;
 
                 .con-form {
                     margin:auto;
                     width: 100%;
-                    height:500px;
+                    min-height:500px;
 
                     .fill-box {
                         position: relative;
@@ -1075,7 +1077,7 @@ html:focus-within {
 
                     textarea {
                         width:100%;
-                        height:180px;
+                        min-height:180px;
                         background-color: rgba(33, 33, 33, 0.877);
                         margin-top:60px;
                         resize:none;
@@ -1115,84 +1117,56 @@ html:focus-within {
                     }
                 }
             }
-
-            @media screen and (max-width:850px) {
-
-                .content-form-left {
-                    margin-right:0;
-                    margin-top:20px;
-
-                    .con-form-text-2 {
-                        width:80%;
-                        margin:auto;
-                        margin-top:80px;
-                    }
-                }
-
-                .content-form-right {
-                    margin-left:0;
-                    margin-top:-50px;
-                }
-            }
         }
 
-        @media screen and (max-width:850px) {
-            .content-con-form {
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr 1fr;
-            }
+        .content-con-form::after {
+            content:"";
+            width:1px;
+            height:110%;
+            background-color: $Bílá;
+            position: absolute;
+            inset:0;
+            margin:auto;
         }
     }
 }
 
-.contact-form::after {
-    content:"";
-    width:1px;
-    height:90%;
-    background-color: $Bílá;
-    position: absolute;
-    inset:0;
-    margin:auto;
-}
-
 @media screen and (max-width:1100px) {
-    
+ 
     .contact-form {
-        height:600px;
         
         .dark-background {
+
             .content-con-form {
+
                 .content-form-left {
-                    padding:0px 50px;
+
+                    h2 {
+                        font-size: 1.4rem;
+                        max-width: 200px;
+                    }
 
                     p {
                         font-size: 1rem;
-                        line-height: 25px;
                     }
-
-                    .con-form-text-1 {
-                        margin-top:-100px;
-                    }
-    
-                    .con-form-text-2 {
-                        margin: auto;
-                        max-width: 300px;
-                        margin-top:50px;
-                    }
-                }    
+                }
 
                 .content-form-right {
-                    padding:0px 70px;
-    
+
                     .con-form {
-                        height:500px;
-                        
+
+                        label {
+                            top:35px;
+                            left:10px;
+                            font-size: 1rem;
+                        }
+
                         input {
                             padding-top:30px;
                             height:60px;
                             font-size: 1rem;
                         }
-    
+
                         .input-name {
                             padding-left:70px;
                         }
@@ -1204,10 +1178,79 @@ html:focus-within {
                         .input-phone {
                             padding-left:85px;
                         }
+
+                        textarea {
+                            font-size:1rem;
+                        }
+
+                        .Submit {
     
+                            button {
+                                width:180px;
+                                height:50px;
+                                margin:auto;
+                                margin-top:35px;
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+
+                    
+                }
+            }
+        }
+    }      
+}
+
+@media screen and (max-width:850px) {
+
+    .contact-form {
+        
+        .dark-background {
+
+            .content-con-form {
+                padding: 0px 20px;
+                gap:6rem;
+
+                .content-form-left {
+
+                    h2 {
+                        font-size: 1.3rem;
+                        max-width: 185px;
+                    }
+
+                    p {
+                        padding:8px 0px;
+                        font-size: 0.9rem;
+                    }
+
+                    .map {
+                        margin-top: 50px;
+                        filter:saturate(0%);
+                        
+                        
+                        iframe {
+                            filter:invert(85%);
+                            border-radius: 10px;
+                            width: 100%;
+                            max-height:250px;
+                        }
+                    }
+                }
+
+                .content-form-right {
+
+                    .con-form {
+
                         label {
                             top:35px;
                             left:10px;
+                            font-size: 1rem;
+                        }
+
+                        input {
+                            padding-top:30px;
+                            height:60px;
                             font-size: 1rem;
                         }
 
@@ -1226,140 +1269,72 @@ html:focus-within {
                             }
                         }
                     }
+
+                    
                 }
             }
         }
-    }                
-}
-
-@media screen and (max-width:850px) {
-
-    .contact-form {
-        height:900px;
-        
-        .dark-background {
-            .content-con-form {
-                .content-form-left {
-                    padding:0px 50px;
-
-                    p {
-                        font-size: 0.9rem;
-                        line-height: 25px;
-                    }
-
-                    .con-form-text-1 {
-                        margin-top:-110px;
-                    }
-    
-                    .con-form-text-2 {
-                        margin: auto;
-                        max-width: 300px;
-                        margin-top:20px;
-                    }
-                }    
-
-                .content-form-right {
-                    padding:0px 50px;
-    
-                    .con-form {
-                        height:400px;
-                        margin-top:-50px;
-                        
-                        input {
-                            padding-top:30px;
-                            height:60px;
-                            font-size: 1rem;
-                        }
-    
-                        .input-name {
-                            padding-left:70px;
-                        }
-    
-                        .input-email {
-                            padding-left:60px;
-                        }
-    
-                        .input-phone {
-                            padding-left:85px;
-                        }
-    
-                        label {
-                            top:35px;
-                            left:10px;
-                            font-size: 1rem;
-                        }
-
-                        .Submit {
-    
-                            button {
-                                width:150px;
-                                height:40px;
-                                margin:auto;
-                                margin-top:35px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }     
+    }      
 }
 
 @media screen and (max-width:550px) {
 
     .contact-form {
-        height:900px;
         
         .dark-background {
+
             .content-con-form {
+                padding: 0px 20px;
+                gap:6rem;
+                flex-direction: column;
+
                 .content-form-left {
-                    padding:0px 50px;
+                    margin-top: 50px;
 
-                    p {
-                        font-size: 0.8rem;
-                        line-height: 25px;
+                    h2 {
+                        font-size: 1.1rem;
                     }
 
-                    .con-form-text-1 {
-                        margin-top:-110px;
+                    .con-form-text {
+
+                        p {
+                            padding:8px 0px;
+                            font-size: 0.8rem;
+                        }
                     }
-    
-                    .con-form-text-2 {
-                        margin: auto;
-                        max-width: 300px;
-                        margin-top:20px;
+
+                    
+
+                    .map {
+                        margin-top: 50px;
+                        filter:saturate(0%);
+                        
+                        
+                        iframe {
+                            filter:invert(85%);
+                            border-radius: 10px;
+                            width: 100%;
+                            max-height:250px;
+                        }
                     }
-                }    
+                }
 
                 .content-form-right {
-                    
-    
+
                     .con-form {
-                        height:400px;
-                        margin-top:-50px;
-                        
-                        input {
-                            padding-top:30px;
-                            height:60px;
-                            font-size: 1rem;
-                        }
-    
-                        .input-name {
-                            padding-left:70px;
-                        }
-    
-                        .input-email {
-                            padding-left:60px;
-                        }
-    
-                        .input-phone {
-                            padding-left:85px;
-                        }
-    
+                        width: 90%;
+                        padding-bottom: 50px;
+
                         label {
                             top:35px;
                             left:10px;
                             font-size: 0.9rem;
+                        }
+
+                        input {
+                            padding-top:30px;
+                            height:60px;
+                            font-size: 1rem;
                         }
 
                         textarea {
@@ -1377,67 +1352,86 @@ html:focus-within {
                             }
                         }
                     }
+
+                    
                 }
+            }
+
+            .content-con-form::after {
+                content:"";
+                width:95%;
+                height:1px;
+                background-color: $SvětláŠedá;
+                position: absolute;
+                inset:0;
+                margin:auto;
             }
         }
     }      
 }
 
-@media screen and (max-width:430px) {
+@media screen and (max-width:435px) {
     
     .contact-form {
-        height:900px;
         
         .dark-background {
+
             .content-con-form {
+                padding: 0px 20px;
+                gap:6rem;
+                flex-direction: column;
+
                 .content-form-left {
-                    padding:0px 20px;
+                    margin-top: 50px;
 
-                    p {
-                        font-size: 0.8rem;
-                        line-height: 22px;
+                    h2 {
+                        font-size: 1.1rem;
                     }
 
-                    .con-form-text-1 {
-                        margin-top:-110px;
+                    .con-form-text {
+
+                        p {
+                            padding:8px 0px;
+                            font-size: 0.8rem;
+                        }
                     }
-    
-                    .con-form-text-2 {
-                        margin: auto;
-                        max-width: 300px;
-                        margin-top:20px;
+
+                    
+
+                    .map {
+                        margin-top: 50px;
+                        filter:saturate(0%);
+                        
+                        
+                        iframe {
+                            filter:invert(85%);
+                            border-radius: 10px;
+                            width: 100%;
+                            max-height:250px;
+                        }
                     }
-                }    
+                }
 
                 .content-form-right {
-                    padding:0px 20px;
-    
+
                     .con-form {
-                        height:400px;
-                        margin-top:-50px;
-                        
+                        width: 90%;
+                        padding-bottom: 50px;
+
+                        label {
+                            top:35px;
+                            left:10px;
+                            font-size: 0.9rem;
+                        }
+
                         input {
                             padding-top:30px;
                             height:60px;
                             font-size: 1rem;
                         }
-    
-                        .input-name {
-                            padding-left:70px;
-                        }
-    
-                        .input-email {
-                            padding-left:60px;
-                        }
-    
-                        .input-phone {
-                            padding-left:85px;
-                        }
-    
-                        label {
-                            top:35px;
-                            left:10px;
-                            font-size: 0.9rem;
+
+                        textarea {
+                            font-size:0.9rem;
                         }
 
                         .Submit {
@@ -1451,19 +1445,104 @@ html:focus-within {
                             }
                         }
                     }
+
+                    
                 }
             }
-        }
-    }     
-}
 
+            .content-con-form::after {
+                content:"";
+                width:95%;
+                height:1px;
+                background-color: $SvětláŠedá;
+                position: absolute;
+                inset:0;
+                margin:auto;
+            }
+        }
+    }      
+}
 
 
 /* contact form END */
 
 
 
-/* Contact form END */
+/* Opening */
+
+
+.opening {
+    width: auto;
+    display: flex;
+    min-height:300px;
+    background-color: $TmavšíŠedá;
+    
+    .content-opening {
+        margin: auto;
+        max-width: 900px;
+        padding: 30px 30px;
+
+        h2, p {
+            text-align: center;
+            color:$Bílá;
+            font-weight: 100;
+            font-family: 'NotoSans-semiBold', sans-serif;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-family: 'NotoSans-light', sans-serif;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media screen and (max-width:1100px) {
+    
+    .opening {
+        min-height:250px;
+    
+        .content-opening {
+            margin: auto;
+            max-width: 900px;
+    
+            h2 {
+                margin-bottom: 20px;
+                font-size: 1.4rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:850px) {
+    
+    .opening {
+        min-height:220px;
+    
+        .content-opening {
+            margin: auto;
+            max-width: 900px;
+    
+            h2 {
+                margin-bottom: 20px;
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+/* Opening END */
 
 
 
