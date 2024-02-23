@@ -800,6 +800,7 @@ input[data-autocompleted] {
   border-bottom: 3px solid rgb(0, 125, 92);
   text-align: center;
   margin: auto;
+  margin-bottom: 20px;
   max-width: 220px;
 }
 .contact-form .dark-background .content-con-form .content-form-left p {
