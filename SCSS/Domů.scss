@@ -563,8 +563,9 @@ input[data-autocompleted] {
             position:absolute;
             background-image:url('../Icons/exit\ arrow.svg');
             background-repeat: no-repeat;
-            top:0px;
-            left:38%;
+            inset:0;
+            margin: auto;
+            margin-top: 5px;
             transform: scale(0.5);
         }
     }
