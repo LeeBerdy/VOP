@@ -202,7 +202,7 @@ input[data-autocompleted] {
 }
 .Top .Navbar .content-navbar .Tabulka li span {
   color: rgb(0, 141, 103);
-  font-family: "NotoSans-semiBold";
+  font-family: "NotoSans-semiBold", sans-serif;
   font-weight: 100;
 }
 .Top .Navbar .content-navbar .Tabulka ol {
@@ -430,15 +430,34 @@ input[data-autocompleted] {
   transform: scaleY(0);
   transform-origin: top;
   transition: 0.3s;
+  overflow-y: scroll;
+}
+.Top .Resp-tabulka ul {
+  padding: 20px;
+  inset: 0;
+  margin: auto;
+  margin-top: 50px;
+}
+.Top .Resp-tabulka li {
+  font-size: 1.2rem;
+  color: rgb(251, 251, 251);
+  list-style-type: none;
+  margin: 10px;
+  font-family: "NotoSans-light";
+}
+.Top .Resp-tabulka span {
+  color: rgb(0, 125, 92);
+  font-family: "NotoSans-semiBold", sans-serif;
 }
 .Top .Resp-tabulka .exit-arrow {
+  width: 100px;
+  height: 100px;
   position: absolute;
-  width: 30px;
-  height: 30px;
-  background-color: rgb(139, 139, 139);
-  border-radius: 50%;
-  top: 50px;
-  right: 48%;
+  background-image: url("../Icons/exit arrow.svg");
+  background-repeat: no-repeat;
+  top: 0px;
+  left: 38%;
+  transform: scale(0.5);
 }
 .Top .Roll {
   transform: scaleY(1);

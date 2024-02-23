@@ -252,7 +252,7 @@ input[data-autocompleted] {
 
                     span {
                         color:rgb(0, 141, 103);
-                        font-family:'NotoSans-semiBold';
+                        font-family:'NotoSans-semiBold', sans-serif;
                         font-weight: 100;
                     }
                 }
@@ -534,15 +534,38 @@ input[data-autocompleted] {
         transform: scaleY(0);
         transform-origin: top;
         transition: 0.3s;
+        overflow-y: scroll;
+
+        ul {
+            padding: 20px;
+            
+            inset:0;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        li {
+            font-size: 1.2rem;
+            color:$Bílá;
+            list-style-type: none;
+            margin: 10px;
+            font-family:'NotoSans-light';
+        }
+
+        span {
+            color:$Zelená;
+            font-family:'NotoSans-semiBold', sans-serif;
+        }
 
         .exit-arrow {
-            position: absolute;
-            width:30px;
-            height: 30px;
-            background-color: $SvětláŠedá;
-            border-radius: 50%;
-            top:50px;
-            right:48%;
+            width: 100px;
+            height: 100px;
+            position:absolute;
+            background-image:url('../Icons/exit\ arrow.svg');
+            background-repeat: no-repeat;
+            top:0px;
+            left:38%;
+            transform: scale(0.5);
         }
     }
 
