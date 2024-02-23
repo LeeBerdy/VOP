@@ -832,6 +832,11 @@ input[data-autocompleted] {
 .contact-form .dark-background .content-con-form .content-form-right {
   display: grid;
   flex-grow: 1;
+  position: relative;
+}
+.contact-form .dark-background .content-con-form .content-form-right .anchor {
+  position: absolute;
+  top: -100px;
 }
 .contact-form .dark-background .content-con-form .content-form-right .con-form {
   margin: auto;

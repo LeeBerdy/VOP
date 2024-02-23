@@ -1104,6 +1104,12 @@ input[data-autocompleted] {
             .content-form-right {
                 display:grid;
                 flex-grow: 1;
+                position: relative;
+
+                .anchor {
+                    position: absolute;
+                    top:-100px;
+                }
 
                 .con-form {
                     margin:auto;
