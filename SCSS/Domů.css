@@ -388,7 +388,7 @@ input[data-autocompleted] {
   display: none;
   position: fixed;
   width: 60%;
-  min-height: 100vh;
+  height: 100vh;
   background: hsla(0, 0%, 9%, 0.7);
   -webkit-backdrop-filter: blur(0.5em);
           backdrop-filter: blur(0.5em);
@@ -424,6 +424,7 @@ input[data-autocompleted] {
   background: hsla(0, 0%, 9%, 0.7);
   -webkit-backdrop-filter: blur(0.8em);
           backdrop-filter: blur(0.8em);
+  display: flex;
   top: 0px;
   left: 0px;
   z-index: 6500;
@@ -434,9 +435,9 @@ input[data-autocompleted] {
 }
 .Top .Resp-tabulka ul {
   padding: 20px;
+  padding-top: 70px;
   inset: 0;
   margin: auto;
-  margin-top: 50px;
 }
 .Top .Resp-tabulka li {
   font-size: 1.2rem;
@@ -614,6 +615,28 @@ input[data-autocompleted] {
   .Top {
     position: fixed;
     width: 100%;
+  }
+  .Top .Resp-tabulka li {
+    font-size: 1.5rem;
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .Top .Resp-tabulka li {
+    font-size: 1.3rem;
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .Top .Resp-tabulka li {
+    font-size: 1.1rem;
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 435px) {
+  .Top .Resp-tabulka li {
+    font-size: 1rem;
+    margin: 15px;
   }
 }
 /* Top END */
