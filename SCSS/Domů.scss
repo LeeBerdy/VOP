@@ -45,7 +45,8 @@ $Bílá:rgba(251, 251, 251, 1);
     }
 }
 
-@-webkit-keyframes autofill {
+@keyframes autofill {
+
     to {
         color: #666;
         background: transparent;

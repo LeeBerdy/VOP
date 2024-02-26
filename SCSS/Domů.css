@@ -28,6 +28,12 @@
     opacity: 1;
   }
 }
+@keyframes autofill {
+  to {
+    color: #666;
+    background: transparent;
+  }
+}
 /* Animations END */
 /* Font-face */
 @font-face {
