@@ -121,8 +121,8 @@ html:focus-within {
 }
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
-  -webkit-transition: background-color 600000s 0s, color 600000s 0s;
-  transition: background-color 600000s 0s, color 600000s 0s;
+  -webkit-transition: background-color 600000s 0s, color 600000s 0s !important;
+  transition: background-color 600000s 0s, color 600000s 0s !important;
 }
 
 input[data-autocompleted] {
