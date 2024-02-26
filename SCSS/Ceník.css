@@ -592,7 +592,7 @@ html:focus-within {
 .Hero {
   width: auto;
   height: 100vh;
-  background: rgb(56, 56, 56);
+  background: linear-gradient(rgb(22, 22, 22), rgb(56, 56, 56));
   position: relative;
   z-index: 2500;
 }
@@ -632,6 +632,21 @@ html:focus-within {
   animation: Slide-right;
   animation-duration: 0.5s;
   animation-timing-function: ease-out;
+}
+.Hero .content-hero .direction {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  inset: 0;
+  margin: auto;
+  margin-bottom: 5%;
+  z-index: 1000;
+  transform: scale(0.5);
+}
+.Hero .content-hero .direction img {
+  position: absolute;
+  left: -23px;
+  transform: rotate(180deg);
 }
 
 @media screen and (max-height: 767px) {
@@ -680,6 +695,7 @@ html:focus-within {
   }
   .Hero .content-hero .Poster {
     z-index: 600;
+    height: 65%;
   }
   .Hero .content-hero .Poster .head {
     position: absolute;

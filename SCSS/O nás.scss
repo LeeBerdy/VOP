@@ -774,7 +774,7 @@ html:focus-within {
 .Hero {
     width:auto;
     height:100vh;
-    background: $ŠedáIkony;
+    background: linear-gradient(rgba(22, 22, 22, 1), $ŠedáIkony);
     position: relative;
     z-index: 2500;
 
@@ -817,8 +817,23 @@ html:focus-within {
                     animation-timing-function: ease-out;
                 }
             }
+        }
 
-            
+        .direction {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            inset:0;
+            margin:auto;
+            margin-bottom: 5%;
+            z-index: 1000;
+            transform: scale(0.5);
+
+            img {
+                position: absolute;
+                left:-23px;
+                transform: rotate(180deg);
+            }
         }
     }
 }
@@ -884,11 +899,12 @@ html:focus-within {
 
             .Poster {
                 z-index: 600;
+                height: 65%;
 
                 .head {
                     position: absolute;
-                    bottom:15%;
-                    right:5%;
+                    bottom:5%;
+                    left:5%;
 
                     h1 {
                         font-size: 6rem;
@@ -912,7 +928,7 @@ html:focus-within {
 
                 .head {
                     position: absolute;
-                    bottom:15%;
+                    bottom:5%;
                     right:5%;
 
                     h1 {
@@ -938,7 +954,7 @@ html:focus-within {
 
                 .head {
                     position: absolute;
-                    bottom:15%;
+                    bottom:5%;
                     right:5%;
 
                     h1 {
@@ -964,7 +980,7 @@ html:focus-within {
 
                 .head {
                     position: absolute;
-                    bottom:25%;
+                    bottom:5%;
                     left:10%;
 
                     h1 {

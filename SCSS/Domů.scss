@@ -45,6 +45,13 @@ $Bílá:rgba(251, 251, 251, 1);
     }
 }
 
+@-webkit-keyframes autofill {
+    to {
+        color: #666;
+        background: transparent;
+    }
+}
+
 /* Animations END */
 
 
@@ -150,12 +157,9 @@ html:focus-within {
     }
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:focus {
-    transition: background-color 600000s 0s, color 600000s 0s;
-}
-input[data-autocompleted] {
-    background-color: transparent !important;
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
 }
 
 /* ALL ELEMENTS END */
@@ -900,7 +904,7 @@ input[data-autocompleted] {
 .Hero {
     width:auto;
     height:100vh;
-    background: linear-gradient($ŠedáIkony, rgba(22, 22, 22, 1));
+    background: linear-gradient($ŠedáIkony, rgb(22, 22, 22));
     position: relative;
     z-index: 2500;
     
