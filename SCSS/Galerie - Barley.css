@@ -752,6 +752,7 @@ html:focus-within {
   }
   .Hero .content-hero .Poster {
     z-index: 600;
+    height: 80%;
   }
   .Hero .content-hero .Poster .logo {
     animation-name: Fall-1;
@@ -819,7 +820,7 @@ html:focus-within {
   width: 350px;
   height: 350px;
   margin: 50px;
-  opacity: 0.8;
+  opacity: 0.9;
   transition: 0.3s;
   position: relative;
   overflow-y: hidden;
@@ -961,6 +962,19 @@ html:focus-within {
   opacity: 0.6;
 }
 
+@media screen and (max-width: 1100px) {
+  .Galery .Galery-grid .pic {
+    opacity: 1;
+  }
+  .Galery .Galery-grid .pic:hover {
+    transform: scale(1);
+    opacity: 1;
+  }
+  .Galery:has(.pic:hover) .pic {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 950px) {
   .Galery {
     width: auto;
@@ -992,7 +1006,6 @@ html:focus-within {
     width: 320px;
     height: 320px;
     margin: 30px;
-    opacity: 0.8;
     transition: 0.3s;
     position: relative;
     overflow-y: hidden;
@@ -1034,7 +1047,6 @@ html:focus-within {
     width: 280px;
     height: 280px;
     margin: 20px;
-    opacity: 0.8;
     transition: 0.3s;
     position: relative;
     overflow-y: hidden;
@@ -1076,7 +1088,6 @@ html:focus-within {
     width: 250px;
     height: 250px;
     margin: 10px;
-    opacity: 0.8;
     transition: 0.3s;
     position: relative;
     overflow-y: hidden;
@@ -1113,7 +1124,6 @@ html:focus-within {
     width: 280px;
     height: 280px;
     margin: 20px;
-    opacity: 0.8;
     transition: 0.3s;
     position: relative;
     overflow-y: hidden;
