@@ -408,6 +408,10 @@ html:focus-within {
 .Top .Resp-navbar ul {
   margin: 15vh auto auto 5vw;
 }
+.Top .Resp-navbar ul .Resp-AC {
+  color: rgb(251, 251, 251);
+  cursor: pointer;
+}
 .Top .Resp-navbar li {
   list-style: none;
   margin: 1em;
@@ -421,6 +425,56 @@ html:focus-within {
 }
 .Top .Resp-navbar.hidden {
   transform: translateX(0%);
+}
+.Top .Resp-tabulka {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: hsla(0, 0%, 9%, 0.7);
+  -webkit-backdrop-filter: blur(0.8em);
+          backdrop-filter: blur(0.8em);
+  display: flex;
+  top: 0px;
+  left: 0px;
+  z-index: 6500;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+  overflow-y: scroll;
+}
+.Top .Resp-tabulka ul {
+  padding: 20px;
+  padding-top: 70px;
+  inset: 0;
+  margin: auto;
+}
+.Top .Resp-tabulka li {
+  font-size: 1.2rem;
+  color: rgb(251, 251, 251);
+  list-style-type: none;
+  margin: 10px;
+  font-family: "NotoSans-light";
+}
+.Top .Resp-tabulka span {
+  color: rgb(0, 125, 92);
+  font-family: "NotoSans-semiBold", sans-serif;
+}
+.Top .Resp-tabulka .exit-arrow {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-image: url("../Icons/exit arrow.svg");
+  background-repeat: no-repeat;
+  inset: 0;
+  margin: auto;
+  margin-top: 5px;
+  transform: scale(0.5);
+}
+.Top .Roll {
+  transform: scaleY(1);
+}
+.Top .Hide {
+  transform: scaleY(0);
 }
 @media screen and (max-width: 1100px) {
   .Top .Navbar {
@@ -570,6 +624,28 @@ html:focus-within {
   .Top {
     position: fixed;
     width: 100%;
+  }
+  .Top .Resp-tabulka li {
+    font-size: 1.5rem;
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .Top .Resp-tabulka li {
+    font-size: 1.3rem;
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .Top .Resp-tabulka li {
+    font-size: 1.1rem;
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 435px) {
+  .Top .Resp-tabulka li {
+    font-size: 1rem;
+    margin: 15px;
   }
 }
 /* Top END */
