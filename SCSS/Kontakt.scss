@@ -167,14 +167,12 @@ html:focus-within {
     }
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:focus {
-    transition: background-color 600000s 0s, color 600000s 0s;
-}
-
-input[data-autocompleted] {
-    background-color: transparent !important;
-}
+input, select {
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+    -webkit-background-clip: text !important;
+    background-clip:  text !important;
+  }
 
 /* ALL ELEMENTS END */
 
