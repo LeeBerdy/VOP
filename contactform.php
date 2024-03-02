@@ -1,14 +1,14 @@
 <?php
 
     $name = $_POST['name'];
+    $company = $_POST['company'];
     $email = $_POST['email'];
-    $phone = $_POST['phone'];
     $message = $_POST['message'];
 
 
-    $to = 'pospishil@vop-develop.cz'
-    $subject = 'Rezervace tetování'
-    $body = "Od: $name\n Email: $email\n Telefon: $phone\n Zpráva: $message";
+    $to = 'pospishil@vop-develop.cz';
+    $subject = 'Rezervace tetování';
+    $body = "Od: $name\n Firma: $company\n Email: $email\n Zpráva: $message";
 
     $headers = "From: $email";
 
