@@ -12,5 +12,6 @@ if (isset($_POST['submit'])) {
     $txt = "Přišel ti email od ".$name.".\n\n".$message;
 
     mail($mailTo, $subject, $txt, $headers);
-    header("Location: index.html")
+    header("Location: index.html?mailsend")
 }
+
