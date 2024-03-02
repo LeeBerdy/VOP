@@ -1,17 +1,23 @@
 <?php
 
-if (isset($_POST['submit'])) {
     $name = $_POST['name'];
-    $subject = $_POST['subject'];
-    $mailFrom = $_POST['mail'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
     $message = $_POST['message'];
 
 
-    $mailTo = "pospishil@vop-develop.cz";
-    $headers = "From: ".$mailFrom;
-    $txt = "Přišel ti email od ".$name.".\n\n".$message;
+    $to = 'pospishil@vop-develop.cz'
+    $subject = 'Rezervace tetování'
+    $body = "Od: $name\n Email: $email\n Telefon: $phone\n Zpráva: $message";
 
-    mail($mailTo, $subject, $txt, $headers);
-    header("Location: index.html?mailsend")
-}
+    $headers = "From: $email";
+
+
+    if (mail($to, $subject, $body, $headers)) {
+        echo 'Zpráva byla úspěšně odeslána.';
+    } else {
+        echo ('Odeslání zprávy selhalo. Zkuste to znovu prosím.');
+    }
+
+?>
 
