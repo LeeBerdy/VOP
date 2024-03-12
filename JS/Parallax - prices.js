@@ -5,7 +5,7 @@ $(window).scroll(function() {
 
 function parallax() {
 
-    var wScroll = $(window).scrollTop()-1100;
+    var wScroll = $(window).scrollTop()-2100;
     
     $('.parallax--bg').css('background-position', 'center '+(wScroll*0.2)+'px')
 }

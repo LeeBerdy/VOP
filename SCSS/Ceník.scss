@@ -50,18 +50,32 @@ $Bílá:rgba(251, 251, 251, 1);
     }
 }
 
-@keyframes Signal {
-    
+@keyframes Scale{
     0% {
-        opacity:1;
+        transform: scale(0.3);
     }
 
     50% {
-        opacity:0;
+        transform: scale(0.4);
     }
 
     100% {
-        opacity:1;
+        transform: scale(0.25);
+    }
+}
+
+@keyframes Show {
+
+    0% {
+        transform: scale(0.25);
+    }
+    
+    20% {
+        transform: scale(0.4);
+    }
+
+    100% {
+        transform: scale(0.3);
     }
 }
 
@@ -256,7 +270,7 @@ html:focus-within {
 
                     span {
                         color:rgb(0, 141, 103);
-                        font-family:'NotoSans-semiBold';
+                        font-family:'NotoSans-semiBold', sans-serif;
                         font-weight: 100;
                     }
                 }
@@ -276,7 +290,6 @@ html:focus-within {
                     font-size: 1.2rem;
                 }
             }
-
 
             .AC.changed {
                 color:transparent;
@@ -313,6 +326,8 @@ html:focus-within {
                 margin-top:20px;
                 text-align: center;
             }
+
+            
 
             .burgermenu {
                 width:40px;
@@ -380,7 +395,6 @@ html:focus-within {
 
                 .burgermenu {
                     display:flex;
-                    
                 }
 
                 .Logo {
@@ -456,6 +470,117 @@ html:focus-within {
 
         }
 
+        @media screen and (min-width:1100px) {
+
+            .hide {
+                .Logo {
+                    animation: Scale;
+                    animation-duration: 0.6s;
+                    animation-fill-mode: forwards;
+                    z-index: 5000;
+                }
+    
+                .Left {
+                    
+                    li:first-child {
+                        transform: translateX(400%);
+                        opacity: 0;
+                        transition: 0.5s;
+                    }
+    
+                    li:nth-child(2) {
+                        transform: translateX(300%);
+                        opacity: 0;
+                        transition: 0.5s;
+                    }
+    
+                    li:nth-child(3) {
+                        transform: translateX(200%);
+                        opacity: 0;
+                        transition: 0.5s;
+                    }
+                }
+    
+                .Right {
+                    
+                    li:first-child {
+                        transform: translateX(-200%);
+                        opacity: 0;
+                        transition: 0.5s;
+                    }
+    
+                    li:nth-child(2) {
+                        transform: translateX(-300%);
+                        opacity: 0;
+                        transition: 0.5s;
+                    }
+    
+                    li:nth-child(3) {
+                        transform: translateX(-400%);
+                        opacity: 0;
+                        transition: 0.5s;
+                    }
+                }
+            }
+    
+            .show {
+    
+                .Logo {
+                    animation: Show;
+                    animation-duration: 0.6s;
+                    animation-fill-mode: forwards;
+                    z-index: 5000;
+                }
+    
+                .Left {
+                    
+                    li:first-child {
+                        transform: translateX(0%);
+                        opacity: 1;
+                        transition: 0.5s;
+                    }
+    
+                    li:nth-child(2) {
+                        transform: translateX(0%);
+                        opacity: 1;
+                        transition: 0.5s;
+                    }
+    
+                    li:nth-child(3) {
+                        transform: translateX(0%);
+                        opacity: 1;
+                        transition: 0.5s;
+                    }
+                }
+    
+                .Right {
+                    
+                    li:first-child {
+                        transform: translateX(0%);
+                        opacity: 1;
+                        transition: 0.5s;
+                    }
+    
+                    li:nth-child(2) {
+                        transform: translateX(0%);
+                        opacity: 1;
+                        transition: 0.5s;
+                    }
+    
+                    li:nth-child(3) {
+                        transform: translateX(0%);
+                        opacity: 1;
+                        transition: 0.5s;
+                    }
+                }
+            }   
+        }
+    }
+
+    @media screen and (min-width:1100px) {
+        .Navbar {
+            position: fixed;
+        }
     }
 
     .home::after,
@@ -488,7 +613,7 @@ html:focus-within {
         display:none;
         position: fixed;
         width:60%;
-        min-height:100vh;
+        height:100vh;
         background: hsla(0, 0%, 9%, 0.7);
         backdrop-filter: blur(0.5em);
         z-index: 5000;
@@ -515,6 +640,7 @@ html:focus-within {
         a {
             text-decoration: none;
             color:$Bílá;
+            
         }
 
     }
@@ -1550,8 +1676,8 @@ html:focus-within {
     height:1200px;
     background-image: url(../Pics/prices-steps-bg.jpg);
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size:cover;
+    background-repeat:no-repeat;
     position: relative;
     z-index: 1000;
     display: flex;
@@ -1559,7 +1685,7 @@ html:focus-within {
     .process {
         height:900px;
         width: 100%;
-        background-color: rgba(23, 23, 23, 0.945);
+        background-color: rgba(23, 23, 23, 0.753);
         margin:auto;
         display:flex;
     

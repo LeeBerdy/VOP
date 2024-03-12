@@ -47,6 +47,28 @@
     opacity: 1;
   }
 }
+@keyframes Scale {
+  0% {
+    transform: scale(0.3);
+  }
+  50% {
+    transform: scale(0.4);
+  }
+  100% {
+    transform: scale(0.25);
+  }
+}
+@keyframes Show {
+  0% {
+    transform: scale(0.25);
+  }
+  20% {
+    transform: scale(0.4);
+  }
+  100% {
+    transform: scale(0.3);
+  }
+}
 /* Animations END */
 /* Font-face */
 @font-face {
@@ -211,7 +233,7 @@ html:focus-within {
 }
 .Top .Navbar .content-navbar .Tabulka li span {
   color: rgb(0, 141, 103);
-  font-family: "NotoSans-semiBold";
+  font-family: "NotoSans-semiBold", sans-serif;
   font-weight: 100;
 }
 .Top .Navbar .content-navbar .Tabulka ol {
@@ -370,6 +392,85 @@ html:focus-within {
     transform: scale(0.18);
   }
 }
+@media screen and (min-width: 1100px) {
+  .Top .Navbar .hide .Logo {
+    animation: Scale;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    z-index: 5000;
+  }
+  .Top .Navbar .hide .Left li:first-child {
+    transform: translateX(400%);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .Top .Navbar .hide .Left li:nth-child(2) {
+    transform: translateX(300%);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .Top .Navbar .hide .Left li:nth-child(3) {
+    transform: translateX(200%);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .Top .Navbar .hide .Right li:first-child {
+    transform: translateX(-200%);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .Top .Navbar .hide .Right li:nth-child(2) {
+    transform: translateX(-300%);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .Top .Navbar .hide .Right li:nth-child(3) {
+    transform: translateX(-400%);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .Top .Navbar .show .Logo {
+    animation: Show;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    z-index: 5000;
+  }
+  .Top .Navbar .show .Left li:first-child {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: 0.5s;
+  }
+  .Top .Navbar .show .Left li:nth-child(2) {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: 0.5s;
+  }
+  .Top .Navbar .show .Left li:nth-child(3) {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: 0.5s;
+  }
+  .Top .Navbar .show .Right li:first-child {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: 0.5s;
+  }
+  .Top .Navbar .show .Right li:nth-child(2) {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: 0.5s;
+  }
+  .Top .Navbar .show .Right li:nth-child(3) {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: 0.5s;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .Top .Navbar {
+    position: fixed;
+  }
+}
 .Top .home::after,
 .Top .about::after,
 .Top .galerie::after,
@@ -397,7 +498,7 @@ html:focus-within {
   display: none;
   position: fixed;
   width: 60%;
-  min-height: 100vh;
+  height: 100vh;
   background: hsla(0, 0%, 9%, 0.7);
   -webkit-backdrop-filter: blur(0.5em);
           backdrop-filter: blur(0.5em);

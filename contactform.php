@@ -5,19 +5,21 @@
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-
     $to = 'pospishil@vop-develop.cz';
-    $subject = 'Rezervace tetování';
-    $body = "Od: $name\n Firma: $company\n Email: $email\n Zpráva: $message";
+    $subject = 'VOP kontaktní formulář';
+    $body = "<br>Od: $name<br>Společnost: $company<br>Email: $email<br><br>Zpráva:<br> $message";
 
-    $headers = "From: $email";
-
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
+    $headers .= "From: $email" . "\r\n" .
+	    "Reply-To: $email" . "\r\n" .
+	    "X-Mailer: PHP/" . phpversion();
 
     if (mail($to, $subject, $body, $headers)) {
-        echo 'Zpráva byla úspěšně odeslána.';
+        header('Location: https://vop-develop.cz/Thank-you.html');
     } else {
-        echo ('Odeslání zprávy selhalo. Zkuste to znovu prosím.');
+        echo "<script>alert('Zprávu se nepodařilo odeslat.<br>Zkuste to prosím znovu.');</script>";
+        header('Location: https://vop-develop.cz/');
     }
 
 ?>
-

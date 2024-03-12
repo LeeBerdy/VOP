@@ -34,6 +34,28 @@
     background: transparent;
   }
 }
+@keyframes Scale {
+  0% {
+    transform: scale(0.3);
+  }
+  50% {
+    transform: scale(0.4);
+  }
+  100% {
+    transform: scale(0.25);
+  }
+}
+@keyframes Show {
+  0% {
+    transform: scale(0.25);
+  }
+  20% {
+    transform: scale(0.4);
+  }
+  100% {
+    transform: scale(0.3);
+  }
+}
 /* Animations END */
 /* Font-face */
 @font-face {
@@ -362,6 +384,85 @@ input, select {
     margin-top: -97px !important;
     grid-column: 2/3;
     transform: scale(0.18);
+  }
+}
+@media screen and (min-width: 1100px) {
+  .Top .Navbar .hide .Logo {
+    animation: Scale;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    z-index: 5000;
+  }
+  .Top .Navbar .hide .Left li:first-child {
+    transform: translateX(400%);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .Top .Navbar .hide .Left li:nth-child(2) {
+    transform: translateX(300%);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .Top .Navbar .hide .Left li:nth-child(3) {
+    transform: translateX(200%);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .Top .Navbar .hide .Right li:first-child {
+    transform: translateX(-200%);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .Top .Navbar .hide .Right li:nth-child(2) {
+    transform: translateX(-300%);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .Top .Navbar .hide .Right li:nth-child(3) {
+    transform: translateX(-400%);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .Top .Navbar .show .Logo {
+    animation: Show;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    z-index: 5000;
+  }
+  .Top .Navbar .show .Left li:first-child {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: 0.5s;
+  }
+  .Top .Navbar .show .Left li:nth-child(2) {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: 0.5s;
+  }
+  .Top .Navbar .show .Left li:nth-child(3) {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: 0.5s;
+  }
+  .Top .Navbar .show .Right li:first-child {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: 0.5s;
+  }
+  .Top .Navbar .show .Right li:nth-child(2) {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: 0.5s;
+  }
+  .Top .Navbar .show .Right li:nth-child(3) {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: 0.5s;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .Top .Navbar {
+    position: fixed;
   }
 }
 .Top .home::after,
@@ -1210,6 +1311,7 @@ input, select {
 }
 .icons .icons-width {
   width: 1400px;
+  min-height: 200px;
   margin: auto;
   padding: 0px 30px;
 }
@@ -1218,6 +1320,7 @@ input, select {
   margin: auto;
   display: flex;
   justify-content: space-evenly;
+  padding: 20px 0px;
 }
 .icons .icons-width .content-icons .tools {
   margin: auto;
@@ -1284,21 +1387,49 @@ input, select {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    row-gap: 20px;
+  }
+  .icons .icons-width .content-icons .icon {
+    transform: scale(0.8);
+  }
+  .icons .icons-width .content-icons .clients {
+    margin-top: -30px;
+  }
+  .icons .icons-width .content-icons .stability {
+    margin-top: -30px;
   }
 }
 @media screen and (max-width: 550px) {
   .icons .icons-width .content-icons {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     row-gap: 0;
+    padding: 0px;
+  }
+  .icons .icons-width .content-icons .icon {
+    transform: scale(0.7);
+  }
+  .icons .icons-width .content-icons .tools {
+    margin-top: 0px;
+    margin-right: -40px;
+  }
+  .icons .icons-width .content-icons .health {
+    margin-top: 60px;
+    margin-left: -40px;
+  }
+  .icons .icons-width .content-icons .clients {
+    margin-top: -80px;
+    margin-right: -40px;
+  }
+  .icons .icons-width .content-icons .stability {
+    margin-top: -20px;
+    margin-left: -40px;
   }
 }
 
 @media screen and (max-width: 1100px) {
   .icons {
-    height: 550px;
+    height: 450px;
     padding: 0px;
   }
   .icons .icons-width {
@@ -1315,7 +1446,7 @@ input, select {
 }
 @media screen and (max-width: 550px) {
   .icons {
-    height: 1100px;
+    height: 480px;
   }
 }
 @media screen and (max-width: 430px) {
