@@ -1897,41 +1897,68 @@ input, select {
         p {
             font-size: 1.1rem;
         }
-
-        .icon {
-            transform: scale(0.9);
-            width:200px;
-        }
     }
 }
 
 @media screen and (max-width:550px) {
 
     .icons {
-        height:480px;
+        height:500px;
+
+        .icons-width {
+            margin-top: 20px;
+        }
     }
 }
 
 @media screen and (max-width:430px) {
 
     .icons {
-        height:1000px;
+        height:530px;
 
         .icons-width{
 
             .content-icons {
-                margin-bottom:50px;
-                height: 800px;
+                margin-bottom:0px;
+                height: 500px;
+                column-gap: 30px;
+
+                .icon {
+                    transform: scale(0.7);
+                    max-width:200px;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                }
+
+                .health {
+                    margin-top:100px;
+                    margin-left: -40px;
+                }
+
+                .clients {
+                    margin-top:-120px;
+                    margin-right: -40px;
+                }
+
+                .stability {
+                    margin-top:-20px;
+                    margin-left: -40px;
+                }
             }
         }
+    }
+}
 
-        p {
-            font-size: 1.1rem;
-        }
-
-        .icon {
-            transform: scale(0.8);
-            width:200px;
+@media screen and (max-width: 350px) {
+    .icons {
+        .icons-width{
+            .content-icons {
+                .icon {
+                    max-width:180px;
+                }
+            }
         }
     }
 }

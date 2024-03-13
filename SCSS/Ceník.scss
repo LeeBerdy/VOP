@@ -1053,7 +1053,7 @@ html:focus-within {
 
             .head {
                 position: absolute;
-                top:30%;
+                bottom:55%;
                 right:10%;
                 
 
@@ -1146,7 +1146,7 @@ html:focus-within {
     .Hero {
 
         .content-hero {
-            padding:60px 20px 0 20px;
+            padding:20px 20px 0 20px;
 
             .Poster {
                 z-index: 600;
@@ -1154,7 +1154,7 @@ html:focus-within {
 
                 .head {
                     position: absolute;
-                    top:15%;
+                    bottom:10%;
                     right:5%;
 
                     h1 {
@@ -1172,14 +1172,15 @@ html:focus-within {
     .Hero {
 
         .content-hero {
-            padding-top:60px;
+            padding-top:20px;
 
             .Poster {
                 z-index: 600;
+                background-position: -25rem center;
 
                 .head {
                     position: absolute;
-                    top:20%;
+                    bottom:20%;
                     right:5%;
 
                     h1 {
@@ -1197,15 +1198,15 @@ html:focus-within {
     .Hero {
 
         .content-hero {
-            padding:60px 30px 0 30px;
+            padding:20px 30px 0 30px;
 
             .Poster {
-                
+                background-position: -35rem center;
                 z-index: 600;
 
                 .head {
                     position: absolute;
-                    top:25%;
+                    bottom:25%;
                     right:5%;
 
                     h1 {
@@ -1223,15 +1224,15 @@ html:focus-within {
     .Hero {
 
         .content-hero {
-            padding:60px 0px 0 0px;
+            padding:20px 0px 0 0px;
 
             .Poster {
-                background-position: -34rem center;
+                background-position: -38rem center;
                 z-index: 600;
 
                 .head {
                     position: absolute;
-                    bottom:25%;
+                    bottom:20%;
                     left:10%;
 
                     h1 {

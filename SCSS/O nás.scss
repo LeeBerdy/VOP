@@ -1039,7 +1039,7 @@ html:focus-within {
 
         .Poster {
             margin:auto;
-            height:100%;
+            height:500px;
             width:100%;
             position: relative;
             background-image:url(../Pics/Onás-Hero.png);
@@ -1053,7 +1053,7 @@ html:focus-within {
 
             .head {
                 position: absolute;
-                bottom:30%;
+                bottom:10%;
                 right:10%;
                 
 
@@ -1146,7 +1146,7 @@ html:focus-within {
     .Hero {
 
         .content-hero {
-            padding:60px 20px 0 20px;
+            padding:20px 20px 0 20px;
 
             .Poster {
                 z-index: 600;
@@ -1155,7 +1155,7 @@ html:focus-within {
                 .head {
                     position: absolute;
                     bottom:5%;
-                    left:5%;
+                    right:5%;
 
                     h1 {
                         font-size: 6rem;
@@ -1172,9 +1172,10 @@ html:focus-within {
     .Hero {
 
         .content-hero {
-            padding-top:60px;
+            padding-top:20px;
 
             .Poster {
+                background-position: -30rem center;
                 z-index: 600;
 
                 .head {
@@ -1197,10 +1198,10 @@ html:focus-within {
     .Hero {
 
         .content-hero {
-            padding:60px 30px 0 30px;
+            padding:20px 30px 0 30px;
 
             .Poster {
-                
+                background-position: -45rem center;
                 z-index: 600;
 
                 .head {
@@ -1223,10 +1224,10 @@ html:focus-within {
     .Hero {
 
         .content-hero {
-            padding:60px 0px 0 0px;
+            padding:0px 0px 0 0px;
 
             .Poster {
-                background-position: -31rem center;
+                background-position: -45rem center;
                 z-index: 600;
 
                 .head {
