@@ -899,7 +899,7 @@ input, select {
   .Hero .content-hero .obrazek {
     right: -25%;
     top: 5%;
-    transform: scale(0.5);
+    transform: scale(0.6);
   }
   .Hero .content-hero .Title {
     top: 55%;
@@ -917,11 +917,11 @@ input, select {
     margin-top: 20px;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 435px) {
   .Hero .content-hero .obrazek {
     right: -42%;
-    top: -5%;
-    transform: scale(0.5);
+    top: 0%;
+    transform: scale(0.6);
   }
   .Hero .content-hero .Title {
     top: 55%;
@@ -1657,7 +1657,10 @@ input, select {
 }
 @media screen and (max-width: 630px) {
   .galery {
-    height: 3200px;
+    height: 3100px;
+  }
+  .galery .galery-grid {
+    margin-top: 750px;
   }
 }
 /* Galery END */

@@ -772,7 +772,7 @@ html:focus-within {
 }
 .Hero .content-hero .Poster {
   margin: auto;
-  height: 500px;
+  height: 450px;
   width: 100%;
   position: relative;
   background-image: url(../Pics/Onás-Hero.png);
@@ -910,7 +910,8 @@ html:focus-within {
     padding: 0px 0px 0 0px;
   }
   .Hero .content-hero .Poster {
-    background-position: -45rem center;
+    background-position: -23rem center;
+    background-size: 50rem 50rem;
     z-index: 600;
   }
   .Hero .content-hero .Poster .head {
@@ -1079,7 +1080,7 @@ html:focus-within {
   background-position: center;
 }
 .Barley .content-Barley .pic-Barley h1 {
-  top: 25px;
+  top: 5px;
   font-size: 2.5rem;
   font-family: "NotoSans-semiBold", sans-serif;
   mix-blend-mode: difference;
@@ -1088,6 +1089,7 @@ html:focus-within {
 .Barley .content-Barley .pic-Barley .h1-one {
   position: absolute;
   right: 5px;
+  color: gray;
 }
 .Barley .content-Barley .pic-Barley .h1-two {
   position: absolute;
@@ -1098,11 +1100,12 @@ html:focus-within {
   font-family: "NotoSans-semiBold", sans-serif;
   mix-blend-mode: difference;
   font-weight: 100;
-  top: 0px;
+  top: 55px;
 }
 .Barley .content-Barley .pic-Barley .h3-one {
   position: absolute;
   right: 5px;
+  color: gray;
 }
 .Barley .content-Barley .pic-Barley .h3-two {
   position: absolute;
@@ -1176,7 +1179,7 @@ html:focus-within {
     height: 400px;
   }
   .Barley .content-Barley .pic-Barley h1 {
-    top: 25px;
+    top: 5px;
     font-size: 2.5rem;
   }
   .Barley .content-Barley .pic-Barley .h1-one {
@@ -1187,7 +1190,7 @@ html:focus-within {
   }
   .Barley .content-Barley .pic-Barley h3 {
     font-size: 1.4rem;
-    top: 0px;
+    top: 55px;
   }
   .Barley .content-Barley .pic-Barley .h3-one {
     right: 5px;
@@ -1226,7 +1229,7 @@ html:focus-within {
     height: 400px;
   }
   .Barley .content-Barley .pic-Barley h1 {
-    top: 25px;
+    top: 5px;
     font-size: 2.5rem;
   }
   .Barley .content-Barley .pic-Barley .h1-one {
@@ -1237,7 +1240,7 @@ html:focus-within {
   }
   .Barley .content-Barley .pic-Barley h3 {
     font-size: 1.4rem;
-    top: 0px;
+    top: 55px;
   }
   .Barley .content-Barley .pic-Barley .h3-one {
     right: 5px;
@@ -1277,7 +1280,7 @@ html:focus-within {
     height: 400px;
   }
   .Barley .content-Barley .pic-Barley h1 {
-    top: 25px;
+    top: 5px;
     font-size: 2.5rem;
   }
   .Barley .content-Barley .pic-Barley .h1-one {
@@ -1288,7 +1291,7 @@ html:focus-within {
   }
   .Barley .content-Barley .pic-Barley h3 {
     font-size: 1.4rem;
-    top: 0px;
+    top: 55px;
   }
   .Barley .content-Barley .pic-Barley .h3-one {
     right: 5px;
@@ -1329,7 +1332,7 @@ html:focus-within {
     height: 400px;
   }
   .Barley .content-Barley .pic-Barley h1 {
-    top: 25px;
+    top: 5px;
     font-size: 2.5rem;
   }
   .Barley .content-Barley .pic-Barley .h1-one {
@@ -1340,7 +1343,7 @@ html:focus-within {
   }
   .Barley .content-Barley .pic-Barley h3 {
     font-size: 1.4rem;
-    top: 0px;
+    top: 55px;
   }
   .Barley .content-Barley .pic-Barley .h3-one {
     right: 5px;
@@ -1394,7 +1397,7 @@ html:focus-within {
     height: 350px;
   }
   .Barley .content-Barley .pic-Barley h1 {
-    top: 25px;
+    top: 5px;
     font-size: 2.2rem;
   }
   .Barley .content-Barley .pic-Barley .h1-one {
@@ -1405,7 +1408,7 @@ html:focus-within {
   }
   .Barley .content-Barley .pic-Barley h3 {
     font-size: 1.1rem;
-    top: 3px;
+    top: 50px;
   }
   .Barley .content-Barley .pic-Barley .h3-one {
     right: 5px;
@@ -1463,7 +1466,7 @@ html:focus-within {
     height: 300px;
   }
   .Barley .content-Barley .pic-Barley h1 {
-    top: 20px;
+    top: 5px;
     font-size: 2rem;
   }
   .Barley .content-Barley .pic-Barley .h1-one {
@@ -1474,7 +1477,7 @@ html:focus-within {
   }
   .Barley .content-Barley .pic-Barley h3 {
     font-size: 1.1rem;
-    top: 0px;
+    top: 48px;
   }
   .Barley .content-Barley .pic-Barley .h3-one {
     right: 5px;
@@ -1553,11 +1556,11 @@ html:focus-within {
   top: 5px;
 }
 .Tomas .content-Tomas .pic-Tomas .h1-one {
-  left: -135px;
+  left: -140px;
 }
 .Tomas .content-Tomas .pic-Tomas .h1-two {
   left: 5px;
-  color: rgb(251, 251, 251);
+  color: gray;
 }
 .Tomas .content-Tomas .pic-Tomas h3 {
   position: absolute;
@@ -1566,7 +1569,7 @@ html:focus-within {
   mix-blend-mode: difference;
   font-weight: 100;
   top: 55px;
-  left: -65px;
+  left: -70px;
 }
 .Tomas .content-Tomas .pic-Tomas img {
   transform: scale(1);
@@ -1591,9 +1594,12 @@ html:focus-within {
   max-width: 600px;
 }
 .Tomas .content-Tomas .pic-Tomas .p-one {
-  bottom: 90px;
+  bottom: 180px;
 }
 .Tomas .content-Tomas .pic-Tomas .p-two {
+  bottom: 70px;
+}
+.Tomas .content-Tomas .pic-Tomas .p-three {
   bottom: 0px;
 }
 .Tomas .content-Tomas .pic-Tomas:after {
@@ -1640,7 +1646,7 @@ html:focus-within {
     font-size: 2.5rem;
   }
   .Tomas .content-Tomas .pic-Tomas .h1-one {
-    left: -135px;
+    left: -140px;
   }
   .Tomas .content-Tomas .pic-Tomas .h1-two {
     left: 5px;
@@ -1653,10 +1659,13 @@ html:focus-within {
     max-width: 400px;
   }
   .Tomas .content-Tomas .pic-Tomas .p-one {
-    bottom: 100px;
+    bottom: 150px;
   }
   .Tomas .content-Tomas .pic-Tomas .p-two {
     bottom: 0px;
+  }
+  .Tomas .content-Tomas .pic-Tomas .p-three {
+    bottom: -80px;
   }
   .Tomas .content-Tomas .pic-logo {
     position: absolute;
@@ -1682,7 +1691,7 @@ html:focus-within {
     font-size: 2.5rem;
   }
   .Tomas .content-Tomas .pic-Tomas .h1-one {
-    left: -135px;
+    left: -140px;
   }
   .Tomas .content-Tomas .pic-Tomas .h1-two {
     left: 5px;
@@ -1702,10 +1711,13 @@ html:focus-within {
     max-width: 400px;
   }
   .Tomas .content-Tomas .pic-Tomas .p-one {
-    bottom: 100px;
+    bottom: 150px;
   }
   .Tomas .content-Tomas .pic-Tomas .p-two {
     bottom: 0px;
+  }
+  .Tomas .content-Tomas .pic-Tomas .p-three {
+    bottom: -80px;
   }
   .Tomas .content-Tomas .pic-logo {
     left: 100px;
@@ -1732,7 +1744,7 @@ html:focus-within {
     font-size: 2.5rem;
   }
   .Tomas .content-Tomas .pic-Tomas .h1-one {
-    left: -135px;
+    left: -140px;
   }
   .Tomas .content-Tomas .pic-Tomas .h1-two {
     left: 5px;
@@ -1752,9 +1764,12 @@ html:focus-within {
     max-width: 380px;
   }
   .Tomas .content-Tomas .pic-Tomas .p-one {
-    bottom: 100px;
+    bottom: 200px;
   }
   .Tomas .content-Tomas .pic-Tomas .p-two {
+    bottom: 70px;
+  }
+  .Tomas .content-Tomas .pic-Tomas .p-three {
     bottom: 0px;
   }
   .Tomas .content-Tomas .pic-logo {
@@ -1765,7 +1780,7 @@ html:focus-within {
 }
 @media screen and (max-width: 750px) {
   .Tomas {
-    height: 900px;
+    height: 950px;
     justify-content: center;
   }
   .Tomas .content-Tomas {
@@ -1782,14 +1797,14 @@ html:focus-within {
     font-size: 2.5rem;
   }
   .Tomas .content-Tomas .pic-Tomas .h1-one {
-    left: -135px;
+    left: -140px;
   }
   .Tomas .content-Tomas .pic-Tomas .h1-two {
     left: 5px;
   }
   .Tomas .content-Tomas .pic-Tomas h3 {
     font-size: 1.4rem;
-    left: -65px;
+    left: -70px;
   }
   .Tomas .content-Tomas .pic-Tomas img {
     transform: scale(0.9);
@@ -1809,10 +1824,13 @@ html:focus-within {
     max-width: 400px;
   }
   .Tomas .content-Tomas .pic-Tomas .p-one {
-    bottom: -150px;
+    bottom: -90px;
   }
   .Tomas .content-Tomas .pic-Tomas .p-two {
-    bottom: -250px;
+    bottom: -205px;
+  }
+  .Tomas .content-Tomas .pic-Tomas .p-three {
+    bottom: -270px;
   }
   .Tomas .content-Tomas .pic-logo {
     left: 43%;
@@ -1847,7 +1865,7 @@ html:focus-within {
   }
   .Tomas .content-Tomas .pic-Tomas h3 {
     font-size: 1.2rem;
-    left: -58px;
+    left: -60px;
     top: 50px;
   }
   .Tomas .content-Tomas .pic-Tomas img {
@@ -1869,10 +1887,13 @@ html:focus-within {
     max-width: 380px;
   }
   .Tomas .content-Tomas .pic-Tomas .p-one {
-    bottom: -120px;
+    bottom: -80px;
   }
   .Tomas .content-Tomas .pic-Tomas .p-two {
-    bottom: -210px;
+    bottom: -185px;
+  }
+  .Tomas .content-Tomas .pic-Tomas .p-three {
+    bottom: -240px;
   }
   .Tomas .content-Tomas .pic-logo {
     left: 41%;
@@ -1886,7 +1907,7 @@ html:focus-within {
 }
 @media screen and (max-width: 435px) {
   .Tomas {
-    height: 830px;
+    height: 850px;
   }
   .Tomas .content-Tomas {
     max-width: 1500px;
@@ -1900,7 +1921,7 @@ html:focus-within {
     height: 300px;
   }
   .Tomas .content-Tomas .pic-Tomas h1 {
-    top: 60px;
+    top: 0px;
     font-size: 2rem;
   }
   .Tomas .content-Tomas .pic-Tomas .h1-one {
@@ -1911,8 +1932,8 @@ html:focus-within {
   }
   .Tomas .content-Tomas .pic-Tomas h3 {
     font-size: 1.1rem;
-    left: -53px;
-    top: 35px;
+    left: -56px;
+    top: 45px;
   }
   .Tomas .content-Tomas .pic-Tomas img {
     transform: scale(0.7);
@@ -1933,10 +1954,13 @@ html:focus-within {
     max-width: 280px;
   }
   .Tomas .content-Tomas .pic-Tomas .p-one {
-    bottom: -150px;
+    bottom: -80px;
   }
   .Tomas .content-Tomas .pic-Tomas .p-two {
-    bottom: -255px;
+    bottom: -220px;
+  }
+  .Tomas .content-Tomas .pic-Tomas .p-three {
+    bottom: -285px;
   }
   .Tomas .content-Tomas .pic-logo {
     left: 39%;

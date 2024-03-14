@@ -1038,11 +1038,11 @@ html:focus-within {
 
         .Poster {
             margin:auto;
-            height:500px;
+            height:450px;
             width:100%;
             position: relative;
             background-image:url(../Pics/Galery-pic.png);
-            background-position: center;
+            background-position: center -70rem;
             background-size:auto;
             background-repeat: no-repeat;
             animation-name: Slide-bottom;
@@ -1199,7 +1199,8 @@ html:focus-within {
             padding:20px 30px 0 30px;
 
             .Poster {
-                
+                background-size:50rem 70rem;
+                background-position: -15rem -34rem;
                 z-index: 600;
 
                 .head {
@@ -1225,7 +1226,8 @@ html:focus-within {
             padding:0px 0px 0 0px;
 
             .Poster {
-                background-position: -20rem center;
+                background-size:50rem 70rem;
+                background-position: -15rem -34rem;
                 z-index: 600;
 
                 .head {

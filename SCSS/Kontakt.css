@@ -30,6 +30,28 @@
     opacity: 1;
   }
 }
+@keyframes Scale {
+  0% {
+    transform: scale(0.3);
+  }
+  50% {
+    transform: scale(0.4);
+  }
+  100% {
+    transform: scale(0.25);
+  }
+}
+@keyframes Show {
+  0% {
+    transform: scale(0.25);
+  }
+  20% {
+    transform: scale(0.4);
+  }
+  100% {
+    transform: scale(0.3);
+  }
+}
 /* Animations END */
 /* Font-face */
 @font-face {
@@ -758,7 +780,7 @@ input, select {
 }
 .Hero .content-hero .Poster {
   margin: auto;
-  height: 100%;
+  height: 450px;
   width: 100%;
   position: relative;
   filter: saturate(80%);
@@ -895,12 +917,12 @@ input, select {
     padding: 20px 0px 0 0px;
   }
   .Hero .content-hero .Poster {
-    background-size: contain;
+    background-size: 45rem 30rem;
     z-index: 600;
   }
   .Hero .content-hero .Poster .head {
     position: absolute;
-    bottom: 0%;
+    bottom: 5%;
     left: 10%;
   }
   .Hero .content-hero .Poster .head h1 {

@@ -1039,7 +1039,7 @@ html:focus-within {
 
         .Poster {
             margin:auto;
-            height:500px;
+            height:450px;
             width:100%;
             position: relative;
             background-image:url(../Pics/Onás-Hero.png);
@@ -1227,7 +1227,8 @@ html:focus-within {
             padding:0px 0px 0 0px;
 
             .Poster {
-                background-position: -45rem center;
+                background-position: -23rem center;
+                background-size:50rem 50rem;
                 z-index: 600;
 
                 .head {
@@ -1439,7 +1440,7 @@ html:focus-within {
             background-position: center;
 
             h1 {
-                top:25px;
+                top:5px;
                 font-size: 2.5rem;
                 font-family: 'NotoSans-semiBold', sans-serif;
                 mix-blend-mode: difference;
@@ -1449,11 +1450,13 @@ html:focus-within {
             .h1-one {
                 position: absolute;
                 right:5px;
+                color: gray;
             }
 
             .h1-two {
                 position: absolute;
                 right:-135px;
+                
             }
 
             h3 {
@@ -1461,12 +1464,13 @@ html:focus-within {
                 font-family: 'NotoSans-semiBold', sans-serif;
                 mix-blend-mode: difference;
                 font-weight: 100;
-                top:0px;
+                top:55px;
             }
 
             .h3-one {
                 position: absolute;
                 right:5px;
+                color: gray;
             }
 
             .h3-two {
@@ -1555,7 +1559,7 @@ html:focus-within {
                 height:400px;
     
                 h1 {
-                    top:25px;
+                    top:5px;
                     font-size: 2.5rem;
                 }
     
@@ -1569,7 +1573,7 @@ html:focus-within {
     
                 h3 {
                     font-size: 1.4rem;
-                    top:0px;
+                    top:55px;
                 }
     
                 .h3-one {
@@ -1620,7 +1624,7 @@ html:focus-within {
                 height:400px;
     
                 h1 {
-                    top:25px;
+                    top:5px;
                     font-size: 2.5rem;
                 }
     
@@ -1634,7 +1638,7 @@ html:focus-within {
     
                 h3 {
                     font-size: 1.4rem;
-                    top:0px;
+                    top:55px;
                 }
     
                 .h3-one {
@@ -1686,7 +1690,7 @@ html:focus-within {
                 height:400px;
     
                 h1 {
-                    top:25px;
+                    top:5px;
                     font-size: 2.5rem;
                 }
     
@@ -1700,7 +1704,7 @@ html:focus-within {
     
                 h3 {
                     font-size: 1.4rem;
-                    top:0px;
+                    top:55px;
                 }
     
                 .h3-one {
@@ -1753,7 +1757,7 @@ html:focus-within {
                 height:400px;
     
                 h1 {
-                    top:25px;
+                    top:5px;
                     font-size: 2.5rem;
                 }
     
@@ -1767,7 +1771,7 @@ html:focus-within {
     
                 h3 {
                     font-size: 1.4rem;
-                    top:0px;
+                    top:55px;
                 }
     
                 .h3-one {
@@ -1836,7 +1840,7 @@ html:focus-within {
                 height:350px;
     
                 h1 {
-                    top:25px;
+                    top:5px;
                     font-size: 2.2rem;
                 }
     
@@ -1850,7 +1854,7 @@ html:focus-within {
     
                 h3 {
                     font-size: 1.1rem;
-                    top:3px;
+                    top:50px;
                 }
     
                 .h3-one {
@@ -1924,7 +1928,7 @@ html:focus-within {
                 height:300px;
     
                 h1 {
-                    top:20px;
+                    top:5px;
                     font-size: 2rem;
                 }
     
@@ -1938,7 +1942,7 @@ html:focus-within {
     
                 h3 {
                     font-size: 1.1rem;
-                    top:0px;
+                    top:48px;
                 }
     
                 .h3-one {
@@ -2040,12 +2044,12 @@ html:focus-within {
             }
 
             .h1-one {
-                left:-135px;
+                left:-140px;
             }
 
             .h1-two {
                 left:5px;
-                color:$Bílá
+                color:gray;
             }
 
             h3 {
@@ -2055,7 +2059,7 @@ html:focus-within {
                 mix-blend-mode: difference;
                 font-weight: 100;
                 top:55px;
-                left:-65px;
+                left:-70px;
             }
 
             img {
@@ -2086,10 +2090,14 @@ html:focus-within {
             }
 
             .p-one {
-                bottom:90px;
+                bottom:180px;
             }
 
             .p-two {
+                bottom:70px;
+            }
+
+            .p-three {
                 bottom:0px;
             }
         }
@@ -2145,7 +2153,7 @@ html:focus-within {
                 }
     
                 .h1-one {
-                    left:-135px;
+                    left:-140px;
                 }
 
                 .h1-two {
@@ -2162,11 +2170,15 @@ html:focus-within {
                 }
     
                 .p-one {
-                    bottom:100px;
+                    bottom:150px;
                 }
     
                 .p-two {
                     bottom:0px;
+                }
+
+                .p-three {
+                    bottom: -80px;
                 }
             }
     
@@ -2200,7 +2212,7 @@ html:focus-within {
                 }
     
                 .h1-one {
-                    left:-135px;
+                    left:-140px;
                 }
 
                 .h1-two {
@@ -2226,11 +2238,15 @@ html:focus-within {
                 }
     
                 .p-one {
-                    bottom:100px;
+                    bottom:150px;
                 }
     
                 .p-two {
                     bottom:0px;
+                }
+
+                .p-three {
+                    bottom: -80px;
                 }
             }
     
@@ -2265,7 +2281,7 @@ html:focus-within {
                 }
     
                 .h1-one {
-                    left:-135px;
+                    left:-140px;
                 }
 
                 .h1-two {
@@ -2291,11 +2307,15 @@ html:focus-within {
                 }
     
                 .p-one {
-                    bottom:100px;
+                    bottom:200px;
                 }
     
                 .p-two {
-                    bottom:0px;
+                    bottom:70px;
+                }
+
+                .p-three {
+                    bottom: 0px;
                 }
             }
     
@@ -2311,7 +2331,7 @@ html:focus-within {
 @media screen and (max-width:750px) {
 
     .Tomas {
-        height:900px;
+        height:950px;
         justify-content:center;
         
         .content-Tomas {
@@ -2330,7 +2350,7 @@ html:focus-within {
                 }
     
                 .h1-one {
-                    left:-135px;
+                    left:-140px;
                 }
 
                 .h1-two {
@@ -2339,7 +2359,7 @@ html:focus-within {
     
                 h3 {
                     font-size: 1.4rem;
-                    left:-65px;
+                    left:-70px;
                 }
 
                 img {
@@ -2364,11 +2384,15 @@ html:focus-within {
                 }
     
                 .p-one {
-                    bottom:-150px;
+                    bottom:-90px;
                 }
     
                 .p-two {
-                    bottom:-250px;
+                    bottom:-205px;
+                }
+
+                .p-three {
+                    bottom: -270px;
                 }
             }
     
@@ -2413,7 +2437,7 @@ html:focus-within {
     
                 h3 {
                     font-size: 1.2rem;
-                    left:-58px;
+                    left:-60px;
                     top:50px;
                 }
 
@@ -2440,11 +2464,15 @@ html:focus-within {
                 }
     
                 .p-one {
-                    bottom:-120px;
+                    bottom:-80px;
                 }
     
                 .p-two {
-                    bottom:-210px;
+                    bottom:-185px;
+                }
+
+                .p-three {
+                    bottom: -240px;
                 }
             }
     
@@ -2465,7 +2493,7 @@ html:focus-within {
 @media screen and (max-width:435px) {
 
     .Tomas {
-        height:830px;
+        height:850px;
         
         .content-Tomas {
             max-width:1500px;
@@ -2480,7 +2508,7 @@ html:focus-within {
                 height:300px;
     
                 h1 {
-                    top:60px;
+                    top:0px;
                     font-size: 2rem;
                 }
     
@@ -2494,8 +2522,8 @@ html:focus-within {
     
                 h3 {
                     font-size: 1.1rem;
-                    left:-53px;
-                    top:35px;
+                    left:-56px;
+                    top:45px;
                 }
 
                 img {
@@ -2521,11 +2549,15 @@ html:focus-within {
                 }
     
                 .p-one {
-                    bottom:-150px;
+                    bottom:-80px;
                 }
     
                 .p-two {
-                    bottom:-255px;
+                    bottom:-220px;
+                }
+
+                .p-three {
+                    bottom: -285px;
                 }
             }
     
