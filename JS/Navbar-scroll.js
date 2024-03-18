@@ -3,7 +3,7 @@ const navbar = document.querySelector('.content-navbar');
 
 function handleScrollBottom() {
 
-    if (window.scrollY >= 1) {
+    if (window.scrollY >= 10) {
         navbar.classList.add('hide')
         navbar.classList.remove('show')
     } else {
