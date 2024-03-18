@@ -102,6 +102,56 @@ $Bílá:rgba(251, 251, 251, 1);
     }
 }
 
+@media screen and (max-width:1100px) {
+
+    @keyframes Scale {
+
+        0% {
+            transform: scale(0.25) translateY(0px);
+        }    
+
+        100% {
+            transform: scale(0.17) translateY(-90px);
+        }
+    }
+
+    @keyframes Show {
+
+        0% {
+            transform: scale(0.17) translateY(-90px);
+        }
+    
+        100% {
+            transform: scale(0.25) translateY(0px);
+        }
+    }
+}
+
+@media screen and (max-width:435px), (max-height:435px) {
+
+    @keyframes Scale {
+
+        0% {
+            transform: scale(0.18) translateY(0px);
+        }    
+
+        100% {
+            transform: scale(0.11) translateY(-90px);
+        }
+    }
+    
+    @keyframes Show {
+
+        0% {
+            transform: scale(0.11) translateY(-90px);
+        }
+    
+        100% {
+            transform: scale(0.18) translateY(0px);
+        }
+    }
+}
+
 
 /* Animations END */
 
@@ -500,110 +550,128 @@ html:focus-within {
 
         }
 
-        @media screen and (min-width:1100px) {
+        .hide {
+            
+            .Logo {
+                animation: Scale;
+                animation-duration: 0.6s;
+                animation-fill-mode: forwards;
+                z-index: 5000;
+            }
 
-            .hide {
-                .Logo {
-                    animation: Scale;
-                    animation-duration: 0.6s;
-                    animation-fill-mode: forwards;
-                    z-index: 5000;
+            .Left {
+                
+                li:first-child {
+                    transform: translateX(400%);
+                    opacity: 0;
+                    transition: 0.5s;
                 }
-    
-                .Left {
-                    
-                    li:first-child {
-                        transform: translateX(400%);
-                        opacity: 0;
-                        transition: 0.5s;
-                    }
-    
-                    li:nth-child(2) {
-                        transform: translateX(300%);
-                        opacity: 0;
-                        transition: 0.5s;
-                    }
-    
-                    li:nth-child(3) {
-                        transform: translateX(200%);
-                        opacity: 0;
-                        transition: 0.5s;
-                    }
+
+                li:nth-child(2) {
+                    transform: translateX(300%);
+                    opacity: 0;
+                    transition: 0.5s;
                 }
-    
-                .Right {
-                    
-                    li:first-child {
-                        transform: translateX(-200%);
-                        opacity: 0;
-                        transition: 0.5s;
-                    }
-    
-                    li:nth-child(2) {
-                        transform: translateX(-300%);
-                        opacity: 0;
-                        transition: 0.5s;
-                    }
-    
-                    li:nth-child(3) {
-                        transform: translateX(-400%);
-                        opacity: 0;
-                        transition: 0.5s;
-                    }
+
+                li:nth-child(3) {
+                    transform: translateX(200%);
+                    opacity: 0;
+                    transition: 0.5s;
                 }
             }
-    
-            .show {
-    
+
+            .Right {
+                
+                li:first-child {
+                    transform: translateX(-200%);
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+
+                li:nth-child(2) {
+                    transform: translateX(-300%);
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+
+                li:nth-child(3) {
+                    transform: translateX(-400%);
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+            }
+        }
+
+        .show {
+
+            .Logo {
+                animation: Show;
+                animation-duration: 0.6s;
+                animation-fill-mode: forwards;
+                z-index: 5000;
+            }
+
+            .Left {
+                
+                li:first-child {
+                    transform: translateX(0%);
+                    opacity: 1;
+                    transition: 0.5s;
+                }
+
+                li:nth-child(2) {
+                    transform: translateX(0%);
+                    opacity: 1;
+                    transition: 0.5s;
+                }
+
+                li:nth-child(3) {
+                    transform: translateX(0%);
+                    opacity: 1;
+                    transition: 0.5s;
+                }
+            }
+
+            .Right {
+                
+                li:first-child {
+                    transform: translateX(0%);
+                    opacity: 1;
+                    transition: 0.5s;
+                }
+
+                li:nth-child(2) {
+                    transform: translateX(0%);
+                    opacity: 1;
+                    transition: 0.5s;
+                }
+
+                li:nth-child(3) {
+                    transform: translateX(0%);
+                    opacity: 1;
+                    transition: 0.5s;
+                }
+            }
+        }   
+
+        @media screen and (max-width:1100px) {
+            
+            .hide {
+
                 .Logo {
-                    animation: Show;
-                    animation-duration: 0.6s;
-                    animation-fill-mode: forwards;
-                    z-index: 5000;
+                    animation-duration: 0.4s;
+                    animation-timing-function: ease-in-out;
                 }
-    
-                .Left {
-                    
-                    li:first-child {
-                        transform: translateX(0%);
-                        opacity: 1;
-                        transition: 0.5s;
-                    }
-    
-                    li:nth-child(2) {
-                        transform: translateX(0%);
-                        opacity: 1;
-                        transition: 0.5s;
-                    }
-    
-                    li:nth-child(3) {
-                        transform: translateX(0%);
-                        opacity: 1;
-                        transition: 0.5s;
-                    }
+            }
+            
+            
+            .show {
+
+                .Logo {
+                    animation-duration: 0.2s;
+                    animation-timing-function: ease-in-out;
                 }
-    
-                .Right {
-                    
-                    li:first-child {
-                        transform: translateX(0%);
-                        opacity: 1;
-                        transition: 0.5s;
-                    }
-    
-                    li:nth-child(2) {
-                        transform: translateX(0%);
-                        opacity: 1;
-                        transition: 0.5s;
-                    }
-    
-                    li:nth-child(3) {
-                        transform: translateX(0%);
-                        opacity: 1;
-                        transition: 0.5s;
-                    }
-                }
-            }   
+            }
         }
     }
 
