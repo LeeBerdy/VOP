@@ -494,6 +494,12 @@ input, select {
   opacity: 1;
   transition: 0.5s;
 }
+@media screen and (max-width: 1100px) {
+  .Top .Navbar .hide .Logo, .Top .Navbar .show .Logo {
+    animation-duration: 0.1s;
+    animation-timing-function: ease-in-out;
+  }
+}
 @media screen and (min-width: 1100px) {
   .Top .Navbar {
     position: fixed;
