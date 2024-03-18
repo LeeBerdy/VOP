@@ -1,9 +1,9 @@
-window.addEventListener('scroll', handleScroll);
+window.addEventListener('scroll', handleScrollBottom);
 const navbar = document.querySelector('.content-navbar');
 
-function handleScroll() {
+function handleScrollBottom() {
 
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 1) {
         navbar.classList.add('hide')
         navbar.classList.remove('show')
     } else {
