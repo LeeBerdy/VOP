@@ -62,12 +62,12 @@
       transform: scale(0.25) translateY(0px);
     }
     100% {
-      transform: scale(0.17) translateY(-100px);
+      transform: scale(0.17) translateY(-90px);
     }
   }
   @keyframes Show {
     0% {
-      transform: scale(0.17) translateY(-100px);
+      transform: scale(0.17) translateY(-90px);
     }
     100% {
       transform: scale(0.25) translateY(0px);
@@ -80,12 +80,12 @@
       transform: scale(0.18) translateY(0px);
     }
     100% {
-      transform: scale(0.11) translateY(-70px);
+      transform: scale(0.11) translateY(-90px);
     }
   }
   @keyframes Show {
     0% {
-      transform: scale(0.11) translateY(-70px);
+      transform: scale(0.11) translateY(-90px);
     }
     100% {
       transform: scale(0.18) translateY(0px);
