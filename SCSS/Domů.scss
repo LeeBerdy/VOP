@@ -645,10 +645,19 @@ input, select {
 
         @media screen and (max-width:1100px) {
             
-            .hide, .show {
+            .hide {
 
                 .Logo {
-                    animation-duration: 0.2s;
+                    animation-duration: 0.3s;
+                    animation-timing-function: ease-in-out;
+                }
+            }
+            
+            
+            .show {
+
+                .Logo {
+                    animation-duration: 0.1s;
                     animation-timing-function: ease-in-out;
                 }
             }
