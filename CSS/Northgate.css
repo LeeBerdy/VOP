@@ -343,7 +343,7 @@ header .Content-logo .logo-contact a {
   }
   .Navbar .Navbar-resp ul li a p {
     color: rgb(172, 173, 154);
-    font-size: clamp(1rem, 5vw, 2rem);
+    font-size: clamp(1.4rem, 5vw, 2rem);
     text-shadow: 1px 1px 10px rgb(43, 43, 43);
   }
   .Navbar .Slide {
@@ -393,7 +393,7 @@ header .Content-logo .logo-contact a {
     height: 100vh;
   }
   .Navbar .Navbar-resp ul {
-    padding: 120px 40px;
+    padding: 120px 20px;
   }
   .Navbar .Navbar-resp ul li {
     list-style-type: none;
@@ -404,7 +404,6 @@ header .Content-logo .logo-contact a {
   }
   .Navbar .Navbar-resp ul li a p {
     color: rgb(172, 173, 154);
-    font-size: clamp(1rem, 5vw, 2rem);
     text-shadow: 1px 1px 10px rgb(43, 43, 43);
   }
   .Navbar .Content-Navbar .Navbar-menu ul {
@@ -462,7 +461,7 @@ header .Content-logo .logo-contact a {
     height: 100vh;
   }
   .Navbar .Navbar-resp ul {
-    padding: 120px 40px;
+    padding: 120px 10px;
   }
   .Navbar .Navbar-resp ul li {
     list-style-type: none;
@@ -473,7 +472,6 @@ header .Content-logo .logo-contact a {
   }
   .Navbar .Navbar-resp ul li a p {
     color: rgb(172, 173, 154);
-    font-size: clamp(1rem, 5vw, 2rem);
     text-shadow: 1px 1px 10px rgb(43, 43, 43);
   }
   .Navbar .Content-Navbar .Navbar-menu ul {
@@ -539,9 +537,9 @@ header .Content-logo .logo-contact a {
 .Hero .Content-Hero .Hero-text p {
   text-align: right;
   color: rgb(255, 255, 255);
-  font-size: clamp(1rem, 4vw, 2rem);
+  font-size: clamp(1.4rem, 4vw, 2rem);
   letter-spacing: 1px;
-  line-height: clamp(18px, 5vw, 45px);
+  line-height: clamp(25px, 5vw, 45px);
   padding-right: 50px;
 }
 .Hero .Content-Hero .Hero-text span {
@@ -552,8 +550,8 @@ header .Content-logo .logo-contact a {
   position: absolute;
   bottom: clamp(7rem, 25vh, 40%);
   right: 10%;
-  width: clamp(10rem, 32vw, 20rem);
-  height: clamp(2.5rem, 6vw, 4rem);
+  width: clamp(12.5rem, 32vw, 20rem);
+  height: clamp(2.9rem, 6vw, 4rem);
   text-decoration: none;
   transition: 0.3s;
   overflow: hidden;
@@ -561,14 +559,14 @@ header .Content-logo .logo-contact a {
   margin-bottom: -40px;
 }
 .Hero .Content-Hero .Hero-estimate-bg .Hero-bg-mover {
-  width: clamp(20rem, 64vw, 40rem);
-  height: clamp(2.5rem, 6vw, 4rem);
+  width: clamp(25rem, 64vw, 40rem);
+  height: clamp(2.9rem, 6vw, 4rem);
   background-image: linear-gradient(100deg, rgba(177, 199, 52, 0.7764705882) 26.5%, #474838 26.5%, #474838 53%, #474838 76%, rgba(177, 199, 52, 0.7764705882) 76%, rgba(177, 199, 52, 0.7764705882) 100%);
-  transform: translateX(clamp(-20rem, -32vw, -10rem));
+  transform: translateX(clamp(-20rem, -32vw, -12.5rem));
   transition: 0.3s;
 }
 .Hero .Content-Hero .Hero-estimate-bg h3 {
-  font-size: clamp(0.72rem, 2.3vw, 1.5rem);
+  font-size: clamp(0.85rem, 2.3vw, 1.5rem);
   position: absolute;
   top: 30%;
   font-family: "InstrumentSans-SemiBold";
@@ -776,7 +774,7 @@ header .Content-logo .logo-contact a {
 }
 @media screen and (max-width: 500px) {
   .Services {
-    height: 380px;
+    height: 350px;
   }
   .Services .Content-Services .Services-blocks {
     display: flex;
@@ -784,17 +782,19 @@ header .Content-logo .logo-contact a {
   }
   .Services .Content-Services .Services-blocks .Block {
     width: 90vw;
+    height: 60px;
   }
   .Services .Content-Services .Service-blocks-textfield {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 70px 70px 70px 70px;
-    row-gap: 3vw;
+    row-gap: 0vw;
     width: 100%;
   }
   .Services .Content-Services .Service-blocks-textfield .Block-textfield {
-    left: 10%;
-    width: 80%;
+    left: 25%;
+    width: 75%;
+    top: 60px;
   }
 }
 .Service-description {
@@ -841,7 +841,7 @@ header .Content-logo .logo-contact a {
   padding: 30px;
   margin: 20px;
   margin-top: 10px;
-  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  font-size: clamp(1rem, 1.5vw, 1.1rem);
 }
 .Service-description .Content-Service-description .Service-description-rows .Services-description-row .Text span {
   font-weight: 900;
@@ -968,7 +968,7 @@ header .Content-logo .logo-contact a {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     margin: 0rem;
     padding: 15px;
-    row-gap: 1rem;
+    row-gap: 0.5rem;
   }
   .Service-description .Content-Service-description .Service-description-rows .Services-description-row {
     margin: auto;
@@ -1096,6 +1096,11 @@ header .Content-logo .logo-contact a {
     transform: scaleX(1);
     transition: 0.4s;
     transition-delay: 0.3s;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Service-description .Content-Service-description .Service-description-rows .Services-description-row .Text p {
+    padding: 12px;
   }
 }
 .Owner-story {
